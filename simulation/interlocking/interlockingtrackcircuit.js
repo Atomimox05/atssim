@@ -10,7 +10,7 @@ class InterlockingTrackCircuit {
     direction
     deactivated
     mapTrackCircuit
-    fleeting
+    reserveForRouteRequests
 
     constructor(name, mapTrackCircuit) {
         this.name = name
@@ -22,19 +22,17 @@ class InterlockingTrackCircuit {
         this.deactivated = false
         this.occupied = false
         this.mapTrackCircuit = mapTrackCircuit
-        this.fleeting = false
+        this.reserveForRouteRequests = 0
         this.approachLockingTimeout = null
     }
 
     releaseRouteInstantly() {
-        this.fleeting = false
         this.approachLocked = false
         this.reservedForRoute = false
         this.reservedForShuntingRoute = false
     }
 
     releaseRouteWithApproachLocking() {
-        this.fleeting = false
         this.approachLocked = true
         this.reservedForRoute = false
         this.reservedForShuntingRoute = false
@@ -80,10 +78,12 @@ class InterlockingTrackCircuit {
                     AlarmHandler.addAlarm(this.name, "YERSİZ RAY DEVRESİ MEŞGULİYETİ", "UNEXPECTED TRACK CIRCUIT OCCUPANCY", 1)
                 }
             } else {
-                if (!this.fleeting && this.occupied && (this.reservedForRoute || this.reservedForShuntingRoute)) {
+                if (this.reserveForRouteRequests == 0 && this.occupied && (this.reservedForRoute || this.reservedForShuntingRoute)) {
                     this.reservedForRoute = false
                     this.reservedForShuntingRoute = false
                     AlarmHandler.addEvent(this.name, "ALT ROTA SERBEST", "SUBROUTE FREE")
+                } else if (this.reserveForRouteRequests > 0) {
+                    this.reserveForRouteRequests--
                 }
             }
         }

@@ -8,11 +8,13 @@ class InterlockingSignal {
     aspect
     interlocking
     fleeting
+    fleetingRoute
 
     constructor(interlocking, name) {
         this.name = name
         this.interlocking = interlocking
         this.fleeting = false
+        this.fleetingRoute = null
         this.updateAspect()
     }
 
@@ -42,6 +44,11 @@ class InterlockingSignal {
         if (this.aspect != newAspect) {
             if (newAspect == "red") {
                 AlarmHandler.addEvent(this.name, "SİNYAL KIRMIZI RENKTE", "SIGNAL ASPECT IS RED")
+                if (this.fleeting) {
+                    this.fleetingRoute.path.forEach(trackCircuit => {
+                        this.interlocking.getTrackCircuitFromName(trackCircuit).reserveForRouteRequests++
+                    })
+                }
             } else if (newAspect == "green") {
                 AlarmHandler.addEvent(this.name, "SİNYAL YEŞİL RENKTE", "SIGNAL ASPECT IS GREEN")
             } else if (newAspect == "flashingGreen") {
@@ -52,68 +59,30 @@ class InterlockingSignal {
         setTimeout(this.updateAspect.bind(this), 200)
     }
 
-    findFleetingRoute() {
-        var route = new Route([], {}, [], this.direction)
+    findFleetingTargetSignal() {
         var currentTrackCircuit = this.nextTrackCircuit.mapTrackCircuit
         if (this.direction == "northbound") {
             while (currentTrackCircuit.northboundSignal == null) {
-                route.path.push(currentTrackCircuit.name)
-                if (currentTrackCircuit.dependsOnPoint != null) {
-                    route.pointPositions.push({
-                        "name": currentTrackCircuit.dependsOnPoint.name,
-                        "position": "normal"
-                    })
-                }
                 currentTrackCircuit = currentTrackCircuit.getNorthbound("normal")
             }
-            route.path.push(currentTrackCircuit.name)
-            if (currentTrackCircuit.dependsOnPoint != null) {
-                route.pointPositions.push({
-                    "name": currentTrackCircuit.dependsOnPoint.name,
-                    "position": "normal"
-                })
-            }
-        }
-        if (this.direction == "southbound") {
+            return currentTrackCircuit.northboundSignal
+        } else {
             while (currentTrackCircuit.southboundSignal == null) {
-                route.path.push(currentTrackCircuit.name)
-                if (currentTrackCircuit.dependsOnPoint != null) {
-                    route.pointPositions.push({
-                        "name": currentTrackCircuit.dependsOnPoint.name,
-                        "position": "normal"
-                    })
-                }
                 currentTrackCircuit = currentTrackCircuit.getSouthbound("normal")
             }
-            route.path.push(currentTrackCircuit.name)
-            if (currentTrackCircuit.dependsOnPoint != null) {
-                route.pointPositions.push({
-                    "name": currentTrackCircuit.dependsOnPoint.name,
-                    "position": "normal"
-                })
-            }
+            return currentTrackCircuit.southboundSignal
         }
-        return route
     }
 
     requestFleeting() {
-        var route = this.findFleetingRoute()
-        var fleetingPossibility = this.interlocking.checkFleetingPossibility(route)
+        var fleetingTargetSignal = this.findFleetingTargetSignal().interlockingSignal
+        this.fleetingRoute = this.interlocking.findRouteBetweenSignals(this, fleetingTargetSignal)
+        var fleetingPossibility = this.interlocking.checkRoutePossibility(this.fleetingRoute)
         if (fleetingPossibility.status) {
-            route.pointPositions.forEach(pointPosition => {
-                var point = this.interlocking.getPointFromName(pointPosition.name)
-                point.desiredPosition = pointPosition.position
-            })
-            route.path.forEach(trackCircuitName => {
-                var trackCircuit = this.interlocking.getTrackCircuitFromName(trackCircuitName)
-                trackCircuit.direction = route.direction
-                trackCircuit.fleeting = true
-                trackCircuit.reservedForRoute = true
-                AlarmHandler.addEvent(trackCircuit.name, "ALT GÜZERGAH KİLİTLİ", "SUBROUTE LOCKED")
-            })
+            this.interlocking.activateRoute(this.fleetingRoute)
             this.fleeting = true
+            AlarmHandler.addEvent(this.name, "FİLO MODU DEVREDE", "FLEETING SET")
         }
-        AlarmHandler.addEvent(this.name, "FİLO MODU DEVREDE", "FLEETING SET")
         return fleetingPossibility
     }
 
@@ -121,10 +90,11 @@ class InterlockingSignal {
         if (!this.fleeting) {
             return new InterlockingAnswer(false, "fleetingAlreadyOff")
         }
-        var route = this.findFleetingRoute()
-        route.path.forEach(trackCircuitName => {
+        this.fleetingRoute.path.forEach(trackCircuitName => {
             var trackCircuit = this.interlocking.getTrackCircuitFromName(trackCircuitName)
-            trackCircuit.fleeting = false
+            if (trackCircuit.reserveForRouteRequests > 0) {
+                trackCircuit.reserveForRouteRequests--
+            }
         })
         this.fleeting = false
         AlarmHandler.addEvent(this.name, "FİLO MODU İPTAL EDİLDİ", "FLEETING CANCELLED")
