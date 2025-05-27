@@ -73,7 +73,7 @@ class ATS {
         var header = document.createElement("div")
         header.classList.add("atsheader")
         var logo = document.createElement("img")
-        logo.src = "/simulation/ats/customerlogo.jpeg"
+        logo.src = "/simulation/ats/customerlogo.jpg"
         logo.classList.add("customerlogo")
         var alarmrectangle = document.createElement("div")
         alarmrectangle.classList.add("alarmrectangle")

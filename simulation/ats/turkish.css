@@ -2,6 +2,10 @@
     display: unset;
 }
 
+.spanish {
+    display: none;
+}
+
 .english {
     display: none;
 }

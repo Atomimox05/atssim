@@ -1,5 +1,5 @@
 "use strict"
-
+//CICLOS DE MANIOBRAS
 var interlockingData = {
     cycles: [
         {

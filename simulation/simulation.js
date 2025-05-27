@@ -30,10 +30,10 @@ var trains = []
 trains.push(new Train("01", 4, map, track, map.getTrackCircuitFromName("OSM_01T"), "northbound", interlocking, ats))
 trains.push(new Train("02", 4, map, track, map.getTrackCircuitFromName("GAY_10T"), "southbound", interlocking, ats))
 trains.push(new Train("03", 4, map, track, map.getTrackCircuitFromName("OSM_12T"), "southbound", interlocking, ats))
-trains.push(new Train("05", 4, map, track, map.getTrackCircuitFromName("4LV_03T"), "northbound", interlocking, ats))
-trains.push(new Train("06", 4, map, track, map.getTrackCircuitFromName("SIS_13T"), "northbound", interlocking, ats))
-trains.push(new Train("07", 4, map, track, map.getTrackCircuitFromName("TAK_08T"), "southbound", interlocking, ats))
-trains.push(new Train("08", 4, map, track, map.getTrackCircuitFromName("TAK_25T"), "northbound", interlocking, ats))
+// trains.push(new Train("05", 4, map, track, map.getTrackCircuitFromName("4LV_03T"), "northbound", interlocking, ats))
+// trains.push(new Train("06", 4, map, track, map.getTrackCircuitFromName("SIS_13T"), "northbound", interlocking, ats))
+// trains.push(new Train("07", 4, map, track, map.getTrackCircuitFromName("TAK_08T"), "southbound", interlocking, ats))
+// trains.push(new Train("08", 4, map, track, map.getTrackCircuitFromName("TAK_25T"), "northbound", interlocking, ats))
 
 function requestReserveForRouteMultipleTrackCircuits(startTrackCircuitName, endTrackCircuitName, direction) {
     var startTrackCircuit = interlocking.getTrackCircuitFromName(startTrackCircuitName)

@@ -12,8 +12,13 @@ class TranslationProvider {
                 turkish.innerText = pair.turkish
                 turkish.classList = "turkish"
 
+                var spanish = document.createElement("span")
+                spanish.innerText = pair.spanish
+                spanish.classList = "spanish"
+
                 wrapper.appendChild(english)
                 wrapper.appendChild(turkish)
+                wrapper.appendChild(spanish)
                 wrapper.classList = "translated"
 
                 return wrapper

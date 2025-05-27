@@ -56,9 +56,6 @@ let mapData = {
             name: "IDP_12",
             southbound: "IDP_10",
             northbound: "GCP_02",
-            signals: {
-                southbound: "IDP08",
-            },
             length: 10
         },
         //VÍA 1
@@ -114,9 +111,6 @@ let mapData = {
             name: "IDP_11",
             southbound: "IDP_09",
             northbound: "GCP_01",
-            signals: {
-                southbound: "IDP07",
-            },
             length: 12
         },
         {
@@ -134,6 +128,9 @@ let mapData = {
             name: "GCP_02",
             southbound: "IDP_12",
             northbound: "GCP_04",
+            signals: {
+                southbound: "IDP08",
+            },
             length: 2
         },
         {
@@ -149,6 +146,9 @@ let mapData = {
             name: "GCP_06",
             southbound: "GCP_04",
             northbound: "ALP_02",
+            signals: {
+                northbound: "ALP02",
+            },
             length: 4
         },
         //VIA 1
@@ -156,6 +156,9 @@ let mapData = {
             name: "GCP_01",
             southbound: "IDP_11",
             northbound: "GCP_03",
+            signals: {
+                southbound: "IDP07",
+            },
             length: 2
         },
         {
@@ -171,6 +174,9 @@ let mapData = {
             name: "GCP_05",
             southbound: "GCP_03",
             northbound: "ALP_01",
+            signals: {
+                northbound: "ALP01",
+            },
             length: 4
         },
         //ALI PRIMERA
@@ -179,9 +185,6 @@ let mapData = {
             name: "ALP_02",
             southbound: "GCP_06",
             northbound: "ALP_04",
-            signals: {
-                northbound: "ALP02",
-            },
             length: 2
         },
         {
@@ -237,9 +240,6 @@ let mapData = {
             name: "ALP_01",
             southbound: "GCP_05",
             northbound: "ALP_03",
-            signals: {
-                northbound: "ALP01",
-            },
             length: 2
         },
         {

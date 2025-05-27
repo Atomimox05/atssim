@@ -3,11 +3,11 @@
 }
 
 .english {
-    display: unset;
+    display: none;
 }
 
 .spanish {
-    display: none;
+    display: unset;
 }
 
 .translated {
