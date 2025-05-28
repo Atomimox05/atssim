@@ -1725,6 +1725,24 @@ var mimicscreendata = [
             <text id="GCP_06" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
                 <tspan x="765" y="194">C_18</tspan>
             </text>
+            <text id="ALP_02" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="830" y="194">C_20</tspan>
+            </text>
+            <text id="ALP_04" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="880" y="194">C_22</tspan>
+            </text>
+            <text id="ALP_06" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="965" y="194">C_24</tspan>
+            </text>
+            <text id="ALP_08" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="1080" y="194">C_26</tspan>
+            </text>
+            <text id="ALP_10" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="1110" y="194">C_28</tspan>
+            </text>
+            <text id="ALP_12" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="1210" y="214">C_30</tspan>
+            </text>
 
             <!-- CIRCUITOS DE VIA - VIA 1 -->
             <text id="IDP_01" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
@@ -1753,6 +1771,24 @@ var mimicscreendata = [
             </text>
             <text id="GCP_05" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
                 <tspan x="765" y="364">C_17</tspan>
+            </text>
+            <text id="ALP_01" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="830" y="364">C_19</tspan>
+            </text>
+            <text id="ALP_03" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="880" y="364">C_21</tspan>
+            </text>
+            <text id="ALP_05" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="965" y="364">C_23</tspan>
+            </text>
+            <text id="ALP_07" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="1080" y="364">C_25</tspan>
+            </text>
+            <text id="ALP_09" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="1110" y="364">C_27</tspan>
+            </text>
+            <text id="ALP_11" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="1210" y="344">C_29</tspan>
             </text>
 
             <!-- Platform INDEPENDENCIA -->
@@ -2301,6 +2337,17 @@ var mimicscreendata = [
                 </g>
                 <text id="ALP08" font-family="Consolas" font-size="11" font-weight="bold" fill="#000000">
                     <tspan x="1170" y="170">E</tspan>
+                </text>
+            <g id="Signal_SP4" transform="translate(1255, 184.5) scale(-1, -1) translate(-293, -186.25)translate(284, 175.5)" stroke="#000000">
+                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
+                <circle id="disc" cx="6.5" cy="15" r="6"></circle>
+            </g>
+                <g id="Button_SP4" transform="translate(1221, 170.5)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
+                </g>
+                <text id="SP4" font-family="Consolas" font-size="11" font-weight="bold" fill="#000000">
+                    <tspan x="1245" y="170">SP4</tspan>
                 </text>
             
             <text id="MT2" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="#000000">
