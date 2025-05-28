@@ -27,8 +27,7 @@ interlocking.getCycleFromName("IDP_2").enable();
 interlocking.getCycleFromName("ALP_1").enable();
 
 var trains = []
-trains.push(new Train("01", 6, map, track, map.getTrackCircuitFromName("ALP_06"), "southbound", interlocking, ats))
-trains.push(new Train("14", 6, map, track, map.getTrackCircuitFromName("IDP_08"), "southbound", interlocking, ats))
+trains.push(new Train("01", 6, map, track, map.getTrackCircuitFromName("GCP_02"), "southbound", interlocking, ats))
 trains.push(new Train("18", 6, map, track, map.getTrackCircuitFromName("ALP_05"), "northbound", interlocking, ats))
 trains.push(new Train("20", 6, map, track, map.getTrackCircuitFromName("IDP_07"), "northbound", interlocking, ats))
 // trains.push(new Train("05", 4, map, track, map.getTrackCircuitFromName("4LV_03T"), "northbound", interlocking, ats))
