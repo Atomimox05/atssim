@@ -1,1114 +1,506 @@
 "use strict"
 
-var mapData = {
+let mapData = {
     trackCircuits: [
+        // INDEPENDENCIA
+        //VÍA 2
         {
-            name: "TAK_02T",
-            southbound: "dependsOnPoint",
-            northbound: "TAK_04T",
-            dependsOnPoint: {
-                point: "TAK_M3",
-                normal: "endOfTrack",
-                reverse: "TAK_15T"
+            name: "IDP_02",
+            southbound: "endOfTrack",
+            northbound: "IDP_04",
+            signals: {
+                northbound: "IDP02",//F
+                southbound: "SP2"
             },
-            length: 1
+            length: 8
         },
         {
-            name: "TAK_04T",
-            southbound: "TAK_02T",
-            northbound: "TAK_06T",
-            length: 4,
-            signals: {
-                southbound: "TAK08"
-            }
-        },
-        {
-            name: "TAK_06T",
-            southbound: "TAK_04T",
-            northbound: "TAK_08T",
-            length: 4,
-            signals: {
-                northbound: "TAK03"
-            }
-        },
-        {
-            name: "TAK_08T",
-            southbound: "TAK_06T",
+            name: "IDP_04",
+            southbound: "IDP_02",
             northbound: "dependsOnPoint",
             dependsOnPoint: {
-                point: "TAK_M8",
-                normal: "TAK_10T",
-                reverse: "TAK_17T"
+                point: "IDP_A2",
+                normal: "IDP_06",
+                reverse: "IDP_CV"
             },
-            length: 1,
-        },
-        {
-            name: "TAK_10T",
-            southbound: "TAK_08T",
-            northbound: "TAK_12T",
-            length: 16,
-        },
-        {
-            name: "TAK_12T",
-            southbound: "dependsOnPoint",
-            northbound: "TAK_14T",
-            dependsOnPoint: {
-                point: "TAK_M9",
-                normal: "TAK_10T",
-                reverse: "TAK_27T"
-            },
-            length: 1
-        },
-        {
-            name: "TAK_14T",
-            southbound: "TAK_12T",
-            northbound: "OSM_02T",
-            length: 10,
-            signals: {
-                southbound: "TAK06"
-            },
-            shuntingPanels: {
-                northbound: "SP2"
-            }
-        },
-        {
-            name: "OSM_02T",
-            southbound: "TAK_14T",
-            northbound: "OSM_04T",
-            length: 10,
-            signals: {
-                northbound: "TAK05"
-            }
-        },
-        {
-            name: "OSM_04T",
-            southbound: "OSM_02T",
-            northbound: "OSM_06T",
-            length: 17
-        },
-        {
-            name: "OSM_06T",
-            southbound: "OSM_04T",
-            northbound: "OSM_08T",
-            length: 4,
-            signals: {
-                southbound: "TAK02"
-            }
-        },
-        {
-            name: "OSM_08T",
-            southbound: "OSM_06T",
-            northbound: "OSM_10T",
-            length: 4
-        },
-        {
-            name: "OSM_10T",
-            southbound: "OSM_08T",
-            northbound: "OSM_12T",
-            length: 17
-        },
-        {
-            name: "OSM_12T",
-            southbound: "OSM_10T",
-            northbound: "SIS_02T",
-            length: 17
-        },
-        {
-            name: "SIS_02T",
-            southbound: "OSM_12T",
-            northbound: "SIS_04T",
-            length: 17,
-            signals: {
-                northbound: "SIS03"
-            },
-            shuntingPanels: {
-                southbound: "SP4"
-            }
-        },
-        {
-            name: "SIS_04T",
-            southbound: "SIS_02T",
-            northbound: "dependsOnPoint",
-            dependsOnPoint: {
-                point: "SIS_M12",
-                normal: "SIS_06T",
-                reverse: "SIS_17T"
-            },
-            length: 1
-        },
-        {
-            name: "SIS_06T",
-            southbound: "SIS_04T",
-            northbound: "SIS_08T",
-            length: 1
-        },
-        {
-            name: "SIS_08T",
-            southbound: "dependsOnPoint",
-            northbound: "SIS_10T",
-            dependsOnPoint: {
-                point: "SIS_M13",
-                normal: "SIS_06T",
-                reverse: "SIS_17T"
-            },
-            length: 1
-        },
-        {
-            name: "SIS_10T",
-            southbound: "SIS_08T",
-            northbound: "SIS_12T",
-            length: 8,
-            signals: {
-                southbound: "SIS06",
-                northbound: "SIS07"
-            },
-            shuntingPanels: {
-                northbound: "SP6"
-            }
-        },
-        {
-            name: "SIS_12T",
-            southbound: "SIS_10T",
-            northbound: "SIS_14T",
-            length: 18
-        },
-        {
-            name: "SIS_14T",
-            southbound: "SIS_12T",
-            northbound: "GAY_02T",
-            length: 18,
-            signals: {
-                southbound: "SIS02"
-            }
-        },
-        {
-            name: "GAY_02T",
-            southbound: "SIS_14T",
-            northbound: "GAY_04T",
-            length: 18
-        },
-        {
-            name: "GAY_04T",
-            southbound: "GAY_02T",
-            northbound: "GAY_06T",
-            length: 18
-        },
-        {
-            name: "GAY_06T",
-            southbound: "GAY_04T",
-            northbound: "GAY_08T",
-            length: 4
-        },
-        {
-            name: "GAY_08T",
-            southbound: "GAY_06T",
-            northbound: "GAY_10T",
-            length: 4
-        },
-        {
-            name: "GAY_10T",
-            southbound: "GAY_08T",
-            northbound: "LEV_02T",
-            length: 15
-        },
-        {
-            name: "LEV_02T",
-            southbound: "GAY_10T",
-            northbound: "LEV_04T",
-            length: 16
-        },
-        {
-            name: "LEV_04T",
-            southbound: "LEV_02T",
-            northbound: "LEV_06T",
-            length: 15
-        },
-        {
-            name: "LEV_06T",
-            southbound: "LEV_04T",
-            northbound: "LEV_08T",
             length: 3
         },
         {
-            name: "LEV_08T",
-            southbound: "LEV_06T",
-            northbound: "LEV_10T",
-            length: 2
-        },
-        {
-            name: "LEV_10T",
-            southbound: "LEV_08T",
-            northbound: "LEV_12T",
-            length: 3,
-            shuntingPanels: {
-                southbound: "SP8"
-            }
-        },
-        {
-            name: "LEV_12T",
-            southbound: "LEV_10T",
-            northbound: "LEV_14T",
-            length: 8,
-            signals: {
-                northbound: "LEV03"
-            }
-        },
-        {
-            name: "LEV_14T",
-            southbound: "LEV_12T",
-            northbound: "dependsOnPoint",
-            dependsOnPoint: {
-                point: "LEV_M16",
-                normal: "4LV_02T",
-                reverse: "LEV_07T"
-            },
-            length: 1
-        },
-        {
-            name: "4LV_02T",
-            southbound: "LEV_14T",
-            northbound: "4LV_04T",
-            length: 8,
-            signals: {
-                southbound: "LEV02"
-            }
-        },
-        {
-            name: "4LV_04T",
-            southbound: "4LV_02T",
-            northbound: "4LV_06T",
-            length: 16
-        },
-        {
-            name: "4LV_06T",
-            southbound: "4LV_04T",
-            northbound: "4LV_08T",
-            length: 16,
-            signals: {
-                southbound: "4LV06"
-            }
-        },
-        {
-            name: "4LV_08T",
-            southbound: "4LV_06T",
-            northbound: "4LV_10T",
-            length: 8,
-            signals: {
-                northbound: "4LV03"
-            }
-        },
-        {
-            name: "4LV_10T",
-            southbound: "4LV_08T",
-            northbound: "dependsOnPoint",
-            dependsOnPoint: {
-                point: "4LV_M21",
-                normal: "4LV_12T",
-                reverse: "4LV_15T"
-            },
-            length: 2
-        },
-        {
-            name: "4LV_12T",
+            name: "IDP_06",
             southbound: "dependsOnPoint",
-            northbound: "4LV_14T",
+            northbound: "IDP_08",
             dependsOnPoint: {
-                point: "4LV_M22",
-                normal: "4LV_10T",
-                reverse: "4LV_15T"
+                point: "IDP_A4",
+                normal: "IDP_04",
+                reverse: "IDP_CV"
             },
-            length: 1
+            length: 3
         },
         {
-            name: "4LV_14T",
-            southbound: "4LV_12T",
-            northbound: "endOfTrack",
-            length: 8,
+            name: "IDP_08",
+            southbound: "IDP_06",
+            northbound: "IDP_10",
             signals: {
-                southbound: "4LV02",
-                northbound: "B52"
-            }
+                southbound: "IDP04",//E
+                northbound: "IDP06"//D
+            },
+            length: 8
         },
         {
-            name: "4LV_15T",
-            crossTrackCircuit: true,
-            southboundLineSouthboundDirection: "4LV_10T",
-            southboundLineNorthboundDirection: "4LV_12T",
-            northboundLineSouthboundDirection: "4LV_13T",
-            northboundLineNorthboundDirection: "4LV_17T",
-            length: 1
+            name: "IDP_10",
+            southbound: "IDP_08",
+            northbound: "IDP_12",
+            length: 8
         },
         {
-            name: "TAK_29T",
+            name: "IDP_12",
+            southbound: "IDP_10",
+            northbound: "GCP_02",
+            length: 10
+        },
+        //VÍA 1
+        {
+            name: "IDP_01",
             southbound: "endOfTrack",
-            northbound: "TAK_15T",
-            length: 8,
+            northbound: "IDP_03",
             signals: {
-                southbound: "B30",
-                northbound: "TAK07"
-            }
+                northbound: "IDP01",//G
+                southbound: "SP1"
+            },
+            length: 8
         },
         {
-            name: "TAK_15T",
-            southbound: "TAK_29T",
+            name: "IDP_03",
+            southbound: "IDP_01",
             northbound: "dependsOnPoint",
             dependsOnPoint: {
-                point: "TAK_M1",
-                normal: "TAK_02T",
-                reverse: "TAK_01T"
+                point: "IDP_A1",
+                normal: "IDP_05",
+                reverse: "IDP_CV"
             },
-            length: 1
+            length: 3
         },
         {
-            name: "TAK_17T",
+            name: "IDP_05",
             southbound: "dependsOnPoint",
-            northbound: "TAK_19T",
+            northbound: "IDP_07",
             dependsOnPoint: {
-                point: "TAK_M5",
-                normal: "TAK_08T",
-                reverse: "TAK_05T"
+                point: "IDP_A3",
+                normal: "IDP_03",
+                reverse: "IDP_CV"
             },
-            length: 1
+            length: 3
         },
         {
-            name: "TAK_19T",
-            southbound: "TAK_17T",
-            northbound: "TAK_21T",
-            length: 4,
+            name: "IDP_07",
+            southbound: "IDP_05",
+            northbound: "IDP_09",
             signals: {
-                southbound: "TAK12"
-            }
+                southbound: "IDP03",//H
+                northbound: "IDP05"//J
+            },
+            length: 8
         },
         {
-            name: "TAK_21T",
-            southbound: "TAK_19T",
-            northbound: "TAK_23T",
+            name: "IDP_09",
+            southbound: "IDP_07",
+            northbound: "IDP_11",
             length: 4
         },
         {
-            name: "TAK_23T",
-            southbound: "TAK_21T",
-            northbound: "TAK_25T",
-            length: 4
+            name: "IDP_11",
+            southbound: "IDP_09",
+            northbound: "GCP_01",
+            length: 10
         },
         {
-            name: "TAK_25T",
-            southbound: "TAK_23T",
-            northbound: "TAK_27T",
-            length: 4,
-            signals: {
-                northbound: "TAK09"
-            }
-        },
-        {
-            name: "TAK_27T",
-            southbound: "TAK_25T",
-            northbound: "dependsOnPoint",
-            dependsOnPoint: {
-                point: "TAK_M6",
-                normal: "TAK_12T",
-                reverse: "TAK_11T"
-            },
-            length: 1
-        },
-        {
-            name: "SIS_17T",
+            name: "IDP_CV",
             crossTrackCircuit: true,
-            southboundLineSouthboundDirection: "SIS_04T",
-            southboundLineNorthboundDirection: "SIS_08T",
-            northboundLineSouthboundDirection: "SIS_03T",
-            northboundLineNorthboundDirection: "SIS_07T",
+            southboundLineSouthboundDirection: "IDP_04",
+            southboundLineNorthboundDirection: "IDP_06",
+            northboundLineSouthboundDirection: "IDP_03",
+            northboundLineNorthboundDirection: "IDP_05",
             length: 2
         },
+        //GUAICAIPURO
+        //VÍA 2
         {
-            name: "TAK_01T",
-            southbound: "dependsOnPoint",
-            northbound: "TAK_03T",
-            dependsOnPoint: {
-                point: "TAK_M2",
-                normal: "endOfTrack",
-                reverse: "TAK_15T"
-            },
-            length: 1
-        },
-        {
-            name: "TAK_03T",
-            southbound: "TAK_01T",
-            northbound: "TAK_05T",
-            length: 8,
+            name: "GCP_02",
+            southbound: "IDP_12",
+            northbound: "GCP_04",
             signals: {
-                southbound: "TAK10",
-                northbound: "TAK01"
-            }
-        },
-        {
-            name: "TAK_05T",
-            southbound: "TAK_03T",
-            northbound: "dependsOnPoint",
-            dependsOnPoint: {
-                point: "TAK_M4",
-                normal: "TAK_07T",
-                reverse: "TAK_17T"
+                southbound: "IDP08",//C
             },
-            length: 1
+            length: 6
         },
         {
-            name: "TAK_07T",
-            southbound: "TAK_05T",
-            northbound: "TAK_09T",
+            name: "GCP_04",
+            southbound: "GCP_02",
+            northbound: "GCP_06",
+            signals: {
+                southbound: "GCP-S2",
+            },
+            length: 8
+        },
+        {
+            name: "GCP_06",
+            southbound: "GCP_04",
+            northbound: "ALP_02",
+            signals: {
+                northbound: "ALP02",//B
+            },
+            length: 4
+        },
+        //VIA 1
+        {
+            name: "GCP_01",
+            southbound: "IDP_11",
+            northbound: "GCP_03",
+            signals: {
+                southbound: "IDP07",//K
+            },
             length: 4
         },
         {
-            name: "TAK_09T",
-            southbound: "TAK_07T",
-            northbound: "TAK_11T",
-            length: 12
-        },
-        {
-            name: "TAK_11T",
-            southbound: "dependsOnPoint",
-            northbound: "TAK_13T",
-            dependsOnPoint: {
-                point: "TAK_M7",
-                normal: "TAK_09T",
-                reverse: "TAK_27T"
-            },
-            length: 1
-        },
-        {
-            name: "TAK_13T",
-            southbound: "TAK_11T",
-            northbound: "OSM_01T",
-            length: 10,
+            name: "GCP_03",
+            southbound: "GCP_01",
+            northbound: "GCP_05",
             signals: {
-                southbound: "TAK04"
+                northbound: "GCP-S1",
             },
-            shuntingPanels: {
-                northbound: "SP1"
-            }
-        },
-        {
-            name: "OSM_01T",
-            southbound: "TAK_13T",
-            northbound: "OSM_03T",
-            length: 27
-        },
-        {
-            name: "OSM_03T",
-            southbound: "OSM_01T",
-            northbound: "OSM_05T",
             length: 8
         },
         {
-            name: "OSM_05T",
-            southbound: "OSM_03T",
-            northbound: "OSM_07T",
-            length: 17,
+            name: "GCP_05",
+            southbound: "GCP_03",
+            northbound: "ALP_01",
             signals: {
-                northbound: "SIS01"
-            }
-        },
-        {
-            name: "OSM_07T",
-            southbound: "OSM_05T",
-            northbound: "SIS_01T",
-            length: 17
-        },
-        {
-            name: "SIS_01T",
-            southbound: "OSM_07T",
-            northbound: "SIS_03T",
-            length: 17,
-            signals: {
-                southbound: "SIS08",
-                northbound: "SIS05"
+                northbound: "ALP01",//L
             },
-            shuntingPanels: {
-                southbound: "SP3"
-            }
+            length: 4
         },
+        //ALI PRIMERA
+        //VIA 2
         {
-            name: "SIS_03T",
-            southbound: "SIS_01T",
-            northbound: "dependsOnPoint",
-            dependsOnPoint: {
-                point: "SIS_M10",
-                normal: "SIS_05T",
-                reverse: "SIS_17T"
-            },
-            length: 1
-        },
-        {
-            name: "SIS_05T",
-            southbound: "SIS_03T",
-            northbound: "SIS_07T",
-            length: 1
-        },
-        {
-            name: "SIS_07T",
-            southbound: "dependsOnPoint",
-            northbound: "SIS_09T",
-            dependsOnPoint: {
-                point: "SIS_M11",
-                normal: "SIS_05T",
-                reverse: "SIS_17T"
-            },
-            length: 1
-        },
-        {
-            name: "SIS_09T",
-            southbound: "SIS_07T",
-            northbound: "SIS_11T",
-            length: 8,
-            signals: {
-                southbound: "SIS04"
-            },
-            shuntingPanels: {
-                northbound: "SP5"
-            }
-        },
-        {
-            name: "SIS_11T",
-            southbound: "SIS_09T",
-            northbound: "SIS_13T",
-            length: 18
-        },
-        {
-            name: "SIS_13T",
-            southbound: "SIS_11T",
-            northbound: "SIS_15T",
-            length: 18
-        },
-        {
-            name: "SIS_15T",
-            southbound: "SIS_13T",
-            northbound: "GAY_01T",
-            length: 18
-        },
-        {
-            name: "GAY_01T",
-            southbound: "SIS_15T",
-            northbound: "GAY_03T",
-            length: 18
-        },
-        {
-            name: "GAY_03T",
-            southbound: "GAY_01T",
-            northbound: "GAY_05T",
-            length: 8
-        },
-        {
-            name: "GAY_05T",
-            southbound: "GAY_03T",
-            northbound: "GAY_07T",
-            length: 15
-        },
-        {
-            name: "GAY_07T",
-            southbound: "GAY_05T",
-            northbound: "LEV_01T",
-            length: 16
-        },
-        {
-            name: "LEV_01T",
-            southbound: "GAY_07T",
-            northbound: "LEV_03T",
-            length: 15
-        },
-        {
-            name: "LEV_03T",
-            southbound: "LEV_01T",
-            northbound: "LEV_05T",
-            length: 8,
-            signals: {
-                northbound: "LEV01"
-            }
-        },
-        {
-            name: "LEV_05T",
-            southbound: "LEV_03T",
-            northbound: "LEV_07T",
-            length: 16
-        },
-        {
-            name: "LEV_07T",
-            southbound: "dependsOnPoint",
-            northbound: "4LV_01T",
-            dependsOnPoint: {
-                point: "LEV_M15",
-                normal: "LEV_05T",
-                reverse: "LEV_14T"
-            },
-            length: 1
-        },
-        {
-            name: "4LV_01T",
-            southbound: "LEV_07T",
-            northbound: "4LV_03T",
-            length: 16,
-            signals: {
-                southbound: "LEV04"
-            },
-            shuntingPanels: {
-                northbound: "SP7"
-            }
-        },
-        {
-            name: "4LV_03T",
-            southbound: "4LV_01T",
-            northbound: "4LV_05T",
-            length: 16
-        },
-        {
-            name: "4LV_05T",
-            southbound: "4LV_03T",
-            northbound: "4LV_07T",
-            length: 3,
-            signals: {
-                southbound: "4LV08"
-            }
-        },
-        {
-            name: "4LV_07T",
-            southbound: "4LV_05T",
-            northbound: "4LV_09T",
+            name: "ALP_02",
+            southbound: "GCP_06",
+            northbound: "ALP_04",
             length: 2
         },
         {
-            name: "4LV_09T",
-            southbound: "4LV_07T",
-            northbound: "4LV_11T",
-            length: 3,
-            signals: {
-                northbound: "4LV05"
-            }
+            name: "ALP_04",
+            southbound: "ALP_02",
+            northbound: "ALP_06",
+            length: 10
         },
         {
-            name: "4LV_11T",
-            southbound: "4LV_09T",
-            northbound: "4LV_13T",
-            length: 1
+            name: "ALP_06",
+            southbound: "ALP_04",
+            northbound: "ALP_08",
+            signals:{
+                southbound: "ALP04",//A
+                northbound: "ALP06"//F
+            },
+            length: 8
         },
         {
-            name: "4LV_13T",
-            southbound: "4LV_11T",
+            name: "ALP_08",
+            southbound: "ALP_06",
             northbound: "dependsOnPoint",
             dependsOnPoint: {
-                point: "4LV_M19",
-                normal: "4LV_17T",
-                reverse: "4LV_15T"
+                point: "ALP_A2",
+                normal: "ALP_10",
+                reverse: "ALP_CV"
             },
-            length: 1
+            length: 4
         },
         {
-            name: "4LV_17T",
+            name: "ALP_10",
             southbound: "dependsOnPoint",
-            northbound: "4LV_19T",
+            northbound: "ALP_12",
             dependsOnPoint: {
-                point: "4LV_M20",
-                normal: "4LV_13T",
-                reverse: "4LV_15T"
+                point: "ALP_A4",
+                normal: "ALP_08",
+                reverse: "ALP_CV"
             },
-            length: 1
+            length: 4
         },
         {
-            name: "4LV_19T",
-            southbound: "4LV_17T",
+            name: "ALP_12",
+            southbound: "ALP_10",
             northbound: "endOfTrack",
-            length: 8,
+            signals:{
+                southbound: "ALP08",//E
+                northbound: "SP4"
+            },
+            length: 6
+        },
+        //VIA 1
+        {
+            name: "ALP_01",
+            southbound: "GCP_05",
+            northbound: "ALP_03",
+            length: 2
+        },
+        {
+            name: "ALP_03",
+            southbound: "ALP_01",
+            northbound: "ALP_05",
+            length: 10
+        },
+        {
+            name: "ALP_05",
+            southbound: "ALP_03",
+            northbound: "ALP_07",
             signals: {
-                southbound: "4LV04",
-                northbound: "B51",
-            }
-        }
+                southbound: "ALP03",//M
+                northbound: "ALP05"//G
+            },
+            length: 8
+        },
+        {
+            name: "ALP_07",
+            southbound: "ALP_05",
+            northbound: "dependsOnPoint",
+            dependsOnPoint: {
+                point: "ALP_A1",
+                normal: "ALP_09",
+                reverse: "ALP_CV"
+            },
+            length: 4
+        },
+        {
+            name: "ALP_09",
+            southbound: "dependsOnPoint",
+            northbound: "ALP_11",
+            dependsOnPoint: {
+                point: "ALP_A3",
+                normal: "ALP_07",
+                reverse: "ALP_CV"
+            },
+            length: 4
+        },
+        {
+            name: "ALP_11",
+            southbound: "ALP_09",
+            northbound: "endOfTrack",
+            signals: {
+                southbound: "ALP07",//H
+                northbound: "SP3"
+            },
+            length: 6
+        },
+        {
+            name: "ALP_CV",
+            crossTrackCircuit: true,
+            southboundLineSouthboundDirection: "ALP_08",
+            southboundLineNorthboundDirection: "ALP_10",
+            northboundLineSouthboundDirection: "ALP_07",
+            northboundLineNorthboundDirection: "ALP_09",
+            length: 4
+        },
     ],
     points: [
         {
-            name: "TAK_M1",
-            trackCircuit: "TAK_15T"
+            name: "IDP_A2",
+            trackCircuit: "IDP_04",
         },
         {
-            name: "TAK_M2",
-            trackCircuit: "TAK_01T"
+            name: "IDP_A4",
+            trackCircuit: "IDP_06",
         },
         {
-            name: "TAK_M3",
-            trackCircuit: "TAK_02T"
+            name: "IDP_A1",
+            trackCircuit: "IDP_03",
         },
         {
-            name: "TAK_M4",
-            trackCircuit: "TAK_05T"
+            name: "IDP_A3",
+            trackCircuit: "IDP_05",
         },
         {
-            name: "TAK_M8",
-            trackCircuit: "TAK_08T"
+            name: "ALP_A2",
+            trackCircuit: "ALP_08",
         },
         {
-            name: "TAK_M9",
-            trackCircuit: "TAK_12T"
+            name: "ALP_A4",
+            trackCircuit: "ALP_10",
         },
         {
-            name: "TAK_M5",
-            trackCircuit: "TAK_17T"
+            name: "ALP_A1",
+            trackCircuit: "ALP_07",
         },
         {
-            name: "TAK_M6",
-            trackCircuit: "TAK_27T"
-        },
-        {
-            name: "TAK_M7",
-            trackCircuit: "TAK_11T"
-        },
-        {
-            name: "SIS_M12",
-            trackCircuit: "SIS_04T"
-        },
-        {
-            name: "SIS_M13",
-            trackCircuit: "SIS_08T"
-        },
-        {
-            name: "SIS_M10",
-            trackCircuit: "SIS_03T"
-        },
-        {
-            name: "SIS_M11",
-            trackCircuit: "SIS_07T"
-        },
-        {
-            name: "LEV_M16",
-            trackCircuit: "LEV_14T"
-        },
-        {
-            name: "LEV_M15",
-            trackCircuit: "LEV_07T"
-        },
-        {
-            name: "4LV_M21",
-            trackCircuit: "4LV_10T"
-        },
-        {
-            name: "4LV_M22",
-            trackCircuit: "4LV_12T"
-        },
-        {
-            name: "4LV_M19",
-            trackCircuit: "4LV_13T"
-        },
-        {
-            name: "4LV_M20",
-            trackCircuit: "4LV_17T"
+            name: "ALP_A3",
+            trackCircuit: "ALP_09",
         }
     ],
     signals: [
         {
-            name: "TAK03",
+            name: "IDP02",
             direction: "northbound"
         },
         {
-            name: "TAK08",
+            name: "IDP04",
             direction: "southbound"
         },
         {
-            name: "TAK06",
-            direction: "southbound"
-        },
-        {
-            name: "TAK05",
+            name: "IDP06",
             direction: "northbound"
         },
         {
-            name: "TAK02",
+            name: "IDP08",
             direction: "southbound"
         },
         {
-            name: "SIS03",
+            name: "IDP01",
             direction: "northbound"
         },
         {
-            name: "TAK07",
+            name: "IDP03",
+            direction: "southbound"
+        },
+        {
+            name: "IDP05",
             direction: "northbound"
         },
         {
-            name: "TAK12",
+            name: "IDP07",
             direction: "southbound"
         },
         {
-            name: "TAK09",
+            name: "GCP-S1",
             direction: "northbound"
         },
         {
-            name: "TAK10",
+            name: "GCP-S2",
             direction: "southbound"
         },
         {
-            name: "TAK01",
+            name: "ALP02",
             direction: "northbound"
         },
         {
-            name: "TAK04",
+            name: "ALP04",
             direction: "southbound"
         },
         {
-            name: "SIS01",
+            name: "ALP06",
             direction: "northbound"
         },
         {
-            name: "SIS08",
+            name: "ALP08",
             direction: "southbound"
         },
         {
-            name: "SIS05",
+            name: "ALP01",
             direction: "northbound"
         },
         {
-            name: "SIS06",
+            name: "ALP03",
             direction: "southbound"
         },
         {
-            name: "SIS07",
+            name: "ALP05",
             direction: "northbound"
         },
         {
-            name: "SIS02",
+            name: "ALP07",
             direction: "southbound"
         },
         {
-            name: "SIS06",
+            name: "SP1",
             direction: "southbound"
         },
         {
-            name: "SIS07",
+            name: "SP2",
+            direction: "southbound"
+        },
+        {
+            name: "SP3",
             direction: "northbound"
         },
         {
-            name: "SIS02",
-            direction: "southbound"
-        },
-        {
-            name: "SIS04",
-            direction: "southbound"
-        },
-        {
-            name: "LEV01",
-            direction: "northbound"
-        },
-        {
-            name: "LEV03",
-            direction: "northbound"
-        },
-        {
-            name: "LEV02",
-            direction: "southbound"
-        },
-        {
-            name: "4LV06",
-            direction: "southbound"
-        },
-        {
-            name: "4LV03",
-            direction: "northbound"
-        },
-        {
-            name: "4LV02",
-            direction: "southbound"
-        },
-        {
-            name: "LEV04",
-            direction: "southbound"
-        },
-        {
-            name: "4LV08",
-            direction: "southbound"
-        },
-        {
-            name: "4LV05",
-            direction: "northbound"
-        },
-        {
-            name: "4LV04",
-            direction: "southbound"
-        },
-        {
-            name: "B30",
-            direction: "southbound"
-        },
-        {
-            name: "B51",
-            direction: "northbound"
-        },
-        {
-            name: "B52",
+            name: "SP4",
             direction: "northbound"
         }
     ],
     shuntingPanels: [
-        {
-            name: "SP1",
-            direction: "northbound"
-        },
-        {
-            name: "SP2",
-            direction: "northbound"
-        },
-        {
-            name: "SP3",
-            direction: "southbound"
-        },
-        {
-            name: "SP4",
-            direction: "southbound"
-        },
-        {
-            name: "SP5",
-            direction: "northbound"
-        },
-        {
-            name: "SP6",
-            direction: "northbound"
-        },
-        {
-            name: "SP7",
-            direction: "northbound"
-        },
-        {
-            name: "SP8",
-            direction: "southbound"
-        },
+        
     ],
     platforms: [
         {
-            name: "TAKSIM_P1",
+            name: "INDEPENDENCIA_V1",
             direction: "northbound",
             northbound: {
-                trackCircuit: "TAK_03T",
+                trackCircuit: "IDP_07",
                 position: 6
             },
             southbound: {
-                trackCircuit: "TAK_03T",
+                trackCircuit: "IDP_07",
                 position: 3
             }
         },
         {
-            name: "TAKSIM_P2",
+            name: "INDEPENDENCIA_V2",
             direction: "southbound",
             northbound: {
-                trackCircuit: "TAK_06T",
-                position: 2
-            },
-            southbound: {
-                trackCircuit: "TAK_04T",
-                position: 3
-            }
-        },
-        {
-            name: "OSMANBEY_P1",
-            direction: "northbound",
-            northbound: {
-                trackCircuit: "OSM_03T",
+                trackCircuit: "IDP_08",
                 position: 6
             },
             southbound: {
-                trackCircuit: "OSM_03T",
-                position: 3
-            }
-        },
-        {
-            name: "OSMANBEY_P2",
-            direction: "southbound",
-            northbound: {
-                trackCircuit: "OSM_08T",
-                position: 2
-            },
-            southbound: {
-                trackCircuit: "OSM_06T",
-                position: 3
-            }
-        },
-        {
-            name: "SISLI_P1",
-            direction: "northbound",
-            northbound: {
-                trackCircuit: "SIS_09T",
-                position: 6
-            },
-            southbound: {
-                trackCircuit: "SIS_09T",
-                position: 3
-            }
-        },
-        {
-            name: "SISLI_P2",
-            direction: "southbound",
-            northbound: {
-                trackCircuit: "SIS_10T",
-                position: 6
-            },
-            southbound: {
-                trackCircuit: "SIS_10T",
-                position: 3
-            }
-        },
-        {
-            name: "GAYRETTEPE_P1",
-            direction: "northbound",
-            northbound: {
-                trackCircuit: "GAY_03T",
-                position: 6
-            },
-            southbound: {
-                trackCircuit: "GAY_03T",
-                position: 3
-            }
-        },
-        {
-            name: "GAYRETTEPE_P2",
-            direction: "southbound",
-            northbound: {
-                trackCircuit: "GAY_08T",
-                position: 2
-            },
-            southbound: {
-                trackCircuit: "GAY_06T",
-                position: 3
-            }
-        },
-        {
-            name: "LEVENT_P1",
-            direction: "northbound",
-            northbound: {
-                trackCircuit: "LEV_03T",
-                position: 6
-            },
-            southbound: {
-                trackCircuit: "LEV_03T",
-                position: 3
-            }
-        },
-        {
-            name: "LEVENT_P2",
-            direction: "southbound",
-            northbound: {
-                trackCircuit: "LEV_10T",
-                position: 1
-            },
-            southbound: {
-                trackCircuit: "LEV_06T",
-                position: 3
-            }
-        },
-        {
-            name: "4-LEVENT_P1",
-            direction: "northbound",
-            northbound: {
-                trackCircuit: "4LV_09T",
-                position: 1
-            },
-            southbound: {
-                trackCircuit: "4LV_05T",
+                trackCircuit: "IDP_08",
                 position: 3
             },
             terminus: true
+        },
+        {
+            name: "GUAICAIPURO_V1",
+            direction: "northbound",
+            northbound: {
+                trackCircuit: "GCP_03",
+                position: 6
+            },
+            southbound: {
+                trackCircuit: "GCP_03",
+                position: 3
+            }
+        },
+        {
+            name: "GUAICAIPURO_V2",
+            direction: "northbound",
+            northbound: {
+                trackCircuit: "GCP_04",
+                position: 6
+            },
+            southbound: {
+                trackCircuit: "GCP_04",
+                position: 3
+            }
+        },
+        {
+            name: "ALIPRIMERA_V1",
+            direction: "northbound",
+            northbound: {
+                trackCircuit: "ALP_05",
+                position: 6
+            },
+            southbound: {
+                trackCircuit: "ALP_05",
+                position: 3
+            },
+            terminus: true
+        },
+        {
+            name: "ALIPRIMERA_V2",
+            direction: "northbound",
+            northbound: {
+                trackCircuit: "ALP_06",
+                position: 6
+            },
+            southbound: {
+                trackCircuit: "ALP_06",
+                position: 3
+            }
         }
-    ]
+    ],
 }
