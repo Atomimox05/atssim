@@ -77,13 +77,16 @@ class InterlockingTrackCircuit {
                 } else {
                     AlarmHandler.addAlarm(this.name, "YERSİZ RAY DEVRESİ MEŞGULİYETİ", "UNEXPECTED TRACK CIRCUIT OCCUPANCY", 1)
                 }
+                console.log(`Circuit ${this.name} occupied.`) // Añadir esto
             } else {
                 if (this.reserveForRouteRequests == 0 && this.occupied && (this.reservedForRoute || this.reservedForShuntingRoute)) {
                     this.reservedForRoute = false
                     this.reservedForShuntingRoute = false
                     AlarmHandler.addEvent(this.name, "ALT ROTA SERBEST", "SUBROUTE FREE")
+                     console.log(`Circuit ${this.name} released.`) // Añadir esto  
                 } else if (this.reserveForRouteRequests > 0) {
                     this.reserveForRouteRequests--
+                    console.log(`Circuit ${this.name} reserve requests: ${this.reserveForRouteRequests}`) // Añadir esto  
                 }
             }
         }

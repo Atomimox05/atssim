@@ -105,7 +105,7 @@ let mapData = {
             name: "IDP_09",
             southbound: "IDP_07",
             northbound: "IDP_11",
-            length: 4
+            length: 6
         },
         {
             name: "IDP_11",
@@ -185,7 +185,7 @@ let mapData = {
             name: "ALP_02",
             southbound: "GCP_06",
             northbound: "ALP_04",
-            length: 2
+            length: 4
         },
         {
             name: "ALP_04",
@@ -240,7 +240,7 @@ let mapData = {
             name: "ALP_01",
             southbound: "GCP_05",
             northbound: "ALP_03",
-            length: 2
+            length: 4
         },
         {
             name: "ALP_03",
@@ -451,7 +451,6 @@ let mapData = {
                 trackCircuit: "IDP_08",
                 position: 3
             },
-            terminus: true
         },
         {
             name: "GUAICAIPURO_V1",
@@ -488,7 +487,6 @@ let mapData = {
                 trackCircuit: "ALP_05",
                 position: 3
             },
-            terminus: true
         },
         {
             name: "ALIPRIMERA_V2",

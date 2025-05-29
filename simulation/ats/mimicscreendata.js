@@ -2716,7 +2716,7 @@ var mimicscreendata = [
                     <tspan x="6" y="13">-</tspan>
                 </text>
             </g>
-            <g id="TrainDescriber_IDP_04" transform="translate(160, 265)" opacity="0">
+            <g id="TrainDescriber_IDP_CV" transform="translate(140, 265)" opacity="0">
                 <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
                 <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
                     <tspan x="6" y="13">-</tspan>
@@ -2778,7 +2778,7 @@ var mimicscreendata = [
                     <tspan x="6" y="13">-</tspan>
                 </text>
             </g>
-            <g id="TrainDescriber_GCP_07" transform="translate(760, 422)" opacity="0">
+            <g id="TrainDescriber_GCP_05" transform="translate(760, 422)" opacity="0">
                 <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
                 <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
                     <tspan x="6" y="13">-</tspan>
