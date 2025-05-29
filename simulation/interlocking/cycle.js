@@ -31,19 +31,13 @@ class Cycle {
                 }
                 if (request.status) {
                     this.currentPhase = "exit"
-                    console.log(`Cycle ${this.name} - Entry route set. Moving to exit phase.`) // Añadir esto  
-                } else {  
-                    console.log(`Cycle ${this.name} - Entry route failed: ${request.message}`) // Añadir esto  
                 }  
             }
             if (this.currentPhase == "exit") {
                 var request = this.interlocking.requestRouteBetweenSignals(this.exitRouteStartSignal, this.exitRouteEndSignal)
                 if (request.status) {
                     this.currentPhase = "entry"
-                    console.log(`Cycle ${this.name} - Exit route set. Moving to entry phase.`) // Añadir esto  
-                } else {  
-                    console.log(`Cycle ${this.name} - Exit route failed: ${request.message}`) // Añadir esto  
-                }  
+                }
             }
         }
         setTimeout(this.update.bind(this), 1000)
