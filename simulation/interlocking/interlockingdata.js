@@ -33,7 +33,7 @@ var interlockingData = {
             "routes": {
                 "entry": {
                     "start": "ALP05",
-                    "end": "SP4",
+                    "end": "ZR2",
                 },
                 "exit": {
                     "start": "ALP08",
@@ -46,7 +46,7 @@ var interlockingData = {
             "routes": {
                 "entry": {
                     "start": "ALP05",
-                    "end": "SP3",
+                    "end": "ZR1",
                 },
                 "exit": {
                     "start": "ALP07",

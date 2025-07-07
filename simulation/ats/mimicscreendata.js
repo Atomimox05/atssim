@@ -1873,7 +1873,10 @@ var mimicscreendata = [
                 <tspan x="1110" y="188">ALP_10</tspan>
             </text>
             <text id="ALP_12" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
-                <tspan x="1200" y="214">ALP_12</tspan>
+                <tspan x="1190" y="214">ALP_12</tspan>
+            </text>
+            <text id="ALP_12" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="1230" y="214">ALP_14</tspan>
             </text>
 
             <!-- CIRCUITOS DE VIA - VIA 1 -->
@@ -1920,7 +1923,10 @@ var mimicscreendata = [
                 <tspan x="1110" y="369">ALP_09</tspan>
             </text>
             <text id="ALP_11" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
-                <tspan x="1200" y="344">ALP_11</tspan>
+                <tspan x="1190" y="344">ALP_11</tspan>
+            </text>
+            <text id="ALP_13" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="1230" y="344">ALP_13</tspan>
             </text>
 
             <!-- Platform INDEPENDENCIA -->
@@ -2042,15 +2048,15 @@ var mimicscreendata = [
             <line x1="822" y1="200" x2="860" y2="200" id="TrackCircuit_ALP_02" stroke="#FFFF06" stroke-width="10"></line>
             <line x1="862" y1="200" x2="920" y2="200" id="TrackCircuit_ALP_04" stroke="#FFFF06" stroke-width="10"></line>
             <line x1="922" y1="200" x2="1030" y2="200" id="TrackCircuit_ALP_06" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="1184" y1="200" x2="1250" y2="200" id="TrackCircuit_ALP_12" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="1251" y1="190" x2="1251" y2="210" id="endOfLine" stroke="#393939" stroke-width="5"></line>
+            <line x1="1184" y1="200" x2="1230" y2="200" id="TrackCircuit_ALP_12" stroke="#FFFF06" stroke-width="10"></line>
+            <line x1="1232" y1="200" x2="1270" y2="200" id="TrackCircuit_ALP_14" stroke="#FFFF06" stroke-width="10"></line>
 
             <!-- Ali Primera - Vía 1 (y=200) -->
             <line x1="822" y1="350" x2="860" y2="350" id="TrackCircuit_ALP_01" stroke="#FFFF06" stroke-width="10"></line>
             <line x1="862" y1="350" x2="920" y2="350" id="TrackCircuit_ALP_03" stroke="#FFFF06" stroke-width="10"></line>
             <line x1="922" y1="350" x2="1030" y2="350" id="TrackCircuit_ALP_05" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="1184" y1="350" x2="1250" y2="350" id="TrackCircuit_ALP_11" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="1251" y1="340" x2="1251" y2="360" id="endOfLine" stroke="#393939" stroke-width="5"></line>
+            <line x1="1184" y1="350" x2="1230" y2="350" id="TrackCircuit_ALP_11" stroke="#FFFF06" stroke-width="10"></line>
+            <line x1="1232" y1="350" x2="1270" y2="350" id="TrackCircuit_ALP_13" stroke="#FFFF06" stroke-width="10"></line>
 
             <!-- CV ALI PRIMERA -->
             <path d="M1087.9756,240.621795 L1122.00236,310.545095 M1122.00319,238.62 L1087.97319,308.55" id="TrackCircuit_ALP_CV" stroke="#FFFF06" stroke-width="10" fill="#D8D8D8"></path>
@@ -2251,7 +2257,7 @@ var mimicscreendata = [
                     <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
                     <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
                 </g>
-                <text id="IDP01" font-family="Consolas" font-size="11" font-weight="bold" fill="#000000">
+                <text id="IDP03" font-family="Consolas" font-size="11" font-weight="bold" fill="#000000">
                     <tspan x="275" y="387.5">H</tspan>
                 </text>
             <g id="Signal_IDP05" transform="translate(402, 367) scale(-1, 1) translate(-291, -367.75)translate(282, 357)" stroke="#000000">
@@ -2387,6 +2393,12 @@ var mimicscreendata = [
                 <text id="ALP05" font-family="Consolas" font-size="11" font-weight="bold" fill="#000000">
                     <tspan x="1038" y="387.5">G</tspan>
                 </text>
+                <g id="Fleeting_ALP05" transform="translate(1035, 323)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <text id="F" font-family="CourierNewPS-BoldMT, Courier New" font-size="17" font-weight="bold" fill="#FFFF06">
+                        <tspan x="4.89916992" y="15">A</tspan>
+                    </text>
+                </g>
              <g id="Signal_ALP07" transform="translate(1167, 356)" stroke="#000000">
                 <polyline id="foot" points="18 0 18 15 12 15"></polyline>
                 <circle id="disc" fill="#1253C9" cx="6.5" cy="15" r="6"></circle>
@@ -2402,17 +2414,14 @@ var mimicscreendata = [
                 <text id="ALP07" font-family="Consolas" font-size="11" font-weight="bold" fill="#000000">
                     <tspan x="1170" y="387.5">H</tspan>
                 </text>
-            <g id="Signal_SP3" transform="translate(1255, 367.5) scale(-1, 1) translate(-291, -367.75)translate(282, 357)" stroke="#000000">
-                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
-                <circle id="disc" cx="6.5" cy="15" r="6"></circle>
+            <g id="Button_AYA01" transform="translate(1237, 360)">
+                <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
             </g>
-                <g id="Button_SP3" transform="translate(1222, 360)">
-                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
-                    <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
-                </g>
-                <text id="SP3" font-family="Consolas" font-size="11" font-weight="bold" fill="#000000">
-                    <tspan x="1245" y="387.5">SP3</tspan>
-                </text>
+            <g id="Cancel_AYA01" transform="translate(1235, 386)">
+                <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
+                <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
+            </g>
 
             <!-- SIGNALS ALI PRIMERA VIA 2 -->
             <g id="Signal_ALP02" transform="translate(827, 184.5) scale(-1, -1) translate(-293, -186.25)translate(284, 175.5)" stroke="#000000">
@@ -2481,18 +2490,21 @@ var mimicscreendata = [
                 <text id="ALP08" font-family="Consolas" font-size="11" font-weight="bold" fill="#000000">
                     <tspan x="1170" y="170">E</tspan>
                 </text>
-            <g id="Signal_SP4" transform="translate(1255, 184.5) scale(-1, -1) translate(-293, -186.25)translate(284, 175.5)" stroke="#000000">
-                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
-                <circle id="disc" cx="6.5" cy="15" r="6"></circle>
-            </g>
-                <g id="Button_SP4" transform="translate(1221, 170.5)">
+                <g id="Fleeting_ALP08" transform="translate(1160, 211)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <text id="F" font-family="CourierNewPS-BoldMT, Courier New" font-size="17" font-weight="bold" fill="#FFFF06">
+                        <tspan x="4.89916992" y="15">A</tspan>
+                    </text>
+                </g>
+                <g id="Button_AYA02" transform="translate(1237, 170)">
                     <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
                     <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
                 </g>
-                <text id="SP4" font-family="Consolas" font-size="11" font-weight="bold" fill="#000000">
-                    <tspan x="1245" y="170">SP4</tspan>
-                </text>
-            
+                <g id="Cancel_AYA02" transform="translate(1235, 135)">
+                    <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
+                    <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
+                </g>
+
             <text id="MT2" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="#000000">
                 <tspan x="15.49780273" y="192">V2</tspan>
             </text>
@@ -3149,8 +3161,8 @@ var mimicscreendata = [
     </g>
 </svg>`
     },
-    /*{
-        "name": "SISLI",
+    {
+        "name": "AYACUCHO",
         "svg": `
 <svg width="1266px" height="815px" viewBox="0 0 1266 815" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
@@ -5099,12 +5111,12 @@ var mimicscreendata = [
                 <polygon id="PowerSection" stroke="#000000" stroke-width="0.5" fill="#EA3323" fill-rule="nonzero" points="619 27 1258 27 1258 17 619 17"></polygon>
                 <polygon id="PowerSection" stroke="#000000" stroke-width="0.5" fill="#EA3323" fill-rule="nonzero" points="0 119 240 119 240 109 0 109"></polygon>
                 <text id="MT2" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="#000000">
-                    <tspan x="4.49780273" y="12">MT2</tspan>
+                    <tspan x="4.49780273" y="12">V2</tspan>
                 </text>
                 <text id="MT1" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="#000000">
-                    <tspan x="4.49780273" y="104">MT1</tspan>
+                    <tspan x="4.49780273" y="104">V1</tspan>
                 </text>
-                <g id="StationName" transform="translate(357, 53)">
+                <g id="StationName" transform="translate(500, 53)">
                     <g id="Rectangle">
                         <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-2)" xlink:href="#path-l6_a5lxqar-1"></use>
                         <use fill="#AFB2C1" fill-rule="evenodd" xlink:href="#path-l6_a5lxqar-1"></use>
@@ -5112,55 +5124,812 @@ var mimicscreendata = [
                         <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="124" height="29"></rect>
                     </g>
                     <text id="STATION" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#000000">
-                        <tspan x="32.4951172" y="21">SISLI</tspan>
+                        <tspan x="45" y="21">AYA</tspan>
                     </text>
                 </g>
-                <g id="StationName" transform="translate(748, 53)">
-                    <g id="Rectangle">
-                        <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-5)" xlink:href="#path-l6_a5lxqar-4"></use>
-                        <use fill="#AFB2C1" fill-rule="evenodd" xlink:href="#path-l6_a5lxqar-4"></use>
-                        <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-6)" xlink:href="#path-l6_a5lxqar-4"></use>
-                        <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="124" height="29"></rect>
-                    </g>
+                <g id="StationName" transform="translate(1030, 53)">    
                     <text id="STATION" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#000000">
-                        <tspan x="2.49023438" y="21">GAYRETTEPE</tspan>
-                    </text>
-                </g>
-                <g id="StationName" transform="translate(1064, 53)">
-                    <g id="Rectangle">
-                        <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-8)" xlink:href="#path-l6_a5lxqar-7"></use>
-                        <use fill="#AFB2C1" fill-rule="evenodd" xlink:href="#path-l6_a5lxqar-7"></use>
-                        <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-9)" xlink:href="#path-l6_a5lxqar-7"></use>
-                        <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="124" height="29"></rect>
-                    </g>
-                    <text id="STATION" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#000000">
-                        <tspan x="26.4941406" y="21">LEVENT</tspan>
+                        <tspan x="26.4941406" y="21">TCA</tspan>
                     </text>
                 </g>
             </g>
-            <text id="14T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="595.196777" y="194">14T</tspan>
+
+            <text id="MT2" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="#000000">
+                <tspan x="15.49780273" y="235">V2</tspan>
             </text>
-            <text id="01T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="1034.19678" y="344">01T</tspan>
+            <text id="MT1" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="#000000">
+                <tspan x="15.49780273" y="330">V1</tspan>
             </text>
-            <text id="13T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="572.196777" y="344">13T</tspan>
+
+            <!-- DIRECTION ARROWS VIA 2 -->
+            <g id="DirectionArrow_AYA_02" transform="translate(120, 72)">
+                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" points="2.15027223e-18 13.3553813 18.5193121 26 18.5193121 19.6776906 50.8889937 19.6776906 50.8889937 7.32230936 18.5193121 7.32230936 18.5193121 1"></polygon>
+                <g id="southboundlight">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-eh8zdmkqnr-70)" xlink:href="#path-eh8zdmkqnr-69"></use>
+                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-eh8zdmkqnr-69"></use>
+                </g>
+                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" transform="translate(79.4445, 13.5) scale(-1, 1) translate(-79.4445, -13.5)" points="54 13.3553813 72.5193121 26 72.5193121 19.6776906 104.888994 19.6776906 104.888994 7.32230936 72.5193121 7.32230936 72.5193121 1"></polygon>
+                <g id="southboundlight" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-eh8zdmkqnr-72)" xlink:href="#path-eh8zdmkqnr-71"></use>
+                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-eh8zdmkqnr-71"></use>
+                </g>
+                <polygon id="southbound" fill="#9496A2" points="5.68455691e-14 12.3553813 18.5193121 25 18.5193121 18.6776906 50.8889937 18.6776906 50.8889937 6.32230936 18.5193121 6.32230936 18.5193121 3.12250226e-15"></polygon>
+                <polygon id="northbound" fill="#9496A2" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)" points="54 12.3553813 72.5193121 25 72.5193121 18.6776906 104.888994 18.6776906 104.888994 6.32230936 72.5193121 6.32230936 72.5193121 3.12250226e-15"></polygon>
+            </g>
+            <g id="DirectionArrow_AYA_08" transform="translate(515, 72)">
+                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" points="2.15027223e-18 13.3553813 18.5193121 26 18.5193121 19.6776906 50.8889937 19.6776906 50.8889937 7.32230936 18.5193121 7.32230936 18.5193121 1"></polygon>
+                <g id="southboundlight">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-eh8zdmkqnr-70)" xlink:href="#path-eh8zdmkqnr-69"></use>
+                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-eh8zdmkqnr-69"></use>
+                </g>
+                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" transform="translate(79.4445, 13.5) scale(-1, 1) translate(-79.4445, -13.5)" points="54 13.3553813 72.5193121 26 72.5193121 19.6776906 104.888994 19.6776906 104.888994 7.32230936 72.5193121 7.32230936 72.5193121 1"></polygon>
+                <g id="southboundlight" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-eh8zdmkqnr-72)" xlink:href="#path-eh8zdmkqnr-71"></use>
+                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-eh8zdmkqnr-71"></use>
+                </g>
+                <polygon id="southbound" fill="#9496A2" points="5.68455691e-14 12.3553813 18.5193121 25 18.5193121 18.6776906 50.8889937 18.6776906 50.8889937 6.32230936 18.5193121 6.32230936 18.5193121 3.12250226e-15"></polygon>
+                <polygon id="northbound" fill="#9496A2" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)" points="54 12.3553813 72.5193121 25 72.5193121 18.6776906 104.888994 18.6776906 104.888994 6.32230936 72.5193121 6.32230936 72.5193121 3.12250226e-15"></polygon>
+            </g>
+            <g id="DirectionArrow_AYA_16" transform="translate(850, 72)">
+                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" points="2.15027223e-18 13.3553813 18.5193121 26 18.5193121 19.6776906 50.8889937 19.6776906 50.8889937 7.32230936 18.5193121 7.32230936 18.5193121 1"></polygon>
+                <g id="southboundlight">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-eh8zdmkqnr-70)" xlink:href="#path-eh8zdmkqnr-69"></use>
+                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-eh8zdmkqnr-69"></use>
+                </g>
+                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" transform="translate(79.4445, 13.5) scale(-1, 1) translate(-79.4445, -13.5)" points="54 13.3553813 72.5193121 26 72.5193121 19.6776906 104.888994 19.6776906 104.888994 7.32230936 72.5193121 7.32230936 72.5193121 1"></polygon>
+                <g id="southboundlight" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-eh8zdmkqnr-72)" xlink:href="#path-eh8zdmkqnr-71"></use>
+                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-eh8zdmkqnr-71"></use>
+                </g>
+                <polygon id="southbound" fill="#9496A2" points="5.68455691e-14 12.3553813 18.5193121 25 18.5193121 18.6776906 50.8889937 18.6776906 50.8889937 6.32230936 18.5193121 6.32230936 18.5193121 3.12250226e-15"></polygon>
+                <polygon id="northbound" fill="#9496A2" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)" points="54 12.3553813 72.5193121 25 72.5193121 18.6776906 104.888994 18.6776906 104.888994 6.32230936 72.5193121 6.32230936 72.5193121 3.12250226e-15"></polygon>
+            </g>
+            <g id="DirectionArrow_TCA_06" transform="translate(1000, 72)">
+                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" points="2.15027223e-18 13.3553813 18.5193121 26 18.5193121 19.6776906 50.8889937 19.6776906 50.8889937 7.32230936 18.5193121 7.32230936 18.5193121 1"></polygon>
+                <g id="southboundlight">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-eh8zdmkqnr-70)" xlink:href="#path-eh8zdmkqnr-69"></use>
+                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-eh8zdmkqnr-69"></use>
+                </g>
+                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" transform="translate(79.4445, 13.5) scale(-1, 1) translate(-79.4445, -13.5)" points="54 13.3553813 72.5193121 26 72.5193121 19.6776906 104.888994 19.6776906 104.888994 7.32230936 72.5193121 7.32230936 72.5193121 1"></polygon>
+                <g id="southboundlight" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-eh8zdmkqnr-72)" xlink:href="#path-eh8zdmkqnr-71"></use>
+                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-eh8zdmkqnr-71"></use>
+                </g>
+                <polygon id="southbound" fill="#9496A2" points="5.68455691e-14 12.3553813 18.5193121 25 18.5193121 18.6776906 50.8889937 18.6776906 50.8889937 6.32230936 18.5193121 6.32230936 18.5193121 3.12250226e-15"></polygon>
+                <polygon id="northbound" fill="#9496A2" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)" points="54 12.3553813 72.5193121 25 72.5193121 18.6776906 104.888994 18.6776906 104.888994 6.32230936 72.5193121 6.32230936 72.5193121 3.12250226e-15"></polygon>
+            </g>
+            <!-- DIRECTION ARROWS VIA 1 -->
+            <g id="DirectionArrow_AYA_01" transform="translate(120, 457)">
+                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" points="2.15027223e-18 13.3553813 18.5193121 26 18.5193121 19.6776906 50.8889937 19.6776906 50.8889937 7.32230936 18.5193121 7.32230936 18.5193121 1"></polygon>
+                <g id="southboundlight">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-eh8zdmkqnr-34)" xlink:href="#path-eh8zdmkqnr-33"></use>
+                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-eh8zdmkqnr-33"></use>
+                </g>
+                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" transform="translate(79.4445, 13.5) scale(-1, 1) translate(-79.4445, -13.5)" points="54 13.3553813 72.5193121 26 72.5193121 19.6776906 104.888994 19.6776906 104.888994 7.32230936 72.5193121 7.32230936 72.5193121 1"></polygon>
+                <g id="southboundlight" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-eh8zdmkqnr-36)" xlink:href="#path-eh8zdmkqnr-35"></use>
+                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-eh8zdmkqnr-35"></use>
+                </g>
+                <polygon id="southbound" fill="#9496A2" points="5.68455691e-14 12.3553813 18.5193121 25 18.5193121 18.6776906 50.8889937 18.6776906 50.8889937 6.32230936 18.5193121 6.32230936 18.5193121 3.12250226e-15"></polygon>
+                <polygon id="northbound" fill="#9496A2" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)" points="54 12.3553813 72.5193121 25 72.5193121 18.6776906 104.888994 18.6776906 104.888994 6.32230936 72.5193121 6.32230936 72.5193121 3.12250226e-15"></polygon>
+            </g>
+            <g id="DirectionArrow_AYA_07" transform="translate(515, 457)">
+                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" points="2.15027223e-18 13.3553813 18.5193121 26 18.5193121 19.6776906 50.8889937 19.6776906 50.8889937 7.32230936 18.5193121 7.32230936 18.5193121 1"></polygon>
+                <g id="southboundlight">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-eh8zdmkqnr-34)" xlink:href="#path-eh8zdmkqnr-33"></use>
+                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-eh8zdmkqnr-33"></use>
+                </g>
+                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" transform="translate(79.4445, 13.5) scale(-1, 1) translate(-79.4445, -13.5)" points="54 13.3553813 72.5193121 26 72.5193121 19.6776906 104.888994 19.6776906 104.888994 7.32230936 72.5193121 7.32230936 72.5193121 1"></polygon>
+                <g id="southboundlight" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-eh8zdmkqnr-36)" xlink:href="#path-eh8zdmkqnr-35"></use>
+                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-eh8zdmkqnr-35"></use>
+                </g>
+                <polygon id="southbound" fill="#9496A2" points="5.68455691e-14 12.3553813 18.5193121 25 18.5193121 18.6776906 50.8889937 18.6776906 50.8889937 6.32230936 18.5193121 6.32230936 18.5193121 3.12250226e-15"></polygon>
+                <polygon id="northbound" fill="#9496A2" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)" points="54 12.3553813 72.5193121 25 72.5193121 18.6776906 104.888994 18.6776906 104.888994 6.32230936 72.5193121 6.32230936 72.5193121 3.12250226e-15"></polygon>
+            </g>
+            <g id="DirectionArrow_AYA_15" transform="translate(850, 457)">
+                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" points="2.15027223e-18 13.3553813 18.5193121 26 18.5193121 19.6776906 50.8889937 19.6776906 50.8889937 7.32230936 18.5193121 7.32230936 18.5193121 1"></polygon>
+                <g id="southboundlight">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-eh8zdmkqnr-34)" xlink:href="#path-eh8zdmkqnr-33"></use>
+                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-eh8zdmkqnr-33"></use>
+                </g>
+                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" transform="translate(79.4445, 13.5) scale(-1, 1) translate(-79.4445, -13.5)" points="54 13.3553813 72.5193121 26 72.5193121 19.6776906 104.888994 19.6776906 104.888994 7.32230936 72.5193121 7.32230936 72.5193121 1"></polygon>
+                <g id="southboundlight" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-eh8zdmkqnr-36)" xlink:href="#path-eh8zdmkqnr-35"></use>
+                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-eh8zdmkqnr-35"></use>
+                </g>
+                <polygon id="southbound" fill="#9496A2" points="5.68455691e-14 12.3553813 18.5193121 25 18.5193121 18.6776906 50.8889937 18.6776906 50.8889937 6.32230936 18.5193121 6.32230936 18.5193121 3.12250226e-15"></polygon>
+                <polygon id="northbound" fill="#9496A2" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)" points="54 12.3553813 72.5193121 25 72.5193121 18.6776906 104.888994 18.6776906 104.888994 6.32230936 72.5193121 6.32230936 72.5193121 3.12250226e-15"></polygon>
+            </g>
+            <g id="DirectionArrow_TCA_07" transform="translate(1060, 457)">
+                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" points="2.15027223e-18 13.3553813 18.5193121 26 18.5193121 19.6776906 50.8889937 19.6776906 50.8889937 7.32230936 18.5193121 7.32230936 18.5193121 1"></polygon>
+                <g id="southboundlight">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-eh8zdmkqnr-34)" xlink:href="#path-eh8zdmkqnr-33"></use>
+                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-eh8zdmkqnr-33"></use>
+                </g>
+                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" transform="translate(79.4445, 13.5) scale(-1, 1) translate(-79.4445, -13.5)" points="54 13.3553813 72.5193121 26 72.5193121 19.6776906 104.888994 19.6776906 104.888994 7.32230936 72.5193121 7.32230936 72.5193121 1"></polygon>
+                <g id="southboundlight" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-eh8zdmkqnr-36)" xlink:href="#path-eh8zdmkqnr-35"></use>
+                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-eh8zdmkqnr-35"></use>
+                </g>
+                <polygon id="southbound" fill="#9496A2" points="5.68455691e-14 12.3553813 18.5193121 25 18.5193121 18.6776906 50.8889937 18.6776906 50.8889937 6.32230936 18.5193121 6.32230936 18.5193121 3.12250226e-15"></polygon>
+                <polygon id="northbound" fill="#9496A2" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)" points="54 12.3553813 72.5193121 25 72.5193121 18.6776906 104.888994 18.6776906 104.888994 6.32230936 72.5193121 6.32230936 72.5193121 3.12250226e-15"></polygon>
+            </g>
+
+            <!-- TRAIN DESCRIBER VIA 2-->
+            <g id="TrainDescriber_ALP_12" transform="translate(20, 110)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_ALP_14" transform="translate(85, 110)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_AYA_02" transform="translate(160, 110)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_AYA_04" transform="translate(280, 110)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_AYA_06" transform="translate(420, 110)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_AYA_08" transform="translate(555, 110)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_AYA_10" transform="translate(650, 110)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_AYA_12" transform="translate(730, 110)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_AYA_14" transform="translate(810, 110)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_AYA_16" transform="translate(875, 110)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_TCA_02" transform="translate(940, 110)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_TCA_04" transform="translate(990, 110)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_TCA_06" transform="translate(1040, 110)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_TCA_08" transform="translate(1090, 110)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_TCA_10" transform="translate(1140, 110)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_TCA_12" transform="translate(1190, 110)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <!-- TRAIN DESCRIBER VIA 1-->
+            <g id="TrainDescriber_ALP_11" transform="translate(20, 422)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_ALP_13" transform="translate(85, 422)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_AYA_01" transform="translate(160, 422)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_AYA_03" transform="translate(280, 422)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_AYA_05" transform="translate(420, 422)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_AYA_07" transform="translate(555, 422)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_AYA_09" transform="translate(650, 422)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_AYA_11" transform="translate(730, 422)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_AYA_13" transform="translate(810, 422)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_AYA_15" transform="translate(875, 422)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_TCA_01" transform="translate(940, 422)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_TCA_03" transform="translate(990, 422)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_TCA_05" transform="translate(1040, 422)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_TCA_07" transform="translate(1090, 422)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_TCA_09" transform="translate(1140, 422)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+            <g id="TrainDescriber_TCA_11" transform="translate(1190, 422)" opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="30" border="1" height="20" stroke="#000000" stroke-width="1"></rect>
+                <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="blue">
+                    <tspan x="6" y="13">-</tspan>
+                </text>
+            </g>
+
+
+            <!-- CIRCUITOS DE VIA - VIA 2 -->
+            <text id="ALP_12" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="20" y="214">ALP_12</tspan>
             </text>
-            <text id="15T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="652.196777" y="344">15T</tspan>
+            <text id="ALP_14" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="85" y="190">ALP_14</tspan>
             </text>
-            <text id="01T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="718.196777" y="344">01T</tspan>
+            <text id="AYA_02" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="150" y="190">AYA_02</tspan>
             </text>
-            <text id="07T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="964.196777" y="344">07T</tspan>
+            <text id="AYA_04" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="300" y="190">AYA_04</tspan>
             </text>
-            <line x1="4" y1="202" x2="68" y2="202" id="TrackCircuit_OSM_10T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="70" y1="202" x2="148" y2="202" id="TrackCircuit_OSM_12T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="150" y1="202" x2="209" y2="202" id="TrackCircuit_SIS_02T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="274" y1="202" x2="292" y2="202" id="TrackCircuit_SIS_06T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="274" y1="352" x2="292" y2="352" id="TrackCircuit_SIS_05T" stroke="#FFFF06" stroke-width="10"></line>
+            <text id="AYA_06" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="400" y="190">AYA_06</tspan>
+            </text>
+            <text id="AYA_08" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="555" y="214">AYA_08</tspan>
+            </text>
+            <text id="AYA_10" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="655" y="190">AYA_10</tspan>
+            </text>
+            <text id="AYA_12" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="740" y="185">AYA_12</tspan>
+            </text>
+            <text id="AYA_14" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="790" y="185">AYA_14</tspan>
+            </text>
+            <text id="AYA_16" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="895" y="190">AYA_16</tspan>
+            </text>
+            <text id="TCA_02" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="940" y="190">TCA_02</tspan>
+            </text>
+            <text id="TCA_04" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="990" y="190">TCA_04</tspan>
+            </text>
+            <text id="TCA_06" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="1032" y="190">TCA_06</tspan>
+            </text>
+            <text id="TCA_08" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="1090" y="214">TCA_08</tspan>
+            </text>
+            <text id="TCA_10" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="1140" y="190">TCA_10</tspan>
+            </text>
+            <text id="TCA_12" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="1190" y="190">TCA_12</tspan>
+            </text>
+            <text id="TRC_02" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="1230" y="214">TRC_02</tspan>
+            </text>
+            <!-- CIRCUITOS DE VIA - VIA 1 -->
+            <text id="ALP_11" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="20" y="344">ALP_11</tspan>
+            </text>
+            <text id="ALP_13" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="85" y="365">ALP_13</tspan>
+            </text>
+            <text id="AYA_01" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="150" y="365">AYA_01</tspan>
+            </text>
+            <text id="AYA_03" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="250" y="365">AYA_03</tspan>
+            </text>
+            <text id="AYA_05" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="450" y="365">AYA_05</tspan>
+            </text>
+            <text id="AYA_07" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="555" y="344">AYA_07</tspan>
+            </text>
+            <text id="AYA_09" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="655" y="365">AYA_09</tspan>
+            </text>
+            <text id="AYA_11" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="740" y="370">AYA_05</tspan>
+            </text>
+            <text id="AYA_13" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="790" y="370">AYA_05</tspan>
+            </text>
+            <text id="AYA_15" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="895" y="365">AYA_15</tspan>
+            </text>
+            <text id="TCA_01" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="940" y="365">TCA_01</tspan>
+            </text>
+            <text id="TCA_03" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="990" y="365">TCA_03</tspan>
+            </text>
+            <text id="TCA_05" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="1032" y="344">TCA_05</tspan>
+            </text>
+            <text id="TCA_07" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="1090" y="365">TCA_07</tspan>
+            </text>
+            <text id="TCA_09" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="1140" y="365">TCA_09</tspan>
+            </text>
+            <text id="TCA_11" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="1190" y="365">TCA_11</tspan>
+            </text>
+            <text id="TRC_01" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="1230" y="344">TRC_01</tspan>
+            </text>
+
+            <!-- Platform AYACUCHO -->
+            <g id="Ayacucho" transform="translate(475, 222)">
+                <rect id="Rectangle" stroke="#000000" x="45.5" y="-60" width="49" height="19"></rect>
+                <rect id="Rectangle" stroke="#000000" x="95.5" y="-60" width="49" height="19"></rect>
+                <rect id="Rectangle" stroke="#000000" x="45.5" y="150" width="49" height="19"></rect>
+                <rect id="Rectangle" stroke="#000000" x="95.5" y="150" width="49" height="19"></rect>
+                <g id="StationName" transform="translate(32, 40)">
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-66)" xlink:href="#path-l6_a5lxqar-65"></use>
+                        <use fill="#AFB2C1" fill-rule="evenodd" xlink:href="#path-l6_a5lxqar-65"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-67)" xlink:href="#path-l6_a5lxqar-65"></use>
+                        <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="124" height="29"></rect>
+                    </g>
+                    <text id="STATION" font-family="CourierNewPS-BoldMT, Consolas" font-size="16" font-weight="bold" fill="#000000">
+                        <tspan x="25" y="21">AYACUCHO</tspan>
+                    </text>
+                </g>
+            </g>
+
+            <!-- AYACUCHO - Vía 2 (y=200) -->
+            <line x1="5" y1="200" x2="70" y2="200" id="TrackCircuit_ALP_12" stroke="#FFFF06" stroke-width="10"></line>  <!-- length: 8 → 80px -->  
+            <line x1="72" y1="200" x2="130" y2="200" id="TrackCircuit_ALP_14" stroke="#FFFF06" stroke-width="10"></line>
+            <line x1="132" y1="200" x2="210" y2="200" id="TrackCircuit_AYA_02" stroke="#FFFF06" stroke-width="10"></line>
+            <g id="Point_AYA_A2" transform="translate(212, 183.5)">
+                <line x1="66.4290698" y1="16.4121395" x2="152.4290698" y2="16.4860835" id="B" stroke="#FFFF06" stroke-width="10"></line>
+                <line x1="40.4290698" y1="16.4121395" x2="66.4290698" y2="16.4121395" id="N" stroke="#FFFF06" stroke-width="10" transform="translate(53.4291, 16.4121) scale(1, -1) translate(-53.4291, -16.4121)"></line>
+                <line x1="36.9842752" y1="65.9797806" x2="91.0413066" y2="65.9940482" id="C" stroke="#FFFF06" stroke-width="10" transform="translate(64.0128, 65.9869) rotate(65) translate(-64.0128, -65.9869)"></line>
+                <line x1="32.9677535" y1="28.9909818" x2="60.5578284" y2="28.982847" id="R" stroke="#FFFF06" stroke-width="10" transform="translate(46.7628, 28.9869) scale(-1, -1) rotate(65) translate(-46.7628, -28.9869)"></line>
+                <line x1="11.5702584" y1="34.241902" x2="28.619282" y2="-2.49481349" id="A" stroke="#FFFF06" stroke-width="10" transform="translate(20.5703, 15.9752) scale(-1, -1) rotate(65) translate(-20.5703, -15.9752)"></line>
+                <circle id="L" stroke="#000000" fill="#FFFF06" transform="translate(42.4291, 16.4861) scale(1, -1) translate(-42.4291, -16.4861)" cx="42.4290698" cy="16.4860835" r="8.5"></circle>
+            </g>
+            <g id="Point_AYA_A4" transform="translate(520, 183.5) scale(-1, 1)">
+                <line x1="66.4290698" y1="16.4121395" x2="152.4290698" y2="16.4860835" id="B" stroke="#FFFF06" stroke-width="10"></line>
+                <line x1="40.4290698" y1="16.4121395" x2="66.4290698" y2="16.4121395" id="N" stroke="#FFFF06" stroke-width="10" transform="translate(53.4291, 16.4121) scale(1, -1) translate(-53.4291, -16.4121)"></line>
+                <line x1="36.9842752" y1="65.9797806" x2="91.0413066" y2="65.9940482" id="C" stroke="#FFFF06" stroke-width="10" transform="translate(64.0128, 65.9869) rotate(65) translate(-64.0128, -65.9869)"></line>
+                <line x1="32.9677535" y1="28.9909818" x2="60.5578284" y2="28.982847" id="R" stroke="#FFFF06" stroke-width="10" transform="translate(46.7628, 28.9869) scale(-1, -1) rotate(65) translate(-46.7628, -28.9869)"></line>
+                <line x1="11.5702584" y1="34.241902" x2="28.619282" y2="-2.49481349" id="A" stroke="#FFFF06" stroke-width="10" transform="translate(20.5703, 15.9752) scale(-1, -1) rotate(65) translate(-20.5703, -15.9752)"></line>
+                <circle id="L" stroke="#000000" fill="#FFFF06" transform="translate(42.4291, 16.4861) scale(1, -1) translate(-42.4291, -16.4861)" cx="42.4290698" cy="16.4860835" r="8.5"></circle>
+            </g>
+            <line x1="522" y1="200" x2="622" y2="200" id="TrackCircuit_AYA_08" stroke="#FFFF06" stroke-width="10"></line>
+            <line x1="624" y1="200" x2="700" y2="200" id="TrackCircuit_AYA_10" stroke="#FFFF06" stroke-width="10"></line>
+            <line x1="863" y1="200" x2="930" y2="200" id="TrackCircuit_AYA_16" stroke="#FFFF06" stroke-width="10"></line>
+
+            <!-- VIA 1 -->
+            <line x1="5" y1="350" x2="70" y2="350" id="TrackCircuit_ALP_11" stroke="#FFFF06" stroke-width="10"></line>
+            <line x1="72" y1="350" x2="130" y2="350" id="TrackCircuit_ALP_13" stroke="#FFFF06" stroke-width="10"></line>
+            <line x1="132" y1="350" x2="210" y2="350" id="TrackCircuit_AYA_01" stroke="#FFFF06" stroke-width="10"></line>
+            <g id="Point_AYA_A1" transform="translate(312, 321) scale(-1, -1) translate(-402.2145, -323.0472)translate(349, 277.7)">
+                <line x1="66.4290698" y1="16.4121395" x2="152.42907" y2="16.3943778" id="B" stroke="#FFFF06" stroke-width="10"></line>
+                <line x1="40.4290698" y1="16.4121395" x2="66.4290698" y2="16.4121395" id="N" stroke="#FFFF06" stroke-width="10" transform="translate(53.4291, 16.4121) scale(1, -1) translate(-53.4291, -16.4121)"></line>
+                <line x1="36.9842752" y1="65.9797806" x2="91.0413066" y2="65.9940482" id="C" stroke="#FFFF06" stroke-width="10" transform="translate(64.0128, 65.9869) rotate(65) translate(-64.0128, -65.9869)"></line>
+                <line x1="32.9677535" y1="28.9909818" x2="60.5578284" y2="28.982847" id="R" stroke="#FFFF06" stroke-width="10" transform="translate(46.7628, 28.9869) scale(-1, -1) rotate(65) translate(-46.7628, -28.9869)"></line>
+                <line x1="11.5702584" y1="34.241902" x2="28.7023956" y2="-2.45605697" id="A" stroke="#FFFF06" stroke-width="10" transform="translate(20.5703, 15.9752) scale(-1, -1) rotate(65) translate(-20.5703, -15.9752)"></line>
+                <circle id="L" stroke="#000000" fill="#FFFF06" transform="translate(42.4291, 16.4861) scale(1, -1) translate(-42.4291, -16.4861)" cx="42.4290698" cy="16.4860835" r="8.5"></circle>
+            </g>
+            <g id="Point_AYA_A3" transform="translate(420.8, 321) scale(1, -1) translate(-402.2145, -323.0472)translate(349, 277.7)">
+                <line x1="66.4290698" y1="16.4121395" x2="152.42907" y2="16.3943778" id="B" stroke="#FFFF06" stroke-width="10"></line>
+                <line x1="40.4290698" y1="16.4121395" x2="66.4290698" y2="16.4121395" id="N" stroke="#FFFF06" stroke-width="10" transform="translate(53.4291, 16.4121) scale(1, -1) translate(-53.4291, -16.4121)"></line>
+                <line x1="36.9842752" y1="65.9797806" x2="91.0413066" y2="65.9940482" id="C" stroke="#FFFF06" stroke-width="10" transform="translate(64.0128, 65.9869) rotate(65) translate(-64.0128, -65.9869)"></line>
+                <line x1="32.9677535" y1="28.9909818" x2="60.5578284" y2="28.982847" id="R" stroke="#FFFF06" stroke-width="10" transform="translate(46.7628, 28.9869) scale(-1, -1) rotate(65) translate(-46.7628, -28.9869)"></line>
+                <line x1="11.5702584" y1="34.241902" x2="28.7023956" y2="-2.45605697" id="A" stroke="#FFFF06" stroke-width="10" transform="translate(20.5703, 15.9752) scale(-1, -1) rotate(65) translate(-20.5703, -15.9752)"></line>
+                <circle id="L" stroke="#000000" fill="#FFFF06" transform="translate(42.4291, 16.4861) scale(1, -1) translate(-42.4291, -16.4861)" cx="42.4290698" cy="16.4860835" r="8.5"></circle>
+            </g>
+            <line x1="522" y1="350" x2="622" y2="350" id="TrackCircuit_AYA_07" stroke="#FFFF06" stroke-width="10"></line>
+            <line x1="624" y1="350" x2="700" y2="350" id="TrackCircuit_AYA_09" stroke="#FFFF06" stroke-width="10"></line>
+            <line x1="863" y1="350" x2="930" y2="350" id="TrackCircuit_AYA_15" stroke="#FFFF06" stroke-width="10"></line>
+
+            <!-- CV AYACUCHO -->
+            <path d="M759.9756,240.621795 L798.00236,310.545095 M798.00319,238.62 L759.97319,308.55" id="TrackCircuit_AYA_CV" stroke="#FFFF06" stroke-width="10" fill="#D8D8D8"></path>
+            <g id="Point_AYA_A7" transform="translate(821, 340.12) scale(-1, 1) translate(-1081.8997, -341.8833)translate(1043.45, 315.2121)">
+                <line x1="41.9362375" y1="36.7879002" x2="66.3494268" y2="36.7879002" id="N" stroke="#FFFF06" stroke-width="10"></line>
+                <line x1="50.4416556" y1="5.96406803" x2="63.1324612" y2="5.96032618" id="C" stroke="#FFFF06" stroke-width="10" transform="translate(56.7871, 5.9622) scale(-1, 1) rotate(65) translate(-56.7871, -5.9622)"></line>
+                <line x1="34.4749212" y1="24.2171927" x2="62.064996" y2="24.2090579" id="R" stroke="#FFFF06" stroke-width="10" transform="translate(48.27, 24.2131) scale(-1, 1) rotate(65) translate(-48.27, -24.2131)"></line>
+                <line x1="12.4765662" y1="55.8743158" x2="30.263221" y2="17.7307115" id="A" stroke="#FFFF06" stroke-width="10" transform="translate(21.4766, 36.9446) scale(-1, 1) rotate(65) translate(-21.4766, -36.9446)"></line>
+                <circle id="L" stroke="#000000" fill="#FFFF06" cx="43.9362375" cy="36.7139562" r="8.5"></circle>
+                <line x1="76.3494268" y1="36.7879002" x2="66.3494268" y2="36.7879002" id="B" stroke="#FFFF06" stroke-width="10"></line>
+            </g>
+            <g id="Point_AYA_A5" transform="translate(702, 313.3)">
+                <line x1="38.3653399" y1="36.7879002" x2="62.9521506" y2="36.7879002" id="N" stroke="#FFFF06" stroke-width="10"></line>
+                <line x1="62.9521506" y1="36.7879002" x2="72.9521506" y2="36.7879002" id="B" stroke="#FFFF06" stroke-width="10"></line>
+                <line x1="46.870758" y1="5.96406803" x2="59.5615636" y2="5.96032618" id="C" stroke="#FFFF06" stroke-width="10" transform="translate(53.2162, 5.9622) scale(-1, 1) rotate(65) translate(-53.2162, -5.9622)"></line>
+                <line x1="30.9040235" y1="24.2171927" x2="58.4940984" y2="24.2090579" id="R" stroke="#FFFF06" stroke-width="10" transform="translate(44.6991, 24.2131) scale(-1, 1) rotate(65) translate(-44.6991, -24.2131)"></line>
+                <line x1="10.9526415" y1="54.5702502" x2="26.9754477" y2="20.2092315" id="A" stroke="#FFFF06" stroke-width="10" transform="translate(19.4526, 37.1143) scale(-1, 1) rotate(65) translate(-19.4526, -37.1143)"></line>
+                <circle id="L" stroke="#000000" fill="#FFFF06" cx="40.3653399" cy="36.7139562" r="8.5"></circle>
+            </g>
+            <g id="Point_AYA_A8" transform="translate(822, 210) scale(-1, -1) translate(-1082.1766, -212.1141)translate(1044, 185.4437)">
+                <line x1="41.9399302" y1="36.7879002" x2="66.3531195" y2="36.7844779" id="N" stroke="#FFFF06" stroke-width="10"></line>
+                <line x1="66.3531195" y1="36.7844779" x2="76.3531195" y2="36.7844779" id="B" stroke="#FFFF06" stroke-width="10"></line>
+                <line x1="50.4453482" y1="5.96406803" x2="63.1361539" y2="5.96032618" id="C" stroke="#FFFF06" stroke-width="10" transform="translate(56.7908, 5.9622) scale(-1, 1) rotate(65) translate(-56.7908, -5.9622)"></line>
+                <line x1="34.4786138" y1="24.2171927" x2="62.0686887" y2="24.2090579" id="R" stroke="#FFFF06" stroke-width="10" transform="translate(48.2737, 24.2131) scale(-1, 1) rotate(65) translate(-48.2737, -24.2131)"></line>
+                <line x1="12.4765662" y1="55.8766683" x2="30.2601194" y2="17.7316177" id="A" stroke="#FFFF06" stroke-width="10" transform="translate(21.4766, 36.9429) scale(-1, 1) rotate(65) translate(-21.4766, -36.9429)"></line>
+                <circle id="L" stroke="#000000" fill="#FFFF06" cx="43.9399302" cy="36.7139562" r="8.5"></circle>
+            </g>
+            <g id="Point_AYA_A6" transform="translate(758, 203.2) scale(1, -1) translate(-986.2263, -205.1399)translate(930.4525, 171.7031)">
+                <line x1="30" y1="36.5765777" x2="80" y2="36.5765777" id="N" stroke="#FFFF06" stroke-width="10"></line>
+                <line x1="44.5054181" y1="5.96406803" x2="57.1962237" y2="5.96032618" id="C" stroke="#FFFF06" stroke-width="10" transform="translate(50.8508, 5.9622) scale(-1, 1) rotate(65) translate(-50.8508, -5.9622)"></line>
+                <line x1="28.5386836" y1="24.2171927" x2="56.1287585" y2="24.2090579" id="R" stroke="#FFFF06" stroke-width="10" transform="translate(42.3337, 24.2131) scale(-1, 1) rotate(65) translate(-42.3337, -24.2131)"></line>
+                <line x1="10.5372167" y1="53.1166949" x2="25.9627833" y2="20.0364606" id="A" stroke="#FFFF06" stroke-width="10" transform="translate(18.25, 36.5766) scale(-1, 1) rotate(65) translate(-18.25, -36.5766)"></line>
+                <circle id="L" stroke="#000000" fill="#FFFF06" cx="38" cy="36.7139562" r="8.5"></circle>
+            </g>
+
+            <!-- CARRIZALITO VIA 2 -->
+            <line x1="932" y1="200" x2="980" y2="200" id="TrackCircuit_TCA_02" stroke="#FFFF06" stroke-width="10"></line>
+            <line x1="982" y1="200" x2="1030" y2="200" id="TrackCircuit_TCA_04" stroke="#FFFF06" stroke-width="10"></line>
+            <line x1="1032" y1="200" x2="1080" y2="200" id="TrackCircuit_TCA_06" stroke="#FFFF06" stroke-width="10"></line>
+            <line x1="1082" y1="200" x2="1130" y2="200" id="TrackCircuit_TCA_08" stroke="#FFFF06" stroke-width="10"></line>
+            <line x1="1132" y1="200" x2="1180" y2="200" id="TrackCircuit_TCA_10" stroke="#FFFF06" stroke-width="10"></line>
+            <line x1="1182" y1="200" x2="1230" y2="200" id="TrackCircuit_TCA_12" stroke="#FFFF06" stroke-width="10"></line>
+            <line x1="1232" y1="200" x2="1260" y2="200" id="TrackCircuit_TRC_02" stroke="#FFFF06" stroke-width="10"></line>
+
+            <!-- CARRIZALITO VIA 1 -->
+            <line x1="932" y1="350" x2="980" y2="350" id="TrackCircuit_TCA_01" stroke="#FFFF06" stroke-width="10"></line>
+            <line x1="982" y1="350" x2="1030" y2="350" id="TrackCircuit_TCA_03" stroke="#FFFF06" stroke-width="10"></line>
+            <line x1="1032" y1="350" x2="1080" y2="350" id="TrackCircuit_TCA_05" stroke="#FFFF06" stroke-width="10"></line>
+            <line x1="1082" y1="350" x2="1130" y2="350" id="TrackCircuit_TCA_07" stroke="#FFFF06" stroke-width="10"></line>
+            <line x1="1132" y1="350" x2="1180" y2="350" id="TrackCircuit_TCA_09" stroke="#FFFF06" stroke-width="10"></line>
+            <line x1="1182" y1="350" x2="1230" y2="350" id="TrackCircuit_TCA_11" stroke="#FFFF06" stroke-width="10"></line>
+            <line x1="1232" y1="350" x2="1260" y2="350" id="TrackCircuit_TRC_01" stroke="#FFFF06" stroke-width="10"></line>
+
+            <!-- Signals AYACUCHO VIA 1 -->
+                <g id="Button_ALP07" transform="translate(25, 370) scale(-1, 1) translate(-190, -371)translate(180, 361)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
+                </g>
+                <g id="Cancel_ALP07" transform="translate(12, 386)">
+                    <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
+                    <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
+                </g>
+            <g id="Signal_AYA01" transform="translate(220, 367) scale(-1, 1) translate(-291, -367.75)translate(282, 357)" stroke="#000000">
+                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
+                <circle id="disc" fill="#1253C9" cx="6.5" cy="15" r="6"></circle>
+            </g>
+                <g id="Button_AYA01" transform="translate(185, 361)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
+                </g>
+                <g id="Cancel_AYA01" transform="translate(182, 386)">
+                    <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
+                    <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
+                </g>
+                <text id="AYA01" font-family="Consolas" font-size="11" font-weight="bold" fill="#000000">
+                    <tspan x="220" y="390">J</tspan>
+                </text>
+                <g id="Fleeting_AYA01" transform="translate(210, 323)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <text id="F" font-family="CourierNewPS-BoldMT, Courier New" font-size="17" font-weight="bold" fill="#FFFF06">
+                        <tspan x="4.89916992" y="15">A</tspan>
+                    </text>
+                </g>
+            <g id="Signal_AYA03" transform="translate(513, 334) scale(1, -1) translate(-167, -186.25)translate(158, 175.5)" stroke="#000000">
+                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
+                <circle id="disc" fill="#1253C9" cx="6.5" cy="15" r="6"></circle>
+            </g>
+                <g id="Button_AYA03" transform="translate(506, 370) scale(-1, 1) translate(-190, -371)translate(180, 361)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
+                </g>
+                <g id="Cancel_AYA03" transform="translate(493, 386)">
+                    <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
+                    <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
+                </g>
+                <text id="AYA03" font-family="Consolas" font-size="11" font-weight="bold" fill="#000000">
+                    <tspan x="489" y="333">X6</tspan>
+                </text>
+            <g id="Signal_AYA05" transform="translate(630, 333) scale(-1, -1) translate(-293, -186.25)translate(284, 175.5)" stroke="#000000">
+                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
+                <circle id="disc" fill="#1253C9" cx="6.5" cy="15" r="6"></circle>
+            </g>
+                <g id="Button_AYA05" transform="translate(625, 361)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
+                </g>
+                <g id="Cancel_AYA05" transform="translate(622, 386)">
+                    <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
+                    <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
+                </g>
+                <text id="AYA05" font-family="Consolas" font-size="11" font-weight="bold" fill="#000000">
+                    <tspan x="642" y="333">X4</tspan>
+                </text>
+                <g id="Fleeting_AYA05" transform="translate(597, 323)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <text id="F" font-family="CourierNewPS-BoldMT, Courier New" font-size="17" font-weight="bold" fill="#FFFF06">
+                        <tspan x="4.89916992" y="15">A</tspan>
+                    </text>
+                </g>
+            <g id="Signal_AYA07" transform="translate(845, 356)" stroke="#000000">
+                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
+                <circle id="disc" fill="#1253C9" cx="6.5" cy="15" r="6"></circle>
+            </g>
+                <g id="Button_AYA07" transform="translate(880, 370) scale(-1, 1) translate(-190, -371)translate(180, 361)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
+                </g>
+                <g id="Cancel_AYA07" transform="translate(867, 385)">
+                    <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
+                    <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
+                </g>
+                <text id="AYA07" font-family="Consolas" font-size="11" font-weight="bold" fill="#000000">
+                    <tspan x="848" y="390">K</tspan>
+                </text>
+
+            <!-- Signals AYACUCHO VIA 2 -->
+                <g id="Button_ALP08" transform="translate(25, 180) scale(-1, 1) translate(-190, -183)translate(180, 173)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
+                </g>
+                <g id="Cancel_ALP08" transform="translate(12, 135)">
+                    <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
+                    <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
+                </g>
+            <g id="Signal_AYA02" transform="translate(220, 183) scale(-1, -1) translate(-293, -186.25)translate(284, 175.5)" stroke="#000000">
+                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
+                <circle id="disc" fill="#1253C9" cx="6.5" cy="15" r="6"></circle>
+            </g>
+                <g id="Button_AYA02" transform="translate(185, 170)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
+                </g>
+                <g id="Cancel_AYA02" transform="translate(182, 135)">
+                    <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
+                    <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
+                </g>
+                <text id="AYA02" font-family="Consolas" font-size="11" font-weight="bold" fill="#000000">
+                    <tspan x="220" y="169">D</tspan>
+                </text>
+            <g id="Signal_AYA04" transform="translate(505, 205)" stroke="#000000">
+                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
+                <circle id="disc" fill="#1253C9" cx="6.5" cy="15" r="6"></circle>
+            </g>
+                <g id="Button_AYA04" transform="translate(507, 180) scale(-1, 1) translate(-190, -183)translate(180, 173)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
+                </g>
+                <g id="Cancel_AYA04" transform="translate(494, 135)">
+                    <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
+                    <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
+                </g>
+                <text id="AYA04" font-family="Consolas" font-size="11" font-weight="bold" fill="#000000">
+                    <tspan x="489" y="225">X7</tspan>
+                </text>
+                <g id="Fleeting_AYA04" transform="translate(527, 211)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <text id="F" font-family="CourierNewPS-BoldMT, Courier New" font-size="17" font-weight="bold" fill="#FFFF06">
+                        <tspan x="4.89916992" y="15">A</tspan>
+                    </text>
+                </g>
+            <g id="Signal_AYA06" transform="translate(630, 216) scale(-1, 1) translate(-291, -367.75)translate(282, 357)" stroke="#000000">
+                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
+                <circle id="disc" fill="#1253C9" cx="6.5" cy="15" r="6"></circle>
+            </g>
+                <g id="Button_AYA06" transform="translate(625, 170)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
+                </g>
+                <g id="Cancel_AYA06" transform="translate(622, 135)">
+                    <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
+                    <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
+                </g>
+                <text id="AYA06" font-family="Consolas" font-size="11" font-weight="bold" fill="#000000">
+                    <tspan x="642" y="225">X5</tspan>
+                </text>
+            <g id="Signal_AYA08" transform="translate(855, 184.5) scale(1, -1) translate(-167, -186.25)translate(158, 175.5)" stroke="#000000">
+                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
+                <circle id="disc" fill="#1253C9" cx="6.5" cy="15" r="6"></circle>
+            </g>
+                <g id="Button_AYA08" transform="translate(880, 180) scale(-1, 1) translate(-190, -183)translate(180, 173)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
+                </g>
+                <g id="Cancel_AYA08" transform="translate(867, 135)">
+                    <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
+                    <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
+                </g>
+                <text id="AYA08" font-family="Consolas" font-size="11" font-weight="bold" fill="#000000">
+                    <tspan x="848" y="170">C</tspan>
+                </text>
+                <g id="Fleeting_AYA08" transform="translate(840, 211)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <text id="F" font-family="CourierNewPS-BoldMT, Courier New" font-size="17" font-weight="bold" fill="#FFFF06">
+                        <tspan x="4.89916992" y="15">A</tspan>
+                    </text>
+                </g>
+
+            <!-- SIGNALS CARRIZALITO -->
+            <g id="Signal_TCA02" transform="translate(1088, 216) scale(-1, 1) translate(-291, -367.75)translate(282, 357)" stroke="#000000">
+                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
+                *<circle id="disc" fill="#1253C9" cx="6.5" cy="15" r="6"></circle>
+            </g>
+                <g id="Button_TCA02" transform="translate(1055, 210)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
+                </g>
+                <g id="Cancel_TCA02" transform="translate(1052, 240)">
+                    <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
+                    <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
+                </g>
+                <text id="TCA02" font-family="Consolas" font-size="11" font-weight="bold" fill="#000000">
+                    <tspan x="1080" y="240">I12</tspan>
+                </text>
+            <g id="Signal_TCA04" transform="translate(1073, 184.5) scale(1, -1) translate(-167, -186.25)translate(158, 175.5)" stroke="#000000">
+                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
+                <circle id="disc" fill="#1253C9" cx="6.5" cy="15" r="6"></circle>
+            </g>
+                <g id="Button_TCA04" transform="translate(1098, 180) scale(-1, 1) translate(-190, -183)translate(180, 173)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
+                </g>
+                <g id="Cancel_TCA04" transform="translate(1085, 135)">
+                    <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
+                    <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
+                </g>
+                <text id="TCA04" font-family="Consolas" font-size="11" font-weight="bold" fill="#000000">
+                    <tspan x="1060" y="170">I10</tspan>
+                </text>
+                <g id="Fleeting_TCA04" transform="translate(1115, 170)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <text id="F" font-family="CourierNewPS-BoldMT, Courier New" font-size="17" font-weight="bold" fill="#FFFF06">
+                        <tspan x="4.89916992" y="15">A</tspan>
+                    </text>
+                </g>
+                <g id="Button_TRC02" transform="translate(1240, 170)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
+                </g>
+                <g id="Cancel_TRC02" transform="translate(1238, 135)">
+                    <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
+                    <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
+                </g>
+            <g id="Signal_TCA01" transform="translate(1089, 367) scale(-1, 1) translate(-291, -367.75)translate(282, 357)" stroke="#000000">
+                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
+                <circle id="disc" fill="#1253C9" cx="6.5" cy="15" r="6"></circle>
+            </g>
+                <g id="Button_TCA01" transform="translate(1055, 361)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
+                </g>
+                <g id="Cancel_TCA01" transform="translate(1053, 386)">
+                    <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
+                    <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
+                </g>
+                <text id="TCA01" font-family="Consolas" font-size="11" font-weight="bold" fill="#000000">
+                    <tspan x="1085" y="390">I1</tspan>
+                </text>
+                <g id="Fleeting_TCA01" transform="translate(1030, 361)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <text id="F" font-family="CourierNewPS-BoldMT, Courier New" font-size="17" font-weight="bold" fill="#FFFF06">
+                        <tspan x="4.89916992" y="15">A</tspan>
+                    </text>
+                </g>
+            <g id="Signal_TCA03" transform="translate(1073, 334) scale(1, -1) translate(-167, -186.25)translate(158, 175.5)" stroke="#000000">
+                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
+                <circle id="disc" fill="#1253C9" cx="6.5" cy="15" r="6"></circle>
+            </g>
+                <g id="Button_TCA03" transform="translate(1098, 330) scale(-1, 1) translate(-190, -183)translate(180, 173)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
+                </g>
+                <g id="Cancel_TCA03" transform="translate(1085, 285)">
+                    <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
+                    <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
+                </g>
+                <text id="TCA03" font-family="Consolas" font-size="11" font-weight="bold" fill="#000000">
+                    <tspan x="1065" y="320">I3</tspan>
+                </text>
+                <g id="Button_TRC01" transform="translate(1237, 361)">
+                    <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
+                    <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
+                </g>
+                <g id="Cancel_TRC01" transform="translate(1235, 386)">
+                    <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
+                    <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
+                </g>
+
             <g id="ControlBar" transform="translate(0, 695)">
                 <rect id="Rectangle" stroke="#FFFFFF" x="0.5" y="0.5" width="1265" height="119"></rect>
                 <g id="ControlGroup" transform="translate(299, 0)">
@@ -5298,587 +6067,32 @@ var mimicscreendata = [
                     </g>
                 </g>
             </g>
-            <g id="DirectionArrow_OSM_05T" transform="translate(4, 457)">
-                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" points="3.55486395e-15 13.3553813 18.5193121 26 18.5193121 19.6776906 50.8889937 19.6776906 50.8889937 7.32230936 18.5193121 7.32230936 18.5193121 1"></polygon>
-                <g id="southboundlight">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-35)" xlink:href="#path-l6_a5lxqar-34"></use>
-                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-l6_a5lxqar-34"></use>
-                </g>
-                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" transform="translate(79.4445, 13.5) scale(-1, 1) translate(-79.4445, -13.5)" points="54 13.3553813 72.5193121 26 72.5193121 19.6776906 104.888994 19.6776906 104.888994 7.32230936 72.5193121 7.32230936 72.5193121 1"></polygon>
-                <g id="southboundlight" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-37)" xlink:href="#path-l6_a5lxqar-36"></use>
-                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-l6_a5lxqar-36"></use>
-                </g>
-                <polygon id="southbound" fill="#9496A2" points="5.68455691e-14 12.3553813 18.5193121 25 18.5193121 18.6776906 50.8889937 18.6776906 50.8889937 6.32230936 18.5193121 6.32230936 18.5193121 3.12250226e-15"></polygon>
-                <polygon id="northbound" fill="#9496A2" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)" points="54 12.3553813 72.5193121 25 72.5193121 18.6776906 104.888994 18.6776906 104.888994 6.32230936 72.5193121 6.32230936 72.5193121 3.12250226e-15"></polygon>
-            </g>
-            <g id="DirectionArrow_SIS_01T" transform="translate(118, 457)">
-                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" points="2.15027223e-18 13.3553813 18.5193121 26 18.5193121 19.6776906 50.8889937 19.6776906 50.8889937 7.32230936 18.5193121 7.32230936 18.5193121 1"></polygon>
-                <g id="southboundlight">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-39)" xlink:href="#path-l6_a5lxqar-38"></use>
-                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-l6_a5lxqar-38"></use>
-                </g>
-                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" transform="translate(79.4445, 13.5) scale(-1, 1) translate(-79.4445, -13.5)" points="54 13.3553813 72.5193121 26 72.5193121 19.6776906 104.888994 19.6776906 104.888994 7.32230936 72.5193121 7.32230936 72.5193121 1"></polygon>
-                <g id="southboundlight" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-41)" xlink:href="#path-l6_a5lxqar-40"></use>
-                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-l6_a5lxqar-40"></use>
-                </g>
-                <polygon id="southbound" fill="#9496A2" points="5.68455691e-14 12.3553813 18.5193121 25 18.5193121 18.6776906 50.8889937 18.6776906 50.8889937 6.32230936 18.5193121 6.32230936 18.5193121 3.12250226e-15"></polygon>
-                <polygon id="northbound" fill="#9496A2" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)" points="54 12.3553813 72.5193121 25 72.5193121 18.6776906 104.888994 18.6776906 104.888994 6.32230936 72.5193121 6.32230936 72.5193121 3.12250226e-15"></polygon>
-            </g>
-            <g id="DirectionArrow_SIS_10T" transform="translate(372, 72)">
-                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" points="2.15027223e-18 13.3553813 18.5193121 26 18.5193121 19.6776906 50.8889937 19.6776906 50.8889937 7.32230936 18.5193121 7.32230936 18.5193121 1"></polygon>
-                <g id="southboundlight">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-43)" xlink:href="#path-l6_a5lxqar-42"></use>
-                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-l6_a5lxqar-42"></use>
-                </g>
-                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" transform="translate(79.4445, 13.5) scale(-1, 1) translate(-79.4445, -13.5)" points="54 13.3553813 72.5193121 26 72.5193121 19.6776906 104.888994 19.6776906 104.888994 7.32230936 72.5193121 7.32230936 72.5193121 1"></polygon>
-                <g id="southboundlight" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-45)" xlink:href="#path-l6_a5lxqar-44"></use>
-                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-l6_a5lxqar-44"></use>
-                </g>
-                <polygon id="southbound" fill="#9496A2" points="5.68455691e-14 12.3553813 18.5193121 25 18.5193121 18.6776906 50.8889937 18.6776906 50.8889937 6.32230936 18.5193121 6.32230936 18.5193121 3.12250226e-15"></polygon>
-                <polygon id="northbound" fill="#9496A2" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)" points="54 12.3553813 72.5193121 25 72.5193121 18.6776906 104.888994 18.6776906 104.888994 6.32230936 72.5193121 6.32230936 72.5193121 3.12250226e-15"></polygon>
-            </g>
-            <g id="DirectionArrow_GAY_06T" transform="translate(732, 72)">
-                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" points="2.15027223e-18 13.3553813 18.5193121 26 18.5193121 19.6776906 50.8889937 19.6776906 50.8889937 7.32230936 18.5193121 7.32230936 18.5193121 1"></polygon>
-                <g id="southboundlight">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-47)" xlink:href="#path-l6_a5lxqar-46"></use>
-                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-l6_a5lxqar-46"></use>
-                </g>
-                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" transform="translate(79.4445, 13.5) scale(-1, 1) translate(-79.4445, -13.5)" points="54 13.3553813 72.5193121 26 72.5193121 19.6776906 104.888994 19.6776906 104.888994 7.32230936 72.5193121 7.32230936 72.5193121 1"></polygon>
-                <g id="southboundlight" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-49)" xlink:href="#path-l6_a5lxqar-48"></use>
-                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-l6_a5lxqar-48"></use>
-                </g>
-                <polygon id="southbound" fill="#9496A2" points="2.15027223e-18 12.3553813 18.5193121 25 18.5193121 18.6776906 50.8889937 18.6776906 50.8889937 6.32230936 18.5193121 6.32230936 18.5193121 3.12250226e-15"></polygon>
-                <polygon id="northbound" fill="#9496A2" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)" points="54 12.3553813 72.5193121 25 72.5193121 18.6776906 104.888994 18.6776906 104.888994 6.32230936 72.5193121 6.32230936 72.5193121 3.12250226e-15"></polygon>
-            </g>
-            <g id="DirectionArrow_GAY_03T" transform="translate(757, 457)">
-                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" points="2.15027223e-18 13.3553813 18.5193121 26 18.5193121 19.6776906 50.8889937 19.6776906 50.8889937 7.32230936 18.5193121 7.32230936 18.5193121 1"></polygon>
-                <g id="southboundlight">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-51)" xlink:href="#path-l6_a5lxqar-50"></use>
-                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-l6_a5lxqar-50"></use>
-                </g>
-                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" transform="translate(79.4445, 13.5) scale(-1, 1) translate(-79.4445, -13.5)" points="54 13.3553813 72.5193121 26 72.5193121 19.6776906 104.888994 19.6776906 104.888994 7.32230936 72.5193121 7.32230936 72.5193121 1"></polygon>
-                <g id="southboundlight" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-53)" xlink:href="#path-l6_a5lxqar-52"></use>
-                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-l6_a5lxqar-52"></use>
-                </g>
-                <polygon id="southbound" fill="#9496A2" points="2.15027223e-18 12.3553813 18.5193121 25 18.5193121 18.6776906 50.8889937 18.6776906 50.8889937 6.32230936 18.5193121 6.32230936 18.5193121 3.12250226e-15"></polygon>
-                <polygon id="northbound" fill="#9496A2" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)" points="54 12.3553813 72.5193121 25 72.5193121 18.6776906 104.888994 18.6776906 104.888994 6.32230936 72.5193121 6.32230936 72.5193121 3.12250226e-15"></polygon>
-            </g>
-            <g id="DirectionArrow_LEV_03T" transform="translate(1081, 457)">
-                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" points="2.15027223e-18 13.3553813 18.5193121 26 18.5193121 19.6776906 50.8889937 19.6776906 50.8889937 7.32230936 18.5193121 7.32230936 18.5193121 1"></polygon>
-                <g id="southboundlight">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-55)" xlink:href="#path-l6_a5lxqar-54"></use>
-                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-l6_a5lxqar-54"></use>
-                </g>
-                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" transform="translate(79.4445, 13.5) scale(-1, 1) translate(-79.4445, -13.5)" points="54 13.3553813 72.5193121 26 72.5193121 19.6776906 104.888994 19.6776906 104.888994 7.32230936 72.5193121 7.32230936 72.5193121 1"></polygon>
-                <g id="southboundlight" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-57)" xlink:href="#path-l6_a5lxqar-56"></use>
-                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-l6_a5lxqar-56"></use>
-                </g>
-                <polygon id="southbound" fill="#9496A2" points="2.15027223e-18 12.3553813 18.5193121 25 18.5193121 18.6776906 50.8889937 18.6776906 50.8889937 6.32230936 18.5193121 6.32230936 18.5193121 3.12250226e-15"></polygon>
-                <polygon id="northbound" fill="#9496A2" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)" points="54 12.3553813 72.5193121 25 72.5193121 18.6776906 104.888994 18.6776906 104.888994 6.32230936 72.5193121 6.32230936 72.5193121 3.12250226e-15"></polygon>
-            </g>
-            <text id="SIS03" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#000000">
-                <tspan x="206.994629" y="172.5">SIS03</tspan>
-            </text>
-            <text id="TAK02" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#000000">
-                <tspan x="71.9946289" y="170">TAK02</tspan>
-            </text>
-            <text id="02T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="151.196777" y="194">02T</tspan>
-            </text>
-            <g id="Cancel_SIS03" transform="translate(179, 142)">
-                <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
-                <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
-            </g>
-            <line x1="482" y1="202" x2="557" y2="202" id="TrackCircuit_SIS_12T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="559" y1="202" x2="625" y2="202" id="TrackCircuit_SIS_14T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="627" y1="202" x2="697" y2="202" id="TrackCircuit_GAY_02T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="699" y1="202" x2="755" y2="202" id="TrackCircuit_GAY_04T" stroke="#FFFF06" stroke-width="10"></line>
-            <g id="Signal_SIS03" transform="translate(215, 186.25) scale(-1, -1) translate(-215, -186.25)translate(206, 175.5)" stroke="#000000">
-                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
-                <circle id="disc" fill="#1253C9" cx="6.5" cy="15" r="6"></circle>
-            </g>
-            <g id="Signal_SIS01" transform="translate(73, 367.75) scale(-1, 1) translate(-73, -367.75)translate(64, 357)" stroke="#000000">
-                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
-                <circle id="disc" fill="#1253C9" cx="6.5" cy="15" r="6"></circle>
-            </g>
-            <g id="Signal_SIS05" transform="translate(209, 367.75) scale(-1, 1) translate(-209, -367.75)translate(200, 357)" stroke="#000000">
-                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
-                <circle id="disc" fill="#1253C9" cx="6.5" cy="15" r="6"></circle>
-            </g>
-            <g id="Signal_SIS08" transform="translate(109, 357)" stroke="#000000">
-                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
-                <circle id="disc" fill="#1253C9" cx="6.5" cy="15" r="6"></circle>
-            </g>
-            <g id="Button_SIS03" transform="translate(182, 173)">
-                <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
-                <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
-            </g>
-            <text id="LEV03" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#000000">
-                <tspan x="1224.99463" y="172.5">LEV03</tspan>
-            </text>
-            <text id="12T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="1202.19678" y="216">12T</tspan>
-            </text>
-            <text id="14T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="1235.19678" y="216">14T</tspan>
-            </text>
-            <g id="Signal_LEV03" transform="translate(1236, 186.25) scale(-1, -1) translate(-1236, -186.25)translate(1227, 175.5)" stroke="#000000">
-                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
-                <circle id="disc" fill="#1253C9" cx="6.5" cy="15" r="6"></circle>
-            </g>
-            <g id="Button_LEV03" transform="translate(1203, 173)">
-                <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
-                <path d="M11.2540062,3.5 L17.214,9.25 L18,10 L17.2220001,10.75 L17.213,10.75 L11.2540062,16.5 L10.3641547,15.6414685 L15.434,10.75 L2,10.75 L2,9.25 L15.434,9.25 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
-            </g>
-            <text id="LEV01" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#000000">
-                <tspan x="1187.99463" y="387.5">LEV01</tspan>
-            </text>
-            <g id="Signal_LEV01" transform="translate(1197, 367.75) scale(-1, 1) translate(-1197, -367.75)translate(1188, 357)" stroke="#000000">
-                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
-                <circle id="disc" fill="#1253C9" cx="6.5" cy="15" r="6"></circle>
-            </g>
-            <g id="Button_LEV01" transform="translate(1164, 361)">
-                <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
-                <path d="M11.2540062,3.5 L17.214,9.25 L18,10 L17.2220001,10.75 L17.213,10.75 L11.2540062,16.5 L10.3641547,15.6414685 L15.434,10.75 L2,10.75 L2,9.25 L15.434,9.25 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
-            </g>
-            <g id="Button_TAK02" transform="translate(83, 183) scale(-1, 1) translate(-83, -183)translate(73, 173)">
-                <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
-                <path d="M11.2540062,3.5 L17.214,9.25 L18,10 L17.2220001,10.75 L17.213,10.75 L11.2540062,16.5 L10.3641547,15.6414685 L15.434,10.75 L2,10.75 L2,9.25 L15.434,9.25 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
-            </g>
-            <text id="TAK04" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#000000">
-                <tspan x="6.99462891" y="390">TAK04</tspan>
-            </text>
-            <text id="SIS01" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#000000">
-                <tspan x="59.9946289" y="387.5">SIS01</tspan>
-            </text>
-            <text id="SIS05" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#000000">
-                <tspan x="199.994629" y="387.5">SIS05</tspan>
-            </text>
-            <text id="SIS08" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#000000">
-                <tspan x="98.9946289" y="387.5">SIS08</tspan>
-            </text>
-            <g id="Button_TAK04" transform="translate(18, 371) scale(-1, 1) translate(-18, -371)translate(8, 361)">
-                <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
-                <path d="M11.2540062,3.5 L17.214,9.25 L18,10 L17.2220001,10.75 L17.213,10.75 L11.2540062,16.5 L10.3641547,15.6414685 L15.434,10.75 L2,10.75 L2,9.25 L15.434,9.25 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
-            </g>
+            
+            
             <rect id="Rectangle" fill="#000000" x="0" y="0" width="2" height="815"></rect>
             <rect id="Rectangle" fill="#FFFFFF" x="2" y="813" width="1264" height="2"></rect>
             <rect id="Rectangle" fill="#FFFFFF" x="1264" y="0" width="2" height="815"></rect>
             <rect id="Rectangle" fill="#000000" x="0" y="0" width="1266" height="2"></rect>
-            <text id="12T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="112.196777" y="194">12T</tspan>
-            </text>
-            <text id="06T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="273.196777" y="194">06T</tspan>
-            </text>
-            <text id="04T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="222.196777" y="194">04T</tspan>
-            </text>
-            <text id="08T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="327.196777" y="194">08T</tspan>
-            </text>
-            <text id="05T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="273.196777" y="344">05T</tspan>
-            </text>
-            <text id="17T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="252.196777" y="280">17T</tspan>
-            </text>
-            <text id="07T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="334.196777" y="344">07T</tspan>
-            </text>
-            <text id="10T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="38.1967773" y="194">10T</tspan>
-            </text>
-            <text id="03T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="211.196777" y="344">03T</tspan>
-            </text>
-            <text id="01T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="152.196777" y="344">01T</tspan>
-            </text>
-            <text id="07T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="88.1967773" y="344">07T</tspan>
-            </text>
-            <text id="MT2" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="#000000">
-                <tspan x="8.49780273" y="192">MT2</tspan>
-            </text>
-            <text id="MT1" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="#000000">
-                <tspan x="8.49780273" y="332">MT1</tspan>
-            </text>
-            <text id="NB" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="#000000">
-                <tspan x="677.998535" y="342">NB</tspan>
-            </text>
-            <text id="SB" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="#000000">
-                <tspan x="677.998535" y="192">SB</tspan>
-            </text>
-            <text id="05T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="13.1967773" y="344">05T</tspan>
-            </text>
-            <g id="DirectionArrow_OSM_12T" transform="translate(88, 72)">
-                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" points="2.15027223e-18 13.3553813 18.5193121 26 18.5193121 19.6776906 50.8889937 19.6776906 50.8889937 7.32230936 18.5193121 7.32230936 18.5193121 1"></polygon>
-                <g id="southboundlight">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-59)" xlink:href="#path-l6_a5lxqar-58"></use>
-                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-l6_a5lxqar-58"></use>
-                </g>
-                <polygon id="southbounddark" fill-opacity="0.5" fill="#000000" transform="translate(79.4445, 13.5) scale(-1, 1) translate(-79.4445, -13.5)" points="54 13.3553813 72.5193121 26 72.5193121 19.6776906 104.888994 19.6776906 104.888994 7.32230936 72.5193121 7.32230936 72.5193121 1"></polygon>
-                <g id="southboundlight" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-61)" xlink:href="#path-l6_a5lxqar-60"></use>
-                    <use fill-opacity="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-l6_a5lxqar-60"></use>
-                </g>
-                <polygon id="southbound" fill="#9496A2" points="5.68455691e-14 12.3553813 18.5193121 25 18.5193121 18.6776906 50.8889937 18.6776906 50.8889937 6.32230936 18.5193121 6.32230936 18.5193121 3.12250226e-15"></polygon>
-                <polygon id="northbound" fill="#9496A2" transform="translate(79.4445, 12.5) scale(-1, 1) translate(-79.4445, -12.5)" points="54 12.3553813 72.5193121 25 72.5193121 18.6776906 104.888994 18.6776906 104.888994 6.32230936 72.5193121 6.32230936 72.5193121 3.12250226e-15"></polygon>
-            </g>
-            <text id="SIS04" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#000000">
-                <tspan x="341.994629" y="387.5">SIS04</tspan>
-            </text>
-            <text id="SIS07" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#000000">
-                <tspan x="476.994629" y="172.5">SIS07</tspan>
-            </text>
-            <text id="SIS06" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#000000">
-                <tspan x="341.994629" y="173.5">SIS06</tspan>
-            </text>
-            <text id="10T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="415.196777" y="194">10T</tspan>
-            </text>
-            <text id="12T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="512.196777" y="194">12T</tspan>
-            </text>
-            <g id="Şişli" transform="translate(329, 222)">
-                <g id="Plencer_P1" transform="translate(0, 57)">
-                    <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
-                    <text id="P" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#000000">
-                        <tspan x="6.99902344" y="19">P</tspan>
-                    </text>
-                </g>
-                <g id="Plencer_P2" transform="translate(163, 27)">
-                    <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
-                    <text id="P" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#000000">
-                        <tspan x="6.99902344" y="19">P</tspan>
-                    </text>
-                </g>
-                <rect id="Rectangle" stroke="#000000" x="45.5" y="0.5" width="49" height="19"></rect>
-                <rect id="Rectangle" stroke="#000000" x="95.5" y="0.5" width="49" height="19"></rect>
-                <rect id="Rectangle" stroke="#000000" x="45.5" y="90.5" width="49" height="19"></rect>
-                <rect id="Rectangle" stroke="#000000" x="95.5" y="90.5" width="49" height="19"></rect>
-                <g id="StationName" transform="translate(32, 40)">
-                    <g id="Rectangle">
-                        <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-63)" xlink:href="#path-l6_a5lxqar-62"></use>
-                        <use fill="#AFB2C1" fill-rule="evenodd" xlink:href="#path-l6_a5lxqar-62"></use>
-                        <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-64)" xlink:href="#path-l6_a5lxqar-62"></use>
-                        <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="124" height="29"></rect>
-                    </g>
-                    <text id="STATION" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#000000">
-                        <tspan x="32.4951172" y="21">SISLI</tspan>
-                    </text>
-                </g>
-                <text id="P2" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="#000000">
-                    <tspan x="85.9985352" y="33">P2</tspan>
-                </text>
-                <text id="P1" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="#000000">
-                    <tspan x="85.9985352" y="84">P1</tspan>
-                </text>
-            </g>
-            <g id="Cancel_SIS06" transform="translate(372, 142)">
-                <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
-                <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
-            </g>
-            <g id="Cancel_SIS07" transform="translate(450, 142)">
-                <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
-                <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
-            </g>
-            <line x1="368" y1="202" x2="480" y2="202" id="TrackCircuit_SIS_10T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="368" y1="352" x2="483" y2="352" id="TrackCircuit_SIS_09T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="4" y1="352" x2="67" y2="352" id="TrackCircuit_OSM_05T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="69" y1="352" x2="122" y2="352" id="TrackCircuit_OSM_07T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="124" y1="352" x2="203" y2="352" id="TrackCircuit_SIS_01T" stroke="#FFFF06" stroke-width="10"></line>
-            <g id="Point_SIS_M11" transform="translate(330, 342.8943) scale(-1, 1) translate(-330, -342.8943)translate(294, 315.2121)">
-                <line x1="48" y1="36.7879002" x2="72" y2="36.7879002" id="N" stroke="#FFFF06" stroke-width="10"></line>
-                <line x1="56.5054181" y1="5.96406803" x2="69.1962237" y2="5.96032618" id="C" stroke="#FFFF06" stroke-width="10" transform="translate(62.8508, 5.9622) scale(-1, 1) rotate(65) translate(-62.8508, -5.9622)"></line>
-                <line x1="40.5386836" y1="24.2171927" x2="68.1287585" y2="24.2090579" id="R" stroke="#FFFF06" stroke-width="10" transform="translate(54.3337, 24.2131) scale(-1, 1) rotate(65) translate(-54.3337, -24.2131)"></line>
-                <line x1="14.0015072" y1="58.765864" x2="34.4984928" y2="14.8099363" id="A" stroke="#FFFF06" stroke-width="10" transform="translate(24.25, 36.7879) scale(-1, 1) rotate(65) translate(-24.25, -36.7879)"></line>
-                <circle id="L" stroke="#000000" fill="#FFFF06" cx="50" cy="36.7139562" r="8.5"></circle>
-            </g>
-            <g id="Point_SIS_M10" transform="translate(204.5868, 315.2121)">
-                <line x1="42.4131893" y1="36.7879002" x2="67.4131893" y2="36.7879002" id="N" stroke="#FFFF06" stroke-width="10"></line>
-                <line x1="50.9186074" y1="5.96406803" x2="63.609413" y2="5.96032618" id="C" stroke="#FFFF06" stroke-width="10" transform="translate(57.264, 5.9622) scale(-1, 1) rotate(65) translate(-57.264, -5.9622)"></line>
-                <line x1="34.951873" y1="24.2171927" x2="62.5419478" y2="24.2090579" id="R" stroke="#FFFF06" stroke-width="10" transform="translate(48.7469, 24.2131) scale(-1, 1) rotate(65) translate(-48.7469, -24.2131)"></line>
-                <line x1="12.4765662" y1="56.1781676" x2="30.4378423" y2="17.6600867" id="A" stroke="#FFFF06" stroke-width="10" transform="translate(21.4766, 36.7222) scale(-1, 1) rotate(65) translate(-21.4766, -36.7222)"></line>
-                <circle id="L" stroke="#000000" fill="#FFFF06" cx="44.4131893" cy="36.7139562" r="8.5"></circle>
-            </g>
-            <g id="Point_SIS_M13" transform="translate(330, 211.1022) scale(-1, -1) translate(-330, -211.1022)translate(294, 183.42)">
-                <line x1="48" y1="36.7879002" x2="72" y2="36.7844779" id="N" stroke="#FFFF06" stroke-width="10"></line>
-                <line x1="56.5054181" y1="5.96406803" x2="69.1962237" y2="5.96032618" id="C" stroke="#FFFF06" stroke-width="10" transform="translate(62.8508, 5.9622) scale(-1, 1) rotate(65) translate(-62.8508, -5.9622)"></line>
-                <line x1="40.5386836" y1="24.2171927" x2="68.1287585" y2="24.2090579" id="R" stroke="#FFFF06" stroke-width="10" transform="translate(54.3337, 24.2131) scale(-1, 1) rotate(65) translate(-54.3337, -24.2131)"></line>
-                <line x1="14.0015072" y1="58.765864" x2="34.4984928" y2="14.8099363" id="A" stroke="#FFFF06" stroke-width="10" transform="translate(24.25, 36.7879) scale(-1, 1) rotate(65) translate(-24.25, -36.7879)"></line>
-                <circle id="L" stroke="#000000" fill="#FFFF06" cx="50" cy="36.7139562" r="8.5"></circle>
-            </g>
-            <g id="Signal_SIS04" transform="translate(353, 357)" stroke="#000000">
-                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
-                <circle id="disc" fill="#1253C9" cx="6.5" cy="15" r="6"></circle>
-            </g>
-            <g id="Signal_SIS07" transform="translate(486, 186.25) scale(-1, -1) translate(-486, -186.25)translate(477, 175.5)" stroke="#000000">
-                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
-                <circle id="disc" fill="#1253C9" cx="6.5" cy="15" r="6"></circle>
-            </g>
-            <g id="Signal_SIS06" transform="translate(362, 186.25) scale(1, -1) translate(-362, -186.25)translate(353, 175.5)" stroke="#000000">
-                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
-                <circle id="disc" fill="#1253C9" cx="6.5" cy="15" r="6"></circle>
-            </g>
-            <text id="SIS02" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#000000">
-                <tspan x="532.994629" y="172.5">SIS02</tspan>
-            </text>
-            <g id="Signal_SIS02" transform="translate(553, 186.25) scale(1, -1) translate(-553, -186.25)translate(544, 175.5)" stroke="#000000">
-                <polyline id="foot" points="18 0 18 15 12 15"></polyline>
-                <circle id="disc" fill="#1253C9" cx="6.5" cy="15" r="6"></circle>
-            </g>
-            <g id="Cancel_SIS02" transform="translate(563, 142)">
-                <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
-                <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
-            </g>
-            <g id="Button_SIS02" transform="translate(576, 183) scale(-1, 1) translate(-576, -183)translate(566, 173)">
-                <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
-                <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
-            </g>
-            <g id="Button_SIS07" transform="translate(453, 173)">
-                <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
-                <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
-            </g>
-            <g id="Button_SIS04" transform="translate(385, 371) scale(-1, 1) translate(-385, -371)translate(375, 361)">
-                <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
-                <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
-            </g>
-            <g id="Button_SIS06" transform="translate(385, 183) scale(-1, 1) translate(-385, -183)translate(375, 173)">
-                <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
-                <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
-            </g>
-            <g id="Cancel_SIS04" transform="translate(372, 386)">
-                <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
-                <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
-            </g>
-            <g id="Button_SIS08" transform="translate(141, 371) scale(-1, 1) translate(-141, -371)translate(131, 361)">
-                <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
-                <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
-            </g>
-            <g id="Cancel_SIS08" transform="translate(128, 386)">
-                <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
-                <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
-            </g>
-            <g id="Button_SIS05" transform="translate(176, 361)">
-                <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
-                <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
-            </g>
-            <g id="Cancel_SIS05" transform="translate(173, 386)">
-                <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
-                <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
-            </g>
-            <text id="09T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="412.196777" y="344">09T</tspan>
-            </text>
-            <text id="11T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="503.196777" y="344">11T</tspan>
-            </text>
-            <text id="03T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="811.196777" y="344">03T</tspan>
-            </text>
-            <text id="05T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="894.196777" y="344">05T</tspan>
-            </text>
-            <text id="06T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="775.196777" y="194">06T</tspan>
-            </text>
-            <text id="08T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="835.196777" y="194">08T</tspan>
-            </text>
-            <line x1="1013" y1="169.5" x2="1013" y2="385" id="Line" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-dasharray="2.6,4"></line>
-            <line x1="757" y1="352" x2="873" y2="352" id="TrackCircuit_GAY_03T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="757" y1="202" x2="814" y2="202" id="TrackCircuit_GAY_06T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="816" y1="202" x2="873" y2="202" id="TrackCircuit_GAY_08T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="875" y1="202" x2="946" y2="202" id="TrackCircuit_GAY_10T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="948" y1="202" x2="1012" y2="202" id="TrackCircuit_LEV_02T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="875" y1="352" x2="935" y2="352" id="TrackCircuit_GAY_05T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="937" y1="352" x2="1012" y2="352" id="TrackCircuit_GAY_07T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="1014" y1="352" x2="1071" y2="352" id="TrackCircuit_LEV_01T" stroke="#FFFF06" stroke-width="10"></line>
-            <g id="Gayrettepe" transform="translate(720, 222)">
-                <g id="Plencer_P1" transform="translate(0, 57)">
-                    <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
-                    <text id="P" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#000000">
-                        <tspan x="6.99902344" y="19">P</tspan>
-                    </text>
-                </g>
-                <g id="Plencer_P2" transform="translate(163, 27)">
-                    <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
-                    <text id="P" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#000000">
-                        <tspan x="6.99902344" y="19">P</tspan>
-                    </text>
-                </g>
-                <rect id="Rectangle" stroke="#000000" x="45.5" y="0.5" width="49" height="19"></rect>
-                <rect id="Rectangle" stroke="#000000" x="95.5" y="0.5" width="49" height="19"></rect>
-                <rect id="Rectangle" stroke="#000000" x="45.5" y="90.5" width="49" height="19"></rect>
-                <rect id="Rectangle" stroke="#000000" x="95.5" y="90.5" width="49" height="19"></rect>
-                <g id="StationName" transform="translate(32, 40)">
-                    <g id="Rectangle">
-                        <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-66)" xlink:href="#path-l6_a5lxqar-65"></use>
-                        <use fill="#AFB2C1" fill-rule="evenodd" xlink:href="#path-l6_a5lxqar-65"></use>
-                        <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-67)" xlink:href="#path-l6_a5lxqar-65"></use>
-                        <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="124" height="29"></rect>
-                    </g>
-                    <text id="STATION" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#000000">
-                        <tspan x="2.49023438" y="21">GAYRETTEPE</tspan>
-                    </text>
-                </g>
-                <text id="P2" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="#000000">
-                    <tspan x="85.9985352" y="33">P2</tspan>
-                </text>
-                <text id="P1" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="#000000">
-                    <tspan x="85.9985352" y="84">P1</tspan>
-                </text>
-            </g>
-            <text id="03T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="1121.19678" y="344">03T</tspan>
-            </text>
-            <text id="06T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="1081.19678" y="194">06T</tspan>
-            </text>
-            <text id="04T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="1033.19678" y="194">04T</tspan>
-            </text>
-            <text id="02T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="970.196777" y="194">02T</tspan>
-            </text>
-            <text id="10T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="902.196777" y="194">10T</tspan>
-            </text>
-            <text id="10T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="1161.19678" y="194">10T</tspan>
-            </text>
-            <text id="08T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="1121.19678" y="194">08T</tspan>
-            </text>
-            <line x1="1073" y1="352" x2="1191" y2="352" id="TrackCircuit_LEV_03T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="1073" y1="202" x2="1110" y2="202" id="TrackCircuit_LEV_06T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="1112" y1="202" x2="1149" y2="202" id="TrackCircuit_LEV_08T" stroke="#FFFF06" stroke-width="10"></line>
-            <g id="Levent" transform="translate(1036, 222)">
-                <g id="Plencer_P1" transform="translate(0, 57)">
-                    <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
-                    <text id="P" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#000000">
-                        <tspan x="6.99902344" y="19">P</tspan>
-                    </text>
-                </g>
-                <g id="Plencer_P2" transform="translate(163, 27)">
-                    <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
-                    <text id="P" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#000000">
-                        <tspan x="6.99902344" y="19">P</tspan>
-                    </text>
-                </g>
-                <rect id="Rectangle" stroke="#000000" x="45.5" y="0.5" width="49" height="19"></rect>
-                <rect id="Rectangle" stroke="#000000" x="95.5" y="0.5" width="49" height="19"></rect>
-                <rect id="Rectangle" stroke="#000000" x="45.5" y="90.5" width="49" height="19"></rect>
-                <rect id="Rectangle" stroke="#000000" x="95.5" y="90.5" width="49" height="19"></rect>
-                <g id="StationName" transform="translate(32, 40)">
-                    <g id="Rectangle">
-                        <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-69)" xlink:href="#path-l6_a5lxqar-68"></use>
-                        <use fill="#AFB2C1" fill-rule="evenodd" xlink:href="#path-l6_a5lxqar-68"></use>
-                        <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-70)" xlink:href="#path-l6_a5lxqar-68"></use>
-                        <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="124" height="29"></rect>
-                    </g>
-                    <text id="STATION" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#000000">
-                        <tspan x="26.4941406" y="21">LEVENT</tspan>
-                    </text>
-                </g>
-                <text id="P2" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="#000000">
-                    <tspan x="85.9985352" y="33">P2</tspan>
-                </text>
-                <text id="P1" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="#000000">
-                    <tspan x="85.9985352" y="84">P1</tspan>
-                </text>
-            </g>
-            <line x1="1014" y1="202" x2="1071" y2="202" id="TrackCircuit_LEV_04T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="1191" y1="202" x2="1230" y2="202" id="TrackCircuit_LEV_12T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="1232" y1="202" x2="1262" y2="202" id="TrackCircuit_LEV_14T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="1151" y1="202" x2="1189" y2="202" id="TrackCircuit_LEV_10T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="699" y1="352" x2="755" y2="352" id="TrackCircuit_GAY_01T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="622" y1="352" x2="697" y2="352" id="TrackCircuit_SIS_15T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="544" y1="352" x2="620" y2="352" id="TrackCircuit_SIS_13T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="485" y1="352" x2="542" y2="352" id="TrackCircuit_SIS_11T" stroke="#FFFF06" stroke-width="10"></line>
-            <line x1="1193" y1="352" x2="1262" y2="352" id="TrackCircuit_LEV_05T" stroke="#FFFF06" stroke-width="10"></line>
-            <g id="PageButton_TAKSIM" transform="translate(15, 15)">
+            
+            <g id="PageButton_INDEPENDENCIA" transform="translate(15, 15)">
                 <g id="Rectangle">
                     <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-72)" xlink:href="#path-l6_a5lxqar-71"></use>
                     <use fill="#9496A2" fill-rule="evenodd" xlink:href="#path-l6_a5lxqar-71"></use>
                 </g>
                 <text id="TAK" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#FFFF06">
-                    <tspan x="11.9970703" y="21">TAK</tspan>
+                    <tspan x="11.9970703" y="21">IDP</tspan>
                 </text>
             </g>
-            <g id="PageButton_LEVENT" transform="translate(1191, 15)">
+            <g id="PageButton_ADJUNTAS" transform="translate(1191, 15)">
                 <g id="Rectangle">
                     <use fill="black" fill-opacity="1" filter="url(#filter-l6_a5lxqar-74)" xlink:href="#path-l6_a5lxqar-73"></use>
                     <use fill="#9496A2" fill-rule="evenodd" xlink:href="#path-l6_a5lxqar-73"></use>
                 </g>
                 <text id="TAK" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#FFFF06">
-                    <tspan x="11.9970703" y="21">LEV</tspan>
+                    <tspan x="11.9970703" y="21">AJU</tspan>
                 </text>
             </g>
-            <g id="Button_SIS01" transform="translate(40, 361)">
-                <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
-                <path d="M11.2540062,3.5 L16.732,8.785 L16.7439237,8.78585315 L18,10 L16.7439237,11.2141469 L16.732,11.214 L11.2540062,16.5 L10.3641547,15.6414685 L14.953,11.214 L2,11.2141469 L2,8.78585315 L14.952,8.785 L10.3641547,4.35853147 L11.2540062,3.5 Z" id="arrow" fill="#FFFF06" fill-rule="nonzero"></path>
-            </g>
-            <g id="Cancel_SIS01" transform="translate(37, 386)">
-                <circle id="circle" stroke="#000000" fill="#9496A2" cx="13" cy="13" r="12.5"></circle>
-                <path d="M4.51471863,21.4852814 L21.4852814,4.51471863 M4.51471863,4.51471863 L21.4852814,21.4852814" id="cross" stroke="#FFFF06"></path>
-            </g>
-            <path d="M265.562413,240.621795 L299.58917,313.545095 M299.59,240.62 L265.56,313.55" id="TrackCircuit_SIS_17T" stroke="#FFFF06" stroke-width="10" fill="#D8D8D8"></path>
             
-            <text id="05T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="1215.19678" y="344">05T</tspan>
-            </text>
-            <text id="04T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="718.196777" y="194">04T</tspan>
-            </text>
-            <text id="02T" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#377E22">
-                <tspan x="646.196777" y="194">02T</tspan>
-            </text>
-            <text id="M12" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#000000">
-                <tspan x="243.196777" y="190">M12</tspan>
-            </text>
-            <text id="M13" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#000000">
-                <tspan x="306.196777" y="190">M13</tspan>
-            </text>
-            <text id="M10" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#000000">
-                <tspan x="239.196777" y="370">M10</tspan>
-            </text>
-            <text id="M11" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#000000">
-                <tspan x="307.196777" y="370">M11</tspan>
-            </text>
-            <g id="Fleeting_SIS01" transform="translate(40, 323)">
-                <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
-                <text id="F" font-family="CourierNewPS-BoldMT, Courier New" font-size="17" font-weight="bold" fill="#FFFF06">
-                    <tspan x="4.89916992" y="15">F</tspan>
-                </text>
-            </g>
-            <g id="Fleeting_SIS05" transform="translate(176, 323)">
-                <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
-                <text id="F" font-family="CourierNewPS-BoldMT, Courier New" font-size="17" font-weight="bold" fill="#FFFF06">
-                    <tspan x="4.89916992" y="15">F</tspan>
-                </text>
-            </g>
-            <g id="Fleeting_SIS02" transform="translate(566, 211)">
-                <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
-                <text id="F" font-family="CourierNewPS-BoldMT, Courier New" font-size="17" font-weight="bold" fill="#FFFF06">
-                    <tspan x="4.89916992" y="15">F</tspan>
-                </text>
-            </g>
-            <g id="Fleeting_SIS06" transform="translate(351, 211)">
-                <rect id="rectangle" stroke="#000000" fill="#9496A2" x="0.5" y="0.5" width="19" height="19"></rect>
-                <text id="F" font-family="CourierNewPS-BoldMT, Courier New" font-size="17" font-weight="bold" fill="#FFFF06">
-                    <tspan x="4.89916992" y="15">F</tspan>
-                </text>
-            </g>
             <g id="CycleButtons_SIS_2" transform="translate(11, 725)">
                 <g id="OffButton" transform="translate(36, 0)">
                     <g id="borders" fill="black" fill-opacity="1">
@@ -6051,34 +6265,7 @@ var mimicscreendata = [
                     <polyline id="Path-5" stroke="#000000" stroke-width="4" points="57 1.71547226 1.58206781e-15 1.71547226 11.5 1.71547226 28.5 28.7154723 50 28.7154723"></polyline>
                 </g>
             </g>
-            <text id="SP3" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#000000">
-                <tspan x="152.196777" y="387.5">SP3</tspan>
-            </text>
-            <g id="ShuntingPanel_SP3" transform="translate(163.5, 367.5) scale(-1, 1) translate(-163.5, -367.5)translate(156, 357)" stroke="#000000">
-                <rect id="Rectangle" fill="#AFB2C1" x="4.5" y="10.5" width="11" height="11"></rect>
-                <polyline id="foot" transform="translate(2.5, 8) scale(-1, 1) translate(-2.5, -8)" points="5 0 5 16 7.57727214e-14 16"></polyline>
-            </g>
-            <text id="SP4" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#000000">
-                <tspan x="159.196777" y="173">SP4</tspan>
-            </text>
-            <g id="ShuntingPanel_SP4" transform="translate(171.5, 186.5) scale(-1, -1) translate(-171.5, -186.5)translate(164, 176)" stroke="#000000">
-                <rect id="Rectangle" fill="#AFB2C1" x="4.5" y="10.5" width="11" height="11"></rect>
-                <polyline id="foot" transform="translate(2.5, 8) scale(-1, 1) translate(-2.5, -8)" points="5 0 5 16 7.57727214e-14 16"></polyline>
-            </g>
-            <text id="SP5" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#000000">
-                <tspan x="480.196777" y="387.5">SP5</tspan>
-            </text>
-            <g id="ShuntingPanel_SP5" transform="translate(480, 357)" stroke="#000000">
-                <rect id="Rectangle" fill="#AFB2C1" x="4.5" y="10.5" width="11" height="11"></rect>
-                <polyline id="foot" transform="translate(2.5, 8) scale(-1, 1) translate(-2.5, -8)" points="5 0 5 16 7.57727214e-14 16"></polyline>
-            </g>
-            <text id="SP6" font-family="CourierNewPS-BoldMT, Courier New" font-size="11" font-weight="bold" fill="#000000">
-                <tspan x="477.196777" y="237.5">SP6</tspan>
-            </text>
-            <g id="ShuntingPanel_SP6" transform="translate(477, 207)" stroke="#000000">
-                <rect id="Rectangle" fill="#AFB2C1" x="4.5" y="10.5" width="11" height="11"></rect>
-                <polyline id="foot" transform="translate(2.5, 8) scale(-1, 1) translate(-2.5, -8)" points="5 0 5 16 7.57727214e-14 16"></polyline>
-            </g>
+            
             <g id="TrainDescriber_OSM_10T" transform="translate(11, 112)" opacity="0">
                 <rect id="Rectangle" fill="#00B5E2" x="-3.55271368e-15" y="0" width="50" height="20"></rect>
                 <text id="0000" font-family="CourierNewPS-BoldMT, Courier New" font-size="15" font-weight="bold" fill="#FFFFFF">
@@ -6647,7 +6834,7 @@ var mimicscreendata = [
 </svg>`
     },
     {
-        "name": "LEVENT",
+        "name": "ADJUNTAS",
         "svg": `
 <svg width="1266px" height="815px" viewBox="0 0 1266 815" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
@@ -9868,5 +10055,5 @@ var mimicscreendata = [
         </g>
     </g>
 </svg>`
-    }*/
+    }
 ]

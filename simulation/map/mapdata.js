@@ -228,12 +228,20 @@ let mapData = {
         {
             name: "ALP_12",
             southbound: "ALP_10",
-            northbound: "endOfTrack",
+            northbound: "ALP_14",
             signals:{
                 southbound: "ALP08",//E
-                northbound: "SP4"
+            },
+            shuntingPanels:{
+                northbound: "ZR2"
             },
             length: 6
+        },
+        {
+            name: "ALP_14",
+            southbound: "ALP_12",
+            northbound: "AYA_02",
+            length: 4
         },
         //VIA 1
         {
@@ -283,12 +291,20 @@ let mapData = {
         {
             name: "ALP_11",
             southbound: "ALP_09",
-            northbound: "endOfTrack",
+            northbound: "ALP_13",
             signals: {
                 southbound: "ALP07",//H
-                northbound: "SP3"
+            },
+            shuntingPanels:{
+                northbound: "ZR1"
             },
             length: 6
+        },
+        {
+            name: "ALP_13",
+            southbound: "ALP_11",
+            northbound: "AYA_01",
+            length: 4
         },
         {
             name: "ALP_CV",
@@ -299,6 +315,544 @@ let mapData = {
             northboundLineNorthboundDirection: "ALP_09",
             length: 4
         },
+        //AYACUCHO
+        //VIA 2
+        {
+            name: "AYA_02",
+            southbound: "ALP_14",
+            northbound: "AYA_04",
+            signals:{
+                northbound: "AYA02" //D
+            },
+            length: 8,
+        },
+        {
+            name: "AYA_04",
+            southbound: "AYA_02",
+            northbound: "dependsOnPoint",
+            dependsOnPoint: {
+                point: "AYA_A2",
+                normal: "AYA_06",
+                reverse: "AYA_03"
+            },
+            length: 6
+        },
+        {
+            name: "AYA_06",
+            southbound: "dependsOnPoint",
+            northbound: "AYA_08",
+            dependsOnPoint: {
+                point: "AYA_A4",
+                normal: "AYA_04",
+                reverse: "AYA_05"
+            },
+            length: 6
+        },
+        {
+            name: "AYA_08",
+            southbound: "AYA_06",
+            northbound: "AYA_10",
+            signals:{
+                southbound: "AYA04", //X7
+                northbound: "AYA06" //X5
+            },
+            length: 8
+        },
+        {
+            name: "AYA_10",
+            southbound: "AYA_08",
+            northbound: "AYA_12",
+            length: 6
+        },
+        {
+            name: "AYA_12",
+            southbound: "AYA_10",
+            northbound: "dependsOnPoint",
+            dependsOnPoint: {
+                point: "AYA_A6",
+                normal: "AYA_14",
+                reverse: "AYA_CV"
+            },
+            length: 4
+        },
+        {
+            name: "AYA_14",
+            southbound: "dependsOnPoint",
+            northbound: "AYA_16",
+            dependsOnPoint: {
+                point: "AYA_A8",
+                normal: "AYA_12",
+                reverse: "AYA_CV"
+            },
+            length: 2
+        },
+        {
+            name: "AYA_16",
+            southbound: "AYA_14",
+            northbound: "TCA_02",
+            signals:{
+                southbound: "AYA08",
+                northbound: "SP4"
+            },
+            length: 8,
+        },
+        //VIA 1
+        {
+            name: "AYA_01",
+            southbound: "ALP_13",
+            northbound: "AYA_03",
+            signals:{
+                northbound: "AYA01" //J
+            },
+            length: 8,
+        },
+        {
+            name: "AYA_03",
+            southbound: "AYA_01",
+            northbound: "dependsOnPoint",
+            dependsOnPoint: {
+                point: "AYA_A1",
+                normal: "AYA_05",
+                reverse: "AYA_04"
+            },
+            length: 6
+        },
+        {
+            name: "AYA_05",
+            southbound: "dependsOnPoint",
+            northbound: "AYA_07",
+            dependsOnPoint: {
+                point: "AYA_A3",
+                normal: "AYA_03",
+                reverse: "AYA_06"
+            },
+            length: 6
+        },
+        {
+            name: "AYA_07",
+            southbound: "AYA_05",
+            northbound: "AYA_09",
+            signals:{
+                southbound: "AYA03", //X6
+                northbound: "AYA05" //X4
+            },
+            length: 8
+        },
+        {
+            name: "AYA_09",
+            southbound: "AYA_07",
+            northbound: "AYA_11",
+            length: 6
+        },
+        {
+            name: "AYA_11",
+            southbound: "AYA_09",
+            northbound: "dependsOnPoint",
+            dependsOnPoint: {
+                point: "AYA_A5",
+                normal: "AYA_13",
+                reverse: "AYA_CV"
+            },
+            length: 4
+        },
+        {
+            name: "AYA_13",
+            southbound: "dependsOnPoint",
+            northbound: "AYA_15",
+            dependsOnPoint: {
+                point: "AYA_A7",
+                normal: "AYA_11",
+                reverse: "AYA_CV"
+            },
+            length: 2
+        },
+        {
+            name: "AYA_15",
+            southbound: "AYA_13",
+            northbound: "TCA_01",
+            signals:{
+                southbound: "AYA07",
+            },
+            length: 8,
+        },
+        {
+            name: "AYA_CV",
+            crossTrackCircuit: true,
+            southboundLineSouthboundDirection: "AYA_12",
+            southboundLineNorthboundDirection: "AYA_14",
+            northboundLineSouthboundDirection: "AYA_11",
+            northboundLineNorthboundDirection: "AYA_13",
+            length: 2
+        },
+        //CARRIZALITO
+        //VIA 2
+        {
+            name: "TCA_02",
+            southbound: "AYA_16",
+            northbound: "TCA_04",
+            length: 10
+        },
+        {
+            "name": "TCA_04",
+            southbound: "TCA_02",
+            northbound: "TCA_06",
+            length: 10
+        },
+        {
+            "name": "TCA_06",
+            southbound: "TCA_04",
+            northbound: "TCA_08",
+            signals: {
+                northbound: "TCA02" //I12
+            },
+            length: 10
+        },
+        {
+            "name": "TCA_08",
+            southbound: "TCA_06",
+            northbound: "TCA_10",
+            signals: {
+                southbound: "TCA04" //I10
+            },
+            length: 10
+        },
+        {
+
+            name: "TCA_10",
+            southbound: "TCA_08",
+            northbound: "TCA_12",
+            length: 10
+        },
+        {
+            "name": "TCA_12",
+            southbound: "TCA_10",
+            northbound: "TRC_02",
+            length: 10
+        },
+        //VIA 1
+        {
+            name: "TCA_01",
+            southbound: "AYA_15",
+            northbound: "TCA_03",
+            length: 10
+        },
+        {
+            "name": "TCA_03",
+            southbound: "TCA_01",
+            northbound: "TCA_05",
+            length: 10
+        },
+        {
+            "name": "TCA_05",
+            southbound: "TCA_03",
+            northbound: "TCA_07",
+            signals: {
+                northbound: "TCA01" //I1
+            },
+            length: 10
+        },
+        {
+            "name": "TCA_07",
+            southbound: "TCA_05",
+            northbound: "TCA_09",
+            signals: {
+                southbound: "TCA03" //I3
+            },
+            length: 10
+        },
+        {
+            name: "TCA_09",
+            southbound: "TCA_07",
+            northbound: "TCA_11",
+            length: 10
+        },
+        {
+            "name": "TCA_11",
+            southbound: "TCA_09",
+            northbound: "TRC_01",
+            length: 10
+        },
+        //RIO CRISTAL
+        //VIA 2
+        {
+            name: "TRC_02",
+            southbound: "TCA_12",
+            northbound: "TRC_04",
+            length: 10
+        },
+        {
+            "name": "TRC_04",
+            southbound: "TRC_02",
+            northbound: "TRC_06",
+            length: 10
+        },
+        {
+            "name": "TRC_06",
+            southbound: "TRC_04",
+            northbound: "TRC_08",
+            signals: {
+                northbound: "TRC02" //I8
+            },
+            length: 10
+        },
+        {
+            "name": "TRC_08",
+            southbound: "TRC_06",
+            northbound: "TRC_10",
+            signals: {
+                southbound: "TRC04" //I6
+            },
+            length: 10
+        },
+        {
+            name: "TRC_10",
+            southbound: "TRC_08",
+            northbound: "TRC_12",
+            length: 10
+        },
+        {
+            "name": "TRC_12",
+            southbound: "TRC_10",
+            northbound: "TCP_02",
+            length: 10
+        },
+        //VIA 1
+        {
+            name: "TRC_01",
+            southbound: "TCA_11",
+            northbound: "TRC_03",
+            length: 10
+        },
+        {
+            "name": "TRC_03",
+            southbound: "TRC_01",
+            northbound: "TRC_05",
+            length: 10
+        },
+        {
+            "name": "TRC_05",
+            southbound: "TRC_03",
+            northbound: "TRC_07",
+            signals: {
+                northbound: "TRC01" //I5
+            },
+            length: 10
+        },
+        {
+            "name": "TRC_07",
+            southbound: "TRC_05",
+            northbound: "TRC_09",
+            signals: {
+                southbound: "TRC03" //I7
+            },
+            length: 10
+        },
+        {
+            name: "TRC_09",
+            southbound: "TRC_07",
+            northbound: "TRC_11",
+            length: 10
+        },
+        {
+            "name": "TRC_11",
+            southbound: "TRC_09",
+            northbound: "TCP_01",
+            length: 10
+        },
+        //CORRAL DE PIEDRA
+        //VIA 2
+        {
+            name: "TCP_02",
+            southbound: "TRC_12",
+            northbound: "TCP_04",
+            length: 10
+        },
+        {
+            "name": "TCP_04",
+            southbound: "TCP_02",
+            northbound: "TCP_06",
+            length: 10
+        },
+        {
+            "name": "TCP_06",
+            southbound: "TCP_04",
+            northbound: "TCP_08",
+            signals: {
+                northbound: "TCP02" //I4
+            },
+            length: 10
+        },
+        {
+            "name": "TCP_08",
+            southbound: "TCP_06",
+            northbound: "TCP_10",
+            signals: {
+                southbound: "TCP04" //I2
+            },
+            length: 10
+        },
+        {
+            name: "TCP_10",
+            southbound: "TCP_08",
+            northbound: "TCP_12",
+            length: 10
+        },
+        {
+            "name": "TCP_12",
+            southbound: "TCP_10",
+            northbound: "AJU_02",
+            length: 10
+        },
+        //VIA 1
+        {
+            name: "TCP_01",
+            southbound: "TRC_11",
+            northbound: "TCP_03",
+            length: 10
+        },
+        {
+            "name": "TCP_03",
+            southbound: "TCP_01",
+            northbound: "TCP_05",
+            length: 10
+        },
+        {
+            "name": "TCP_05",
+            southbound: "TCP_03",
+            northbound: "TCP_07",
+            signals: {
+                northbound: "TCP01" //I9
+            },
+            length: 10
+        },
+        {
+            "name": "TCP_07",
+            southbound: "TCP_05",
+            northbound: "TCP_09",
+            signals: {
+                southbound: "TCP03" //I11
+            },
+            length: 10
+        },
+        {
+            name: "TCP_09",
+            southbound: "TCP_07",
+            northbound: "TCP_11",
+            length: 10
+        },
+        {
+            "name": "TCP_11",
+            southbound: "TCP_09",
+            northbound: "AJU_01",
+            length: 10
+        },
+        //LAS ADJUNTAS
+        //VIA 2
+        {
+            name: "AJU_02",
+            southbound: "TCP_12",
+            northbound: "AJU_04",
+            signals:{
+                northbound: "AJU02" //B
+            },
+            length: 8
+        },
+        {
+            name: "AJU_04",
+            southbound: "AJU_02",
+            northbound: "dependsOnPoint",
+            dependsOnPoint: {
+                point: "AJU_A2",
+                normal: "AJU_06",
+                reverse: "AJU_CV"
+            },
+            length: 2
+        },
+        {
+            name: "AJU_06",
+            northbound: "AJU_08",
+            southbound: "dependsOnPoint",
+            dependsOnPoint: {
+                point: "AJU_A4",
+                normal: "AJU_04",
+                reverse: "AJU_CV"
+            },
+            length: 8
+        },
+        {
+            name: "AJU_08",
+            southbound: "AJU_06",
+            northbound: "AJU_10",
+            signals: {
+                southbound: "AJU04", //A
+                northbound: "AJU06" //N
+            },
+            length: 8
+        },
+        {
+            name: "AJU_10",
+            southbound: "AJU_08",
+            northbound: "endOfTrack",
+            length: 8
+        },
+        //VIA 1
+        {
+            name: "AJU_01",
+            southbound: "TCP_11",
+            northbound: "AJU_03",
+            signals: {
+                northbound: "AJU01" //L
+            },
+            length: 8
+        },
+        {
+            name: "AJU_03",
+            southbound: "AJU_01",
+            northbound: "dependsOnPoint",
+            dependsOnPoint: {
+                point: "AJU_A1",
+                normal: "AJU_05",
+                reverse: "AJU_CV"
+            },
+            length: 2
+        },
+        {
+            name: "AJU_05",
+            northbound: "AJU_07",
+            southbound: "dependsOnPoint",
+            dependsOnPoint: {
+                point: "AJU_A3",
+                normal: "AJU_03",
+                reverse: "AJU_CV"
+            },
+            length: 8
+        },
+        {
+            name: "AJU_07",
+            southbound: "AJU_05",
+            northbound: "AJU_09",
+            signals: {
+                southbound: "AJU03", //M
+                northbound: "AJU05" //K
+            },
+            length: 8
+        },
+        {
+            name: "AJU_09",
+            southbound: "AJU_07",
+            northbound: "endOfTrack",
+            length: 8
+        },
+        {
+            name: "AJU_CV",
+            crossTrackCircuit: true,
+            southboundLineSouthboundDirection: "AJU_04",
+            southboundLineNorthboundDirection: "AJU_06",
+            northboundLineSouthboundDirection: "AJU_03",
+            northboundLineNorthboundDirection: "AJU_05",
+            length: 2
+        },
+
     ],
     points: [
         {
@@ -332,7 +886,55 @@ let mapData = {
         {
             name: "ALP_A3",
             trackCircuit: "ALP_09",
-        }
+        },
+        {
+            name: "AYA_A2",
+            trackCircuit: "AYA_04"
+        },
+        {
+            name: "AYA_A4",
+            trackCircuit: "AYA_06"
+        },
+        {
+            name: "AYA_A6",
+            trackCircuit: "AYA_12"
+        },
+        {
+            name: "AYA_A8",
+            trackCircuit: "AYA_14"
+        },
+        {
+            name: "AYA_A1",
+            trackCircuit: "AYA_03"
+        },
+        {
+            name: "AYA_A3",
+            trackCircuit: "AYA_05"
+        },
+        {
+            name: "AYA_A5",
+            trackCircuit: "AYA_11"
+        },
+        {
+            name: "AYA_A7",
+            trackCircuit: "AYA_13"
+        },
+        {
+            name: "AJU_A2",
+            trackCircuit: "AJU_04"
+        },
+        {
+            name: "AJU_A4",
+            trackCircuit: "AJU_06"
+        },
+        {
+            name: "AJU_A1",
+            trackCircuit: "AJU_03"
+        },
+        {
+            name: "AJU_A3",
+            trackCircuit: "AJU_05"
+        },
     ],
     signals: [
         {
@@ -408,6 +1010,110 @@ let mapData = {
             direction: "southbound"
         },
         {
+            name: "AYA02",
+            direction: "northbound"
+        },
+        {
+            name: "AYA04",
+            direction: "southbound"
+        },
+        {
+            name: "AYA06",
+            direction: "northbound"
+        },
+        {
+            name: "AYA08",
+            direction: "southbound"
+        },
+        {
+            name: "AYA01",
+            direction: "northbound"
+        },
+        {
+            name: "AYA03",
+            direction: "southbound"
+        },
+        {
+            name: "AYA05",
+            direction: "northbound"
+        },
+        {
+            name: "AYA07",
+            direction: "southbound"
+        },
+        {
+            name: "TCA02",
+            direction: "northbound"
+        },
+        {
+            name: "TCA04",
+            direction: "southbound"
+        },
+        {
+            name: "TCA01",
+            direction: "northbound"
+        },
+        {
+            name: "TCA03",
+            direction: "southbound"
+        },
+        {
+            name: "TRC02",
+            direction: "northbound"
+        },
+        {
+            name: "TRC04",
+            direction: "southbound"
+        },
+        {
+            name: "TRC01",
+            direction: "northbound"
+        },
+        {
+            name: "TRC03",
+            direction: "southbound"
+        },
+        {
+            name: "TCP02",
+            direction: "northbound"
+        },
+        {
+            name: "TCP04",
+            direction: "southbound"
+        },
+        {
+            name: "TCP01",
+            direction: "northbound"
+        },
+        {
+            name: "TCP03",
+            direction: "southbound"
+        },
+        {
+            name: "AJU02",
+            direction: "northbound"
+        },
+        {
+            name: "AJU04",
+            direction: "southbound"
+        },
+        {
+            name: "AJU06",
+            direction: "northbound"
+        },
+        {
+            name: "AJU01",
+            direction: "northbound"
+        },
+        {
+            name: "AJU03",
+            direction: "southbound"
+        },
+        {
+            name: "AJU05",
+            direction: "northbound"
+        },
+        {
             name: "SP1",
             direction: "southbound"
         },
@@ -425,12 +1131,35 @@ let mapData = {
         }
     ],
     shuntingPanels: [
-        
+        {
+            name: "ZR1",
+            direction: "northbound"
+        },
+        {
+            name: "ZR3",
+            direction: "northbound"
+        },
+        {
+            name: "ZR5",
+            direction: "southbound"
+        },
+        {
+            name: "ZR2",
+            direction: "northbound"
+        },
+        {
+            name: "ZR4",
+            direction: "northbound"
+        },
+        {
+            name: "ZR6",
+            direction: "southbound"
+        },
     ],
     platforms: [
         {
             name: "INDEPENDENCIA_V1",
-            direction: "northbound",
+            direction: "southbound",
             northbound: {
                 trackCircuit: "IDP_07",
                 position: 6
@@ -442,7 +1171,7 @@ let mapData = {
         },
         {
             name: "INDEPENDENCIA_V2",
-            direction: "southbound",
+            direction: "northbound",
             northbound: {
                 trackCircuit: "IDP_08",
                 position: 6
@@ -454,7 +1183,7 @@ let mapData = {
         },
         {
             name: "GUAICAIPURO_V1",
-            direction: "northbound",
+            direction: "southbound",
             northbound: {
                 trackCircuit: "GCP_03",
                 position: 6
@@ -478,7 +1207,7 @@ let mapData = {
         },
         {
             name: "ALIPRIMERA_V1",
-            direction: "northbound",
+            direction: "southbound",
             northbound: {
                 trackCircuit: "ALP_05",
                 position: 6
@@ -499,6 +1228,56 @@ let mapData = {
                 trackCircuit: "ALP_06",
                 position: 3
             }
+        },
+        {
+            name: "AYACUCHO_V1",
+            direction: "southbound",
+            northbound: {
+                trackCircuit: "AYA_07",
+                position: 6
+            },
+            southbound: {
+                trackCircuit: "AYA_07",
+                position: 3
+            },
+        },
+        {
+            name: "AYACUCHO_V2",
+            direction: "northbound",
+            northbound: {
+                trackCircuit: "AYA_08",
+                position: 6
+            },
+            southbound: {
+                trackCircuit: "AYA_08",
+                position: 3
+            }
+        },
+        {
+            name: "ADJUNTAS_V1",
+            direction: "northbound",
+            northbound: {
+                trackCircuit: "AJU_07",
+                position: 6
+            },
+            southbound: {
+                trackCircuit: "AJU_07",
+                position: 3
+            },
+            terminus: true
+        },
+        {
+            name: "ADJUNTAS_V2",
+            direction: "northbound",
+            northbound: {
+                trackCircuit: "AJU_08",
+                position: 6
+            },
+            southbound: {
+                trackCircuit: "AJU_08",
+                position: 3
+            },
+            terminus: true
         }
     ],
 }
