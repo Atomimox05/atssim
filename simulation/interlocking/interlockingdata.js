@@ -53,7 +53,100 @@ var interlockingData = {
                     "end": "ALP04"
                 }
             }
+        },
+        {
+            "name": "AYA_1",
+            "routes": {
+                "entry": {
+                    "start": "AYA05",
+                    "end": "ZR3",
+                },
+                "exit": {
+                    "start": "AYA07",
+                    "end": "AYA04"
+                }
+            }
+        },
+        {
+            "name": "AYA_2",
+            "routes": {
+                "entry": {
+                    "start": "AYA05",
+                    "end": "ZR4",
+                },
+                "exit": {
+                    "start": "AYA08",
+                    "end": "AYA04"
+                }
+            }
+        },
+        {
+            "name": "AYA_3",
+            "routes": {
+                "entry": {
+                    "start": "AYA08",
+                    "end": "AYA03",
+                },
+                "exit": {
+                    "start": "AYA05",
+                    "end": "TCA01"
+                }
+            }
+        },
+        {
+            "name": "AYA_4",
+            "routes": {
+                "entry": {
+                    "start": "AYA08",
+                    "end": "AYA04",
+                },
+                "exit": {
+                    "start": "AYA06",
+                    "end": "TCA01"
+                }
+            }
         }
     ],
-    shuntingRoutes: []
+    shuntingRoutes: [
+        {
+            "entry": {
+                "start": "ALP05",
+                "end": "ZR2"
+            },
+            "exit": {
+                "start": "ALP08",
+                "end": "ALP04"
+            }
+        },
+        {
+            "entry": {
+                "start": "ALP05",
+                "end": "ZR1"
+            },
+            "exit": {
+                "start": "ALP07",
+                "end": "ALP04"
+            }
+        },
+        {
+            "entry": {
+                "start": "AYA05",
+                "end": "ZR3"
+            },
+            "exit": {
+                "start": "AYA07",
+                "end": "AYA04"
+            }
+        },
+        {
+            "entry": {
+                "start": "AYA05",
+                "end": "ZR4"
+            },
+            "exit": {
+                "start": "AYA08",
+                "end": "AYA04"
+            }
+        },
+    ]
 }

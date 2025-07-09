@@ -392,7 +392,9 @@ let mapData = {
             northbound: "TCA_02",
             signals:{
                 southbound: "AYA08",
-                northbound: "SP4"
+            },
+            shuntingPanels: {
+                northbound: "ZR4"
             },
             length: 8,
         },
@@ -472,6 +474,9 @@ let mapData = {
             northbound: "TCA_01",
             signals:{
                 southbound: "AYA07",
+            },
+            shuntingPanels: {
+                northbound: "ZR3"
             },
             length: 8,
         },
