@@ -194,5 +194,25 @@ var interlockingData = {
                 "end": "AJU05"
             }
         },
+        {
+            "entry": {
+                "start": "AJU03",
+                "end": "ZR5"
+            },
+            "exit": {
+                "start": "AJU01",
+                "end": "AJU06"
+            }
+        },
+        {
+            "entry": {
+                "start": "AJU04",
+                "end": "ZR6"
+            },
+            "exit": {
+                "start": "AJU02",
+                "end": "AJU05"
+            }
+        },
     ]
 }

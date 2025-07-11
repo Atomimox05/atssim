@@ -471,7 +471,7 @@ const atsuielements = {
                     <tspan x="15.9863281" y="38">SIGNALLING</tspan>
                 </text>
             </g>
-            <g id="Access_TAKSIM" transform="translate(39, 293)">
+            <g id="Access_ADJUNTAS" transform="translate(839, 293)">
                 <g id="Rectangle">
                     <use fill="#9496A2" fill-rule="evenodd" xlink:href="#path-hd7e1nc55q-4"></use>
                     <use fill="black" fill-opacity="1" filter="url(#filter-hd7e1nc55q-5)" xlink:href="#path-hd7e1nc55q-4"></use>
@@ -479,32 +479,43 @@ const atsuielements = {
                 </g>
                 <line x1="7.5" y1="113" x2="382.5" y2="113" id="Path-30" stroke="#323232" stroke-width="8"></line>
                 <line x1="7.5" y1="163" x2="382.5" y2="163" id="Path-30" stroke="#323232" stroke-width="8"></line>
-                <polyline id="Path-30" stroke="#323232" stroke-width="8" points="13 138 47.5 138 72.5 113"></polyline>
-                <polyline id="Path-30" stroke="#323232" stroke-width="8" transform="translate(42.75, 150.5) scale(1, -1) translate(-42.75, -150.5)" points="13 163 47.5 163 72.5 138"></polyline>
-                <polyline id="Path-30" stroke="#323232" stroke-width="8" points="131 113 156 138 210 138 235 113"></polyline>
-                <polyline id="Path-30" stroke="#323232" stroke-width="8" transform="translate(183, 150.5) scale(1, -1) translate(-183, -150.5)" points="131 138 156 163 210 163 235 138"></polyline>
-                <g id="StationName" transform="translate(19, 66)">
-                    <g id="Rectangle">
-                        <use fill="black" fill-opacity="1" filter="url(#filter-hd7e1nc55q-7)" xlink:href="#path-hd7e1nc55q-6"></use>
-                        <use fill="black" fill-opacity="1" filter="url(#filter-hd7e1nc55q-8)" xlink:href="#path-hd7e1nc55q-6"></use>
-                        <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="124" height="29"></rect>
-                    </g>
-                    <text id="STATION" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#000000">
-                        <tspan x="26.4941406" y="21">TAKSIM</tspan>
-                    </text>
-                </g>
-                <g id="StationName" transform="translate(244, 66)">
+                <g id="StationName" transform="translate(250, 66)">
                     <g id="Rectangle">
                         <use fill="black" fill-opacity="1" filter="url(#filter-hd7e1nc55q-10)" xlink:href="#path-hd7e1nc55q-9"></use>
                         <use fill="black" fill-opacity="1" filter="url(#filter-hd7e1nc55q-11)" xlink:href="#path-hd7e1nc55q-9"></use>
                         <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="124" height="29"></rect>
                     </g>
-                    <text id="STATION" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#000000">
-                        <tspan x="14.4921875" y="21">OSMANBEY</tspan>
+                    <text id="STATION" font-family="CourierNewPS-BoldMT, Courier New" font-size="16" font-weight="bold" fill="#000000">
+                        <tspan x="5" y="21">LAS ADJUNTAS</tspan>
                     </text>
                 </g>
+                <line x1="211" y1="113" x2="261" y2="163" id="Path-2" stroke="#323232" stroke-width="8"></line>
+                <line x1="18.5" y1="113" x2="68.5" y2="163" id="Path-2" stroke="#323232" stroke-width="8" transform="translate(140, 138) scale(-1, 1) translate(-140, -138)"></line>
             </g>
-            <g id="Access_SISLI" transform="translate(439, 293)">
+            <g id="Access_AYACUCHO" transform="translate(439, 293)">
+                <g id="Rectangle">
+                    <use fill="#9496A2" fill-rule="evenodd" xlink:href="#path-hd7e1nc55q-20"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-hd7e1nc55q-21)" xlink:href="#path-hd7e1nc55q-20"></use>
+                    <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="389" height="249"></rect>
+                </g>
+                <line x1="289" y1="113" x2="339" y2="163" id="Path-2" stroke="#323232" stroke-width="8"></line>
+                <line x1="289" y1="113" x2="339" y2="163" id="Path-2" stroke="#323232" stroke-width="8" transform="translate(314, 138) scale(-1, 1) translate(-314, -138)"></line>
+                <line x1="7.5" y1="113" x2="382.5" y2="113" id="Path-30" stroke="#323232" stroke-width="8"></line>
+                <line x1="7.5" y1="163" x2="382.5" y2="163" id="Path-30" stroke="#323232" stroke-width="8"></line>
+                <g id="StationName" transform="translate(170, 66)">
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-hd7e1nc55q-26)" xlink:href="#path-hd7e1nc55q-25"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-hd7e1nc55q-27)" xlink:href="#path-hd7e1nc55q-25"></use>
+                        <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="124" height="29"></rect>
+                    </g>
+                    <text id="AYACUCHO" font-family="CourierNewPS-BoldMT, Courier New" font-size="16" font-weight="bold" fill="#000000">
+                        <tspan x="25" y="21">AYACUCHO</tspan>
+                    </text>
+                </g>
+                <line x1="46.5" y1="113" x2="96.5" y2="163" id="Path-2" stroke="#323232" stroke-width="8"></line>
+                <line x1="132.5" y1="113" x2="182.5" y2="163" id="Path-2" stroke="#323232" stroke-width="8" transform="translate(157.5, 138) scale(-1, 1) translate(-157.5, -138)"></line>
+            </g>
+            <g id="Access_INDEPENDENCIA" transform="translate(39, 293)">
                 <g id="Rectangle">
                     <use fill="#9496A2" fill-rule="evenodd" xlink:href="#path-hd7e1nc55q-12"></use>
                     <use fill="black" fill-opacity="1" filter="url(#filter-hd7e1nc55q-13)" xlink:href="#path-hd7e1nc55q-12"></use>
@@ -518,55 +529,25 @@ const atsuielements = {
                         <use fill="black" fill-opacity="1" filter="url(#filter-hd7e1nc55q-16)" xlink:href="#path-hd7e1nc55q-14"></use>
                         <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="124" height="29"></rect>
                     </g>
-                    <text id="SISLI" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#000000">
-                        <tspan x="32.4951172" y="21">SISLI</tspan>
+                    <text id="INDEPENDENCIA" font-family="CourierNewPS-BoldMT, Courier New" font-size="16" font-weight="bold" fill="#000000">
+                        <tspan x="-2" y="21">INDEPENDENCIA</tspan>
                     </text>
                 </g>
-                <g id="StationName" transform="translate(244, 66)">
+                <g id="StationName" transform="translate(250, 66)">
                     <g id="Rectangle">
                         <use fill="black" fill-opacity="1" filter="url(#filter-hd7e1nc55q-18)" xlink:href="#path-hd7e1nc55q-17"></use>
                         <use fill="black" fill-opacity="1" filter="url(#filter-hd7e1nc55q-19)" xlink:href="#path-hd7e1nc55q-17"></use>
                         <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="124" height="29"></rect>
                     </g>
-                    <text id="GAYRETTEPE" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#000000">
-                        <tspan x="2.49023438" y="21">GAYRETTEPE</tspan>
+                    <text id="ALIPRIMERA" font-family="CourierNewPS-BoldMT, Courier New" font-size="16" font-weight="bold" fill="#000000">
+                        <tspan x="10" y="21">ALI PRIMERA</tspan>
                     </text>
                 </g>
                 <line x1="18.5" y1="113" x2="68.5" y2="163" id="Path-2" stroke="#323232" stroke-width="8"></line>
                 <line x1="18.5" y1="113" x2="68.5" y2="163" id="Path-2" stroke="#323232" stroke-width="8" transform="translate(43.5, 138) scale(-1, 1) translate(-43.5, -138)"></line>
-            </g>
-            <g id="Access_LEVENT" transform="translate(839, 293)">
-                <g id="Rectangle">
-                    <use fill="#9496A2" fill-rule="evenodd" xlink:href="#path-hd7e1nc55q-20"></use>
-                    <use fill="black" fill-opacity="1" filter="url(#filter-hd7e1nc55q-21)" xlink:href="#path-hd7e1nc55q-20"></use>
-                    <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="389" height="249"></rect>
-                </g>
-                <line x1="289" y1="113" x2="339" y2="163" id="Path-2" stroke="#323232" stroke-width="8"></line>
-                <line x1="289" y1="113" x2="339" y2="163" id="Path-2" stroke="#323232" stroke-width="8" transform="translate(314, 138) scale(-1, 1) translate(-314, -138)"></line>
-                <line x1="7.5" y1="113" x2="382.5" y2="113" id="Path-30" stroke="#323232" stroke-width="8"></line>
-                <line x1="7.5" y1="163" x2="382.5" y2="163" id="Path-30" stroke="#323232" stroke-width="8"></line>
-                <g id="StationName" transform="translate(19, 66)">
-                    <g id="Rectangle">
-                        <use fill="black" fill-opacity="1" filter="url(#filter-hd7e1nc55q-23)" xlink:href="#path-hd7e1nc55q-22"></use>
-                        <use fill="black" fill-opacity="1" filter="url(#filter-hd7e1nc55q-24)" xlink:href="#path-hd7e1nc55q-22"></use>
-                        <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="124" height="29"></rect>
-                    </g>
-                    <text id="LEVENT" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#000000">
-                        <tspan x="26.4941406" y="21">LEVENT</tspan>
-                    </text>
-                </g>
-                <g id="StationName" transform="translate(244, 66)">
-                    <g id="Rectangle">
-                        <use fill="black" fill-opacity="1" filter="url(#filter-hd7e1nc55q-26)" xlink:href="#path-hd7e1nc55q-25"></use>
-                        <use fill="black" fill-opacity="1" filter="url(#filter-hd7e1nc55q-27)" xlink:href="#path-hd7e1nc55q-25"></use>
-                        <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="124" height="29"></rect>
-                    </g>
-                    <text id="4-LEVENT" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#000000">
-                        <tspan x="14.4921875" y="21">4-LEVENT</tspan>
-                    </text>
-                </g>
-                <line x1="46.5" y1="113" x2="96.5" y2="163" id="Path-2" stroke="#323232" stroke-width="8"></line>
-                <line x1="132.5" y1="113" x2="182.5" y2="163" id="Path-2" stroke="#323232" stroke-width="8" transform="translate(157.5, 138) scale(-1, 1) translate(-157.5, -138)"></line>
+                
+                <line x1="321" y1="113" x2="371" y2="163" id="Path-2" stroke="#323232" stroke-width="8"></line>
+                <line x1="18.5" y1="113" x2="68.5" y2="163" id="Path-2" stroke="#323232" stroke-width="8" transform="translate(195, 138) scale(-1, 1) translate(-195, -138)"></line>
             </g>
             <rect id="Rectangle" fill="#000000" x="0" y="0" width="2" height="815"></rect>
             <rect id="Rectangle" fill="#FFFFFF" x="2" y="813" width="1264" height="2"></rect>
