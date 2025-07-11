@@ -8666,6 +8666,118 @@ var mimicscreendata = [
                 <tspan x="1235" y="330">V1</tspan>
             </text>
 
+            <!-- CIRCUITOS DE VIA - VIA 2 -->
+            <text id="TCA_12" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="12.5" y="214">TCA_12</tspan>
+            </text>
+            <text id="TRC_02" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="60" y="190">TRC_02</tspan>
+            </text>
+            <text id="TRC_04" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="110" y="190">TRC_04</tspan>
+            </text>
+            <text id="TRC_06" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="160" y="190">TRC_06</tspan>
+            </text>
+            <text id="TRC_08" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="210" y="214">TRC_08</tspan>
+            </text>
+            <text id="TRC_10" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="260" y="190">TRC_10</tspan>
+            </text>
+            <text id="TRC_12" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="310" y="190">TRC_12</tspan>
+            </text>
+            <text id="TCP_02" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="360" y="190">TCP_02</tspan>
+            </text>
+            <text id="TCP_04" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="410" y="190">TCP_04</tspan>
+            </text>
+            <text id="TCP_06" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="460" y="190">TCP_06</tspan>
+            </text>
+            <text id="TCP_08" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="510" y="214">TCP_08</tspan>
+            </text>
+            <text id="TCP_10" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="560" y="190">TCP_10</tspan>
+            </text>
+            <text id="TCP_12" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="610" y="190">TCP_12</tspan>
+            </text>
+            <text id="AJU_02" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="660" y="190">AJU_02</tspan>
+            </text>
+            <text id="AJU_04" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="770" y="185">AJU_04</tspan>
+            </text>
+            <text id="AJU_06" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="820" y="185">AJU_06</tspan>
+            </text>
+            <text id="AJU_08" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="940" y="190">AJU_08</tspan>
+            </text>
+            <text id="AJU_10" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="1040" y="190">AJU_10</tspan>
+            </text>
+
+            <!-- CIRCUITOS DE VIA - VIA 1 -->
+            <text id="TCA_11" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="12.5" y="344">TCA_11</tspan>
+            </text>
+            <text id="TRC_01" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="60" y="365">TRC_01</tspan>
+            </text>
+            <text id="TRC_03" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="110" y="365">TRC_03</tspan>
+            </text>
+            <text id="TRC_05" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="160" y="344">TRC_05</tspan>
+            </text>
+            <text id="TRC_07" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="210" y="365">TRC_07</tspan>
+            </text>
+            <text id="TRC_09" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="260" y="365">TRC_09</tspan>
+            </text>
+            <text id="TRC_11" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="310" y="365">TRC_11</tspan>
+            </text>
+            <text id="TCP_01" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="360" y="365">TCP_01</tspan>
+            </text>
+            <text id="TCP_03" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="410" y="365">TCP_03</tspan>
+            </text>
+            <text id="TRC_05" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="460" y="344">TRC_05</tspan>
+            </text>
+            <text id="TRC_07" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="510" y="365">TRC_07</tspan>
+            </text>
+            <text id="TRC_09" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="560" y="365">TRC_09</tspan>
+            </text>
+            <text id="TRC_11" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="610" y="365">TRC_11</tspan>
+            </text>
+            <text id="AJU_01" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="660" y="365">AJU_01</tspan>
+            </text>
+            <text id="AJU_03" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="770" y="370">AJU_03</tspan>
+            </text>
+            <text id="AJU_05" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="820" y="370">AJU_05</tspan>
+            </text>
+            <text id="AJU_07" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="940" y="365">AJU_07</tspan>
+            </text>
+            <text id="AJU_09" font-family="CourierNewPS-BoldMT, Courier New" font-size="9" font-weight="bold" fill="#377E22">
+                <tspan x="1040" y="365">AJU_09</tspan>
+            </text>
+            
             <!-- TRACK CIRCUITS V2 -->
             <line x1="5" y1="200" x2="50" y2="200" id="TrackCircuit_TCA_12" stroke="#FFFF06" stroke-width="10"></line>
             <line x1="52" y1="200" x2="100" y2="200" id="TrackCircuit_TRC_02" stroke="#FFFF06" stroke-width="10"></line>
@@ -8683,7 +8795,8 @@ var mimicscreendata = [
             <line x1="652" y1="200" x2="730" y2="200" id="TrackCircuit_AJU_02" stroke="#FFFF06" stroke-width="10"></line>
             <line x1="892" y1="200" x2="1015" y2="200" id="TrackCircuit_AJU_08" stroke="#FFFF06" stroke-width="10"></line>
             <line x1="1017" y1="200" x2="1095" y2="200" id="TrackCircuit_AJU_10" stroke="#FFFF06" stroke-width="10"></line>
-
+            <line x1="1096" y1="190" x2="1096" y2="210" id="endOfLine" stroke="#393939" stroke-width="5"></line>
+            
             <!-- TRACK CIRCUITS V2 -->
             <line x1="5" y1="350" x2="50" y2="350" id="TrackCircuit_TCA_11" stroke="#FFFF06" stroke-width="10"></line>
             <line x1="52" y1="350" x2="100" y2="350" id="TrackCircuit_TRC_01" stroke="#FFFF06" stroke-width="10"></line>
@@ -8701,6 +8814,7 @@ var mimicscreendata = [
             <line x1="652" y1="350" x2="730" y2="350" id="TrackCircuit_AJU_01" stroke="#FFFF06" stroke-width="10"></line>
             <line x1="892" y1="350" x2="1015" y2="350" id="TrackCircuit_AJU_07" stroke="#FFFF06" stroke-width="10"></line>
             <line x1="1017" y1="350" x2="1095" y2="350" id="TrackCircuit_AJU_09" stroke="#FFFF06" stroke-width="10"></line>
+            <line x1="1096" y1="340" x2="1096" y2="360" id="endOfLine" stroke="#393939" stroke-width="5"></line>
 
             <!-- CV ADJUNTAS -->
             <path d="M792.9756,240.621795 L828.00236,311 M829.00319,238.62 L790,310.55" id="TrackCircuit_AJU_CV" stroke="#FFFF06" stroke-width="10" fill="#D8D8D8"></path>

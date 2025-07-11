@@ -760,6 +760,9 @@ let mapData = {
             signals:{
                 northbound: "AJU02" //B
             },
+            shuntingPanels: {
+                southbound: "ZR6"
+            },
             length: 8
         },
         {
@@ -807,6 +810,9 @@ let mapData = {
             northbound: "AJU_03",
             signals: {
                 northbound: "AJU01" //L
+            },
+            shuntingPanels: {
+                southbound: "ZR5"
             },
             length: 8
         },

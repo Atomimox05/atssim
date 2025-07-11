@@ -105,6 +105,32 @@ var interlockingData = {
                     "end": "TCA01"
                 }
             }
+        },
+        {
+            "name": "AJU_1",
+            "routes": {
+                "entry": {
+                    "start": "AJU01",
+                    "end": "AJU05",
+                },
+                "exit": {
+                    "start": "AJU03",
+                    "end": "TCP04"
+                }
+            }
+        },
+        {
+            "name": "AJU_2",
+            "routes": {
+                "entry": {
+                    "start": "AJU01",
+                    "end": "AJU06",
+                },
+                "exit": {
+                    "start": "AJU04",
+                    "end": "TCP04"
+                }
+            }
         }
     ],
     shuntingRoutes: [
@@ -146,6 +172,26 @@ var interlockingData = {
             "exit": {
                 "start": "AYA08",
                 "end": "AYA04"
+            }
+        },
+        {
+            "entry": {
+                "start": "AJU03",
+                "end": "ZR6"
+            },
+            "exit": {
+                "start": "AJU02",
+                "end": "AJU06"
+            }
+        },
+        {
+            "entry": {
+                "start": "AJU04",
+                "end": "ZR5"
+            },
+            "exit": {
+                "start": "AJU01",
+                "end": "AJU05"
             }
         },
     ]
