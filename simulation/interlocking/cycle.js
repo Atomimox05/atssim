@@ -47,14 +47,14 @@ class Cycle {
         if (!this.enabled) {
             this.currentPhase = "entry"
             this.enabled = true
-            AlarmHandler.addEvent(this.name, "SAYKIL AYARLI", "CYCLE SET")
+            AlarmHandler.addEvent(this.name, "SAYKIL AYARLI", "CYCLE SET", "CICLO ESTABLECIDO")
         }
     }
 
     disable() {
         if (this.enabled) {
             this.enabled = false
-            AlarmHandler.addEvent(this.name, "SAYKIL İPTAL EDİLDİ", "CYCLE CANCELLED")
+            AlarmHandler.addEvent(this.name, "SAYKIL İPTAL EDİLDİ", "CYCLE CANCELLED", "CICLO CANCELADO")
         }
     }
 }

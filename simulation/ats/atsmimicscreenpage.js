@@ -14,7 +14,7 @@ class ATSMimicScreenPage {
     constructor(name, svg, interlocking, ats) {
         this.name = name
         this.HTMLElement = document.createElement("svg")
-        var newElement = new DOMParser().parseFromString(svg, "text/html").body.firstChild
+        var newElement = new DOMParser().parseFromString(svg, "image/svg+xml").documentElement
         this.HTMLElement.append(newElement)
         this.interlocking = interlocking
         this.ats = ats
@@ -29,8 +29,14 @@ class ATSMimicScreenPage {
         this.startCycles()
         this.startHolds()
         setTimeout(this.startPageButtons.bind(this), 200)
-        this.HTMLElement.querySelector("#screenbackground").addEventListener("click", () => {this.currentClickedButton = null})
-        this.controlBar = new ATSMimicScreenControlBar(this.HTMLElement.querySelector("#ControlBar"), this)
+        var screenBackground = this.HTMLElement.querySelector("#screenbackground")
+        if (screenBackground != null) {
+            screenBackground.addEventListener("click", () => { this.currentClickedButton = null })
+        }
+        var controlBarElement = this.HTMLElement.querySelector("#ControlBar")
+        if (controlBarElement != null) {
+            this.controlBar = new ATSMimicScreenControlBar(controlBarElement, this)
+        }
     }
 
     startSignals() {
@@ -66,19 +72,38 @@ class ATSMimicScreenPage {
 
     startTrackCircuits() {
         this.interlocking.trackCircuits.forEach(interlockingTrackCircuit => {
-            var trackCircuitInScreen = this.HTMLElement.querySelector(`#TrackCircuit_${interlockingTrackCircuit.name}`)
-            if (trackCircuitInScreen != null) {
-                this.updateTrackCircuit(interlockingTrackCircuit, trackCircuitInScreen)
-            }
-            var directionArrowInScreen = this.HTMLElement.querySelector(`#DirectionArrow_${interlockingTrackCircuit.name}`)
-            if (directionArrowInScreen != null) {
-                this.updateDirectionArrow(interlockingTrackCircuit, directionArrowInScreen)
-            }
-            var trainDescriberInScreen = this.HTMLElement.querySelector(`#TrainDescriber_${interlockingTrackCircuit.name}`)
-            if (trainDescriberInScreen != null) {
-                this.trainDescribers.push(new ATSTrainDescriber(this.ats.trainManager, interlockingTrackCircuit.name, trainDescriberInScreen))
-            }
-        })
+            
+            // 1. Busca TODOS los elementos y los guarda en una LISTA
+            const listaDeTrackCircuits = this.HTMLElement.querySelectorAll(
+                `.TrackCircuit_${interlockingTrackCircuit.name}`
+            );
+            
+            // 2. ¡ESTA ES LA CORRECCIÓN!
+            // Recorremos la lista y llamamos a updateTrackCircuit 
+            // para CADA elemento individual.
+            listaDeTrackCircuits.forEach(unSoloTrackCircuit => {
+                // "unSoloTrackCircuit" SÍ es un elemento y SÍ tiene .setAttribute
+                this.updateTrackCircuit(interlockingTrackCircuit, unSoloTrackCircuit);
+            });
+
+            // --- Repetimos el patrón para los demás ---
+
+            const listaDeDirectionArrows = this.HTMLElement.querySelectorAll(
+                `.DirectionArrow_${interlockingTrackCircuit.name}`
+            );
+            listaDeDirectionArrows.forEach(unaSolaArrow => {
+                this.updateDirectionArrow(interlockingTrackCircuit, unaSolaArrow);
+            });
+
+            const listaDeTrainDescribers = this.HTMLElement.querySelectorAll(
+                `.TrainDescriber_${interlockingTrackCircuit.name}`
+            );
+            listaDeTrainDescribers.forEach(unSoloDescriber => {
+                this.trainDescribers.push(
+                    new ATSTrainDescriber(this.ats.trainManager, interlockingTrackCircuit.name, unSoloDescriber)
+                );
+            });
+        });
     }
 
     startPoints() {
@@ -108,23 +133,30 @@ class ATSMimicScreenPage {
 
     startHolds() {
         this.ats.regulation.platforms.forEach(platform => {
-            if (this.HTMLElement.querySelector(`#HoldButton_${platform.name}`) != null) {
-                var holdingOnButtonInScreen = this.HTMLElement.querySelector(`#HoldButton_${platform.name}`).querySelector(`#OnButton`)
-                var holdingOffButtonInScreen = this.HTMLElement.querySelector(`#HoldButton_${platform.name}`).querySelector(`#OffButton`)
+            var holdBtn = this.HTMLElement.querySelector(`#HoldButton_${platform.name}`)
+            if (holdBtn != null) {
+                var holdingOnButtonInScreen = holdBtn.querySelector(`#OnButton`)
+                var holdingOffButtonInScreen = holdBtn.querySelector(`#OffButton`)
                 if (holdingOnButtonInScreen != null && holdingOffButtonInScreen != null) {
                     this.signalButtons.push(new ATSHoldButton(platform, holdingOnButtonInScreen, holdingOffButtonInScreen))
                 }
             }
         })
-        var globalSouthboundHoldingOnButton = this.HTMLElement.querySelector(`#HoldButton_GlobalSouthbound`).querySelector(`#OnButton`)
-        var globalSouthboundHoldingOffButton = this.HTMLElement.querySelector(`#HoldButton_GlobalSouthbound`).querySelector(`#OffButton`)
-        if (globalSouthboundHoldingOnButton != null && globalSouthboundHoldingOffButton != null) {
-            this.signalButtons.push(new ATSGlobalHoldButton(this.ats, "southbound", globalSouthboundHoldingOnButton, globalSouthboundHoldingOffButton))
+        var globalSouthbound = this.HTMLElement.querySelector(`#HoldButton_GlobalSouthbound`)
+        if (globalSouthbound != null) {
+            var globalSouthboundHoldingOnButton = globalSouthbound.querySelector(`#OnButton`)
+            var globalSouthboundHoldingOffButton = globalSouthbound.querySelector(`#OffButton`)
+            if (globalSouthboundHoldingOnButton != null && globalSouthboundHoldingOffButton != null) {
+                this.signalButtons.push(new ATSGlobalHoldButton(this.ats, "southbound", globalSouthboundHoldingOnButton, globalSouthboundHoldingOffButton))
+            }
         }
-        var globalNorthboundHoldingOnButton = this.HTMLElement.querySelector(`#HoldButton_GlobalNorthbound`).querySelector(`#OnButton`)
-        var globalNorthboundHoldingOffButton = this.HTMLElement.querySelector(`#HoldButton_GlobalNorthbound`).querySelector(`#OffButton`)
-        if (globalNorthboundHoldingOnButton != null && globalNorthboundHoldingOffButton != null) {
-            this.signalButtons.push(new ATSGlobalHoldButton(this.ats, "northbound", globalNorthboundHoldingOnButton, globalNorthboundHoldingOffButton))
+        var globalNorthbound = this.HTMLElement.querySelector(`#HoldButton_GlobalNorthbound`)
+        if (globalNorthbound != null) {
+            var globalNorthboundHoldingOnButton = globalNorthbound.querySelector(`#OnButton`)
+            var globalNorthboundHoldingOffButton = globalNorthbound.querySelector(`#OffButton`)
+            if (globalNorthboundHoldingOnButton != null && globalNorthboundHoldingOffButton != null) {
+                this.signalButtons.push(new ATSGlobalHoldButton(this.ats, "northbound", globalNorthboundHoldingOnButton, globalNorthboundHoldingOffButton))
+            }
         }
     }
 
@@ -152,6 +184,17 @@ class ATSMimicScreenPage {
             aspect = "blue"
         }
         signalInScreen.querySelector("#disc").setAttribute("fill", aspect)
+        var whiteDisc = signalInScreen.querySelector("#whiteDisc")
+        if (whiteDisc) {
+            if (interlockingSignal.fleetingAspect === "redWhite" || interlockingSignal.fleetingAspect === "greenWhite") {
+                whiteDisc.setAttribute("display", "inline")
+                whiteDisc.setAttribute("cx", "6.5")
+                signalInScreen.querySelector("#disc").setAttribute("cx", "-6")
+            } else {
+                whiteDisc.setAttribute("display", "none")
+                signalInScreen.querySelector("#disc").setAttribute("cx", "6.5")
+            }
+        }
         setTimeout(() => { this.updateSignal(interlockingSignal, signalInScreen) }, 500)
     }
 
@@ -161,7 +204,7 @@ class ATSMimicScreenPage {
             if (interlockingTrackCircuit.occupied) {
                 color = "red"
             } else if (interlockingTrackCircuit.reservedForRoute || interlockingTrackCircuit.approachLocked || interlockingTrackCircuit.reservedForShuntingRoute) {
-                color = "white"
+                color = "#00CC00"
             } else {
                 color = "#FFFF06"
             }
@@ -169,19 +212,19 @@ class ATSMimicScreenPage {
             color = "blue"
         }
         trackCircuitInScreen.setAttribute("stroke", color)
-        setTimeout(() => { this.updateTrackCircuit(interlockingTrackCircuit, trackCircuitInScreen) }, 200)
+        setTimeout(() => { this.updateTrackCircuit(interlockingTrackCircuit, trackCircuitInScreen) }, 100)
     }
 
     updateDirectionArrow(interlockingTrackCircuit, directionArrowInScreen) {
         if ((interlockingTrackCircuit.reservedForRoute || interlockingTrackCircuit.occupied || interlockingTrackCircuit.reservedForShuntingRoute) && interlockingTrackCircuit.direction == "northbound") {
             directionArrowInScreen.querySelector("#northbound").setAttribute("fill", "white")
-            directionArrowInScreen.querySelector("#southbound").setAttribute("fill", "#9496A2")
+            directionArrowInScreen.querySelector("#southbound").setAttribute("fill", "#2b2d31")
         } else if ((interlockingTrackCircuit.reservedForRoute || interlockingTrackCircuit.occupied || interlockingTrackCircuit.reservedForShuntingRoute) && interlockingTrackCircuit.direction == "southbound") {
-            directionArrowInScreen.querySelector("#northbound").setAttribute("fill", "#9496A2")
+            directionArrowInScreen.querySelector("#northbound").setAttribute("fill", "#2b2d31")
             directionArrowInScreen.querySelector("#southbound").setAttribute("fill", "white")
         } else {
-            directionArrowInScreen.querySelector("#northbound").setAttribute("fill", "#9496A2")
-            directionArrowInScreen.querySelector("#southbound").setAttribute("fill", "#9496A2")
+            directionArrowInScreen.querySelector("#northbound").setAttribute("fill", "#2b2d31")
+            directionArrowInScreen.querySelector("#southbound").setAttribute("fill", "#2b2d31")
         }
         setTimeout(() => { this.updateDirectionArrow(interlockingTrackCircuit, directionArrowInScreen) }, 200)
     }
@@ -193,7 +236,7 @@ class ATSMimicScreenPage {
             if (interlockingTrackCircuit.occupied) {
                 trackCircuitColor = "red"
             } else if (interlockingTrackCircuit.reservedForRoute || interlockingTrackCircuit.approachLocked || interlockingTrackCircuit.reservedForShuntingRoute) {
-                trackCircuitColor = "white"
+                trackCircuitColor = "#00CC00"
             } else {
                 trackCircuitColor = "#FFFF06"
             }
@@ -233,12 +276,14 @@ class ATSMimicScreenPage {
     }
 
     startPageButtons() {
-        this.ats.mimicScreen.pages.forEach(page => {
-            var pageButtonInScreen = this.HTMLElement.querySelector(`#PageButton_${page.name}`)
-            if (pageButtonInScreen != null) {
-                pageButtonInScreen.addEventListener("click", () => { this.ats.mimicScreen.setActivePage(page) })
-            }
-        })
+        if (this.ats && this.ats.mimicScreen && this.ats.mimicScreen.pages) {
+            this.ats.mimicScreen.pages.forEach(page => {
+                var pageButtonInScreen = this.HTMLElement.querySelector(`#PageButton_${page.name}`)
+                if (pageButtonInScreen != null) {
+                    pageButtonInScreen.addEventListener("click", () => { this.ats.mimicScreen.setActivePage(page) })
+                }
+            })
+        }
     }
 
     updateSecondsSinceButtonClick() {

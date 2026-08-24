@@ -456,22 +456,22 @@
         </filter>
     </defs>
     <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect fill="#AFB2C1" x="0" y="0" width="1266" height="815"></rect>
-        <rect id="screenbackground" fill="#AFB2C1" x="0" y="0" width="1266" height="815"></rect>
+        <rect fill="#111214" x="0" y="0" width="1266" height="815"></rect>
+        <rect id="screenbackground" fill="#111214" x="0" y="0" width="1266" height="815"></rect>
         <g id="Group" transform="translate(534, 157)">
             <g id="Rectangle">
-                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                <use fill="white" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="white" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
                 <rect stroke="#C3C6D2" stroke-width="6" stroke-linejoin="square" x="3" y="3" width="194" height="54"></rect>
             </g>
-            <text id="SIGNALLING" font-family="CourierNewPS-BoldMT, Courier New" font-size="28" font-weight="bold" fill="#FFFFFF">
+            <text id="SIGNALLING" font-family="CourierNewPS-BoldMT, Courier New" font-size="28" font-weight="bold" fill="#000000">
                 <tspan x="15.9863281" y="38">SIGNALLING</tspan>
             </text>
         </g>
         <g id="Access_TAKSIM" transform="translate(39, 293)">
             <g id="Rectangle">
-                <use fill="#9496A2" fill-rule="evenodd" xlink:href="#path-4"></use>
-                <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                <use fill="#2b2d31" fill-rule="evenodd" xlink:href="#path-4"></use>
+                <use fill="white" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
                 <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="389" height="249"></rect>
             </g>
             <line x1="7.5" y1="113" x2="382.5" y2="113" id="Path-30" stroke="#323232" stroke-width="8"></line>
@@ -482,50 +482,50 @@
             <polyline id="Path-30" stroke="#323232" stroke-width="8" transform="translate(183, 150.5) scale(1, -1) translate(-183, -150.5)" points="131 138 156 163 210 163 235 138"></polyline>
             <g id="StationName" transform="translate(19, 66)">
                 <g id="Rectangle">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
-                    <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-6"></use>
+                    <use fill="white" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                    <use fill="white" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-6"></use>
                     <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="124" height="29"></rect>
                 </g>
-                <text id="STATION" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#000000">
+                <text id="STATION" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#E0E0E0">
                     <tspan x="26.4941406" y="21">TAKSIM</tspan>
                 </text>
             </g>
             <g id="StationName" transform="translate(244, 66)">
                 <g id="Rectangle">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
-                    <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-9"></use>
+                    <use fill="white" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                    <use fill="white" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-9"></use>
                     <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="124" height="29"></rect>
                 </g>
-                <text id="STATION" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#000000">
+                <text id="STATION" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#E0E0E0">
                     <tspan x="14.4921875" y="21">OSMANBEY</tspan>
                 </text>
             </g>
         </g>
         <g id="Access_SISLI" transform="translate(439, 293)">
             <g id="Rectangle">
-                <use fill="#9496A2" fill-rule="evenodd" xlink:href="#path-12"></use>
-                <use fill="black" fill-opacity="1" filter="url(#filter-13)" xlink:href="#path-12"></use>
+                <use fill="#2b2d31" fill-rule="evenodd" xlink:href="#path-12"></use>
+                <use fill="white" fill-opacity="1" filter="url(#filter-13)" xlink:href="#path-12"></use>
                 <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="389" height="249"></rect>
             </g>
             <line x1="7.5" y1="113" x2="382.5" y2="113" id="Path-30" stroke="#323232" stroke-width="8"></line>
             <line x1="7.5" y1="163" x2="382.5" y2="163" id="Path-30" stroke="#323232" stroke-width="8"></line>
             <g id="StationName" transform="translate(19, 66)">
                 <g id="Rectangle">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-15)" xlink:href="#path-14"></use>
-                    <use fill="black" fill-opacity="1" filter="url(#filter-16)" xlink:href="#path-14"></use>
+                    <use fill="white" fill-opacity="1" filter="url(#filter-15)" xlink:href="#path-14"></use>
+                    <use fill="white" fill-opacity="1" filter="url(#filter-16)" xlink:href="#path-14"></use>
                     <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="124" height="29"></rect>
                 </g>
-                <text id="SISLI" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#000000">
+                <text id="SISLI" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#E0E0E0">
                     <tspan x="32.4951172" y="21">SISLI</tspan>
                 </text>
             </g>
             <g id="StationName" transform="translate(244, 66)">
                 <g id="Rectangle">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-18)" xlink:href="#path-17"></use>
-                    <use fill="black" fill-opacity="1" filter="url(#filter-19)" xlink:href="#path-17"></use>
+                    <use fill="white" fill-opacity="1" filter="url(#filter-18)" xlink:href="#path-17"></use>
+                    <use fill="white" fill-opacity="1" filter="url(#filter-19)" xlink:href="#path-17"></use>
                     <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="124" height="29"></rect>
                 </g>
-                <text id="GAYRETTEPE" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#000000">
+                <text id="GAYRETTEPE" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#E0E0E0">
                     <tspan x="2.49023438" y="21">GAYRETTEPE</tspan>
                 </text>
             </g>
@@ -534,8 +534,8 @@
         </g>
         <g id="Access_LEVENT" transform="translate(839, 293)">
             <g id="Rectangle">
-                <use fill="#9496A2" fill-rule="evenodd" xlink:href="#path-20"></use>
-                <use fill="black" fill-opacity="1" filter="url(#filter-21)" xlink:href="#path-20"></use>
+                <use fill="#2b2d31" fill-rule="evenodd" xlink:href="#path-20"></use>
+                <use fill="white" fill-opacity="1" filter="url(#filter-21)" xlink:href="#path-20"></use>
                 <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="389" height="249"></rect>
             </g>
             <line x1="289" y1="113" x2="339" y2="163" id="Path-2" stroke="#323232" stroke-width="8"></line>
@@ -544,21 +544,21 @@
             <line x1="7.5" y1="163" x2="382.5" y2="163" id="Path-30" stroke="#323232" stroke-width="8"></line>
             <g id="StationName" transform="translate(19, 66)">
                 <g id="Rectangle">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-23)" xlink:href="#path-22"></use>
-                    <use fill="black" fill-opacity="1" filter="url(#filter-24)" xlink:href="#path-22"></use>
+                    <use fill="white" fill-opacity="1" filter="url(#filter-23)" xlink:href="#path-22"></use>
+                    <use fill="white" fill-opacity="1" filter="url(#filter-24)" xlink:href="#path-22"></use>
                     <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="124" height="29"></rect>
                 </g>
-                <text id="LEVENT" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#000000">
+                <text id="LEVENT" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#E0E0E0">
                     <tspan x="26.4941406" y="21">LEVENT</tspan>
                 </text>
             </g>
             <g id="StationName" transform="translate(244, 66)">
                 <g id="Rectangle">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-26)" xlink:href="#path-25"></use>
-                    <use fill="black" fill-opacity="1" filter="url(#filter-27)" xlink:href="#path-25"></use>
+                    <use fill="white" fill-opacity="1" filter="url(#filter-26)" xlink:href="#path-25"></use>
+                    <use fill="white" fill-opacity="1" filter="url(#filter-27)" xlink:href="#path-25"></use>
                     <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="124" height="29"></rect>
                 </g>
-                <text id="4-LEVENT" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#000000">
+                <text id="4-LEVENT" font-family="CourierNewPS-BoldMT, Courier New" font-size="20" font-weight="bold" fill="#E0E0E0">
                     <tspan x="14.4921875" y="21">4-LEVENT</tspan>
                 </text>
             </g>

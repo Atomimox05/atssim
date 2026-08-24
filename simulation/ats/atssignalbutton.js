@@ -38,15 +38,16 @@ class ATSSignalButton {
         if (this.interlockingSignal.aspect == "green" ||
         this.interlockingSignal.aspect == "flashingGreen" ||
         this.mimicScreenPage.currentClickedButton instanceof ATSSignalButton &&
-        this.HTMLElement.querySelector("#rectangle").getAttribute("fill") == "#9496A2" && 
+        this.HTMLElement.querySelector("#rectangle").getAttribute("fill") == "#2b2d31" && 
         this.mimicScreenPage.currentClickedButton != null &&
         this.mimicScreenPage.currentClickedButton.interlockingSignal.name == this.interlockingSignal.name) {
             this.HTMLElement.querySelector("#rectangle").setAttribute("fill", "white")
             this.HTMLElement.querySelector("#arrow").setAttribute("fill", "black")
         } else {
-            this.HTMLElement.querySelector("#rectangle").setAttribute("fill", "#9496A2")
+            this.HTMLElement.querySelector("#rectangle").setAttribute("fill", "#2b2d31")
             this.HTMLElement.querySelector("#arrow").setAttribute("fill", "#FFFF06")
         }
         setTimeout(this.updateColors.bind(this), 500)
     }
 }
+

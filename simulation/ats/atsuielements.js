@@ -459,8 +459,8 @@ const atsuielements = {
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Artboard">
-            <rect fill="#AFB2C1" x="0" y="0" width="1266" height="815"></rect>
-            <rect id="screenbackground" fill="#AFB2C1" x="0" y="0" width="1266" height="815"></rect>
+            <rect fill="#111214" x="0" y="0" width="1266" height="815"></rect>
+            <rect id="screenbackground" fill="#111214" x="0" y="0" width="1266" height="815"></rect>
             <g id="Group" transform="translate(534, 157)">
                 <g id="Rectangle">
                     <use fill="black" fill-opacity="1" filter="url(#filter-hd7e1nc55q-2)" xlink:href="#path-hd7e1nc55q-1"></use>
@@ -473,12 +473,12 @@ const atsuielements = {
             </g>
             <g id="Access_ADJUNTAS" transform="translate(839, 293)">
                 <g id="Rectangle">
-                    <use fill="#9496A2" fill-rule="evenodd" xlink:href="#path-hd7e1nc55q-4"></use>
+                    <use fill="#2b2d31" fill-rule="evenodd" xlink:href="#path-hd7e1nc55q-4"></use>
                     <use fill="black" fill-opacity="1" filter="url(#filter-hd7e1nc55q-5)" xlink:href="#path-hd7e1nc55q-4"></use>
                     <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="389" height="249"></rect>
                 </g>
-                <line x1="7.5" y1="113" x2="382.5" y2="113" id="Path-30" stroke="#323232" stroke-width="8"></line>
-                <line x1="7.5" y1="163" x2="382.5" y2="163" id="Path-30" stroke="#323232" stroke-width="8"></line>
+                <line x1="7.5" y1="113" x2="382.5" y2="113" id="Path-30" stroke="#888888" stroke-width="8"></line>
+                <line x1="7.5" y1="163" x2="382.5" y2="163" id="Path-30" stroke="#888888" stroke-width="8"></line>
                 <g id="StationName" transform="translate(250, 66)">
                     <g id="Rectangle">
                         <use fill="black" fill-opacity="1" filter="url(#filter-hd7e1nc55q-10)" xlink:href="#path-hd7e1nc55q-9"></use>
@@ -489,19 +489,19 @@ const atsuielements = {
                         <tspan x="5" y="21">LAS ADJUNTAS</tspan>
                     </text>
                 </g>
-                <line x1="211" y1="113" x2="261" y2="163" id="Path-2" stroke="#323232" stroke-width="8"></line>
-                <line x1="18.5" y1="113" x2="68.5" y2="163" id="Path-2" stroke="#323232" stroke-width="8" transform="translate(140, 138) scale(-1, 1) translate(-140, -138)"></line>
+                <line x1="211" y1="113" x2="261" y2="163" id="Path-2" stroke="#888888" stroke-width="8"></line>
+                <line x1="18.5" y1="113" x2="68.5" y2="163" id="Path-2" stroke="#888888" stroke-width="8" transform="translate(140, 138) scale(-1, 1) translate(-140, -138)"></line>
             </g>
             <g id="Access_AYACUCHO" transform="translate(439, 293)">
                 <g id="Rectangle">
-                    <use fill="#9496A2" fill-rule="evenodd" xlink:href="#path-hd7e1nc55q-20"></use>
+                    <use fill="#2b2d31" fill-rule="evenodd" xlink:href="#path-hd7e1nc55q-20"></use>
                     <use fill="black" fill-opacity="1" filter="url(#filter-hd7e1nc55q-21)" xlink:href="#path-hd7e1nc55q-20"></use>
                     <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="389" height="249"></rect>
                 </g>
-                <line x1="289" y1="113" x2="339" y2="163" id="Path-2" stroke="#323232" stroke-width="8"></line>
-                <line x1="289" y1="113" x2="339" y2="163" id="Path-2" stroke="#323232" stroke-width="8" transform="translate(314, 138) scale(-1, 1) translate(-314, -138)"></line>
-                <line x1="7.5" y1="113" x2="382.5" y2="113" id="Path-30" stroke="#323232" stroke-width="8"></line>
-                <line x1="7.5" y1="163" x2="382.5" y2="163" id="Path-30" stroke="#323232" stroke-width="8"></line>
+                <line x1="289" y1="113" x2="339" y2="163" id="Path-2" stroke="#888888" stroke-width="8"></line>
+                <line x1="289" y1="113" x2="339" y2="163" id="Path-2" stroke="#888888" stroke-width="8" transform="translate(314, 138) scale(-1, 1) translate(-314, -138)"></line>
+                <line x1="7.5" y1="113" x2="382.5" y2="113" id="Path-30" stroke="#888888" stroke-width="8"></line>
+                <line x1="7.5" y1="163" x2="382.5" y2="163" id="Path-30" stroke="#888888" stroke-width="8"></line>
                 <g id="StationName" transform="translate(170, 66)">
                     <g id="Rectangle">
                         <use fill="black" fill-opacity="1" filter="url(#filter-hd7e1nc55q-26)" xlink:href="#path-hd7e1nc55q-25"></use>
@@ -512,17 +512,17 @@ const atsuielements = {
                         <tspan x="25" y="21">AYACUCHO</tspan>
                     </text>
                 </g>
-                <line x1="46.5" y1="113" x2="96.5" y2="163" id="Path-2" stroke="#323232" stroke-width="8"></line>
-                <line x1="132.5" y1="113" x2="182.5" y2="163" id="Path-2" stroke="#323232" stroke-width="8" transform="translate(157.5, 138) scale(-1, 1) translate(-157.5, -138)"></line>
+                <line x1="46.5" y1="113" x2="96.5" y2="163" id="Path-2" stroke="#888888" stroke-width="8"></line>
+                <line x1="132.5" y1="113" x2="182.5" y2="163" id="Path-2" stroke="#888888" stroke-width="8" transform="translate(157.5, 138) scale(-1, 1) translate(-157.5, -138)"></line>
             </g>
             <g id="Access_INDEPENDENCIA" transform="translate(39, 293)">
                 <g id="Rectangle">
-                    <use fill="#9496A2" fill-rule="evenodd" xlink:href="#path-hd7e1nc55q-12"></use>
+                    <use fill="#2b2d31" fill-rule="evenodd" xlink:href="#path-hd7e1nc55q-12"></use>
                     <use fill="black" fill-opacity="1" filter="url(#filter-hd7e1nc55q-13)" xlink:href="#path-hd7e1nc55q-12"></use>
                     <rect stroke="#C3C6D2" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="389" height="249"></rect>
                 </g>
-                <line x1="7.5" y1="113" x2="382.5" y2="113" id="Path-30" stroke="#323232" stroke-width="8"></line>
-                <line x1="7.5" y1="163" x2="382.5" y2="163" id="Path-30" stroke="#323232" stroke-width="8"></line>
+                <line x1="7.5" y1="113" x2="382.5" y2="113" id="Path-30" stroke="#888888" stroke-width="8"></line>
+                <line x1="7.5" y1="163" x2="382.5" y2="163" id="Path-30" stroke="#888888" stroke-width="8"></line>
                 <g id="StationName" transform="translate(19, 66)">
                     <g id="Rectangle">
                         <use fill="black" fill-opacity="1" filter="url(#filter-hd7e1nc55q-15)" xlink:href="#path-hd7e1nc55q-14"></use>
@@ -543,11 +543,11 @@ const atsuielements = {
                         <tspan x="10" y="21">ALI PRIMERA</tspan>
                     </text>
                 </g>
-                <line x1="18.5" y1="113" x2="68.5" y2="163" id="Path-2" stroke="#323232" stroke-width="8"></line>
-                <line x1="18.5" y1="113" x2="68.5" y2="163" id="Path-2" stroke="#323232" stroke-width="8" transform="translate(43.5, 138) scale(-1, 1) translate(-43.5, -138)"></line>
+                <line x1="18.5" y1="113" x2="68.5" y2="163" id="Path-2" stroke="#888888" stroke-width="8"></line>
+                <line x1="18.5" y1="113" x2="68.5" y2="163" id="Path-2" stroke="#888888" stroke-width="8" transform="translate(43.5, 138) scale(-1, 1) translate(-43.5, -138)"></line>
                 
-                <line x1="321" y1="113" x2="371" y2="163" id="Path-2" stroke="#323232" stroke-width="8"></line>
-                <line x1="18.5" y1="113" x2="68.5" y2="163" id="Path-2" stroke="#323232" stroke-width="8" transform="translate(195, 138) scale(-1, 1) translate(-195, -138)"></line>
+                <line x1="321" y1="113" x2="371" y2="163" id="Path-2" stroke="#888888" stroke-width="8"></line>
+                <line x1="18.5" y1="113" x2="68.5" y2="163" id="Path-2" stroke="#888888" stroke-width="8" transform="translate(195, 138) scale(-1, 1) translate(-195, -138)"></line>
             </g>
             <rect id="Rectangle" fill="#000000" x="0" y="0" width="2" height="815"></rect>
             <rect id="Rectangle" fill="#FFFFFF" x="2" y="813" width="1264" height="2"></rect>
@@ -1056,8 +1056,8 @@ const atsuielements = {
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Artboard">
-            <rect fill="#AFB2C1" x="0" y="0" width="1266" height="815"></rect>
-            <rect id="screenbackground" fill="#AFB2C1" x="0" y="0" width="1266" height="815"></rect>
+            <rect fill="#111214" x="0" y="0" width="1266" height="815"></rect>
+            <rect id="screenbackground" fill="#111214" x="0" y="0" width="1266" height="815"></rect>
             <rect id="Rectangle" fill="#000000" x="0" y="0" width="2" height="815"></rect>
             <rect id="Rectangle" fill="#FFFFFF" x="2" y="813" width="1264" height="2"></rect>
             <rect id="Rectangle" fill="#FFFFFF" x="1264" y="0" width="2" height="815"></rect>
@@ -1066,7 +1066,7 @@ const atsuielements = {
                 <g id="borders" fill="black" fill-opacity="1">
                     <use filter="url(#filter-7pc0on4ajl-2)" xlink:href="#path-7pc0on4ajl-1"></use>
                 </g>
-                <rect id="background" fill="#AFB2C1" x="0" y="0" width="121" height="20"></rect>
+                <rect id="background" fill="#111214" x="0" y="0" width="121" height="20"></rect>
                 <text id="text" font-family="CourierNewPS-BoldMT, Courier New" font-size="14" font-weight="bold" fill="#000000">
                     <tspan x="35.2877017" y="14.4761905">Active</tspan>
                 </text>
@@ -1075,7 +1075,7 @@ const atsuielements = {
                 <g id="borders" fill="black" fill-opacity="1">
                     <use filter="url(#filter-7pc0on4ajl-4)" xlink:href="#path-7pc0on4ajl-3"></use>
                 </g>
-                <rect id="background" fill="#AFB2C1" x="0" y="0" width="121" height="20"></rect>
+                <rect id="background" fill="#111214" x="0" y="0" width="121" height="20"></rect>
                 <text id="text" font-family="CourierNewPS-BoldMT, Courier New" font-size="14" font-weight="bold" fill="#000000">
                     <tspan x="4.68565093" y="14.4761905">Potential</tspan>
                 </text>
@@ -1084,7 +1084,7 @@ const atsuielements = {
                 <g id="borders" fill="black" fill-opacity="1">
                     <use filter="url(#filter-7pc0on4ajl-6)" xlink:href="#path-7pc0on4ajl-5"></use>
                 </g>
-                <rect id="background" fill="#AFB2C1" x="0" y="0" width="121" height="20"></rect>
+                <rect id="background" fill="#111214" x="0" y="0" width="121" height="20"></rect>
                 <text id="text" font-family="CourierNewPS-BoldMT, Courier New" font-size="14" font-weight="bold" fill="#000000">
                     <tspan x="9.28770172" y="14.4761905">Logged</tspan>
                 </text>
@@ -1093,7 +1093,7 @@ const atsuielements = {
                 <g id="borders" fill="black" fill-opacity="1">
                     <use filter="url(#filter-7pc0on4ajl-8)" xlink:href="#path-7pc0on4ajl-7"></use>
                 </g>
-                <rect id="background" fill="#AFB2C1" x="0" y="0" width="121" height="20"></rect>
+                <rect id="background" fill="#111214" x="0" y="0" width="121" height="20"></rect>
                 <text id="text" font-family="CourierNewPS-BoldMT, Courier New" font-size="14" font-weight="bold" fill="#000000">
                     <tspan x="17.8863345" y="14.4761905">Archived</tspan>
                 </text>
@@ -1102,7 +1102,7 @@ const atsuielements = {
                 <g id="borders" fill="black" fill-opacity="1">
                     <use filter="url(#filter-7pc0on4ajl-10)" xlink:href="#path-7pc0on4ajl-9"></use>
                 </g>
-                <rect id="background" fill="#AFB2C1" x="0" y="0" width="83" height="20"></rect>
+                <rect id="background" fill="#111214" x="0" y="0" width="83" height="20"></rect>
                 <text id="text" font-family="CourierNewPS-BoldMT, Courier New" font-size="14" font-weight="bold" fill="#000000">
                     <tspan x="3.19384766" y="14">Selection</tspan>
                 </text>
@@ -1111,7 +1111,7 @@ const atsuielements = {
                 <g id="borders" fill="black" fill-opacity="1">
                     <use filter="url(#filter-7pc0on4ajl-12)" xlink:href="#path-7pc0on4ajl-11"></use>
                 </g>
-                <rect id="background" fill="#AFB2C1" x="0" y="0" width="152" height="20"></rect>
+                <rect id="background" fill="#111214" x="0" y="0" width="152" height="20"></rect>
                 <text id="text" font-family="CourierNewPS-BoldMT, Courier New" font-size="14" font-weight="bold" fill="#000000">
                     <tspan x="36.996582" y="14">Print</tspan>
                 </text>
@@ -1120,7 +1120,7 @@ const atsuielements = {
                 <g id="borders" fill="black" fill-opacity="1">
                     <use filter="url(#filter-7pc0on4ajl-14)" xlink:href="#path-7pc0on4ajl-13"></use>
                 </g>
-                <rect id="background" fill="#AFB2C1" x="0" y="0" width="191" height="20"></rect>
+                <rect id="background" fill="#111214" x="0" y="0" width="191" height="20"></rect>
                 <text id="text" font-family="CourierNewPS-BoldMT, Courier New" font-size="14" font-weight="bold" fill="#000000">
                     <tspan x="2.58837891" y="14">Acknowledge level</tspan>
                 </text>
@@ -1129,7 +1129,7 @@ const atsuielements = {
                 <g id="borders" fill="black" fill-opacity="1">
                     <use filter="url(#filter-7pc0on4ajl-16)" xlink:href="#path-7pc0on4ajl-15"></use>
                 </g>
-                <rect id="background" fill="#AFB2C1" x="0" y="0" width="191" height="20"></rect>
+                <rect id="background" fill="#111214" x="0" y="0" width="191" height="20"></rect>
                 <text id="text" font-family="CourierNewPS-BoldMT, Courier New" font-size="14" font-weight="bold" fill="#000000">
                     <tspan x="32.5917969" y="14">Enable level</tspan>
                 </text>
@@ -1138,7 +1138,7 @@ const atsuielements = {
                 <g id="borders" fill="black" fill-opacity="1">
                     <use filter="url(#filter-7pc0on4ajl-18)" xlink:href="#path-7pc0on4ajl-17"></use>
                 </g>
-                <rect id="background" fill="#AFB2C1" x="0" y="0" width="191" height="20"></rect>
+                <rect id="background" fill="#111214" x="0" y="0" width="191" height="20"></rect>
                 <text id="text" font-family="CourierNewPS-BoldMT, Courier New" font-size="14" font-weight="bold" fill="#000000">
                     <tspan x="32.3911133" y="14">Disable level</tspan>
                 </text>
@@ -1147,33 +1147,33 @@ const atsuielements = {
                 <g id="borders" fill="black" fill-opacity="1">
                     <use filter="url(#filter-7pc0on4ajl-20)" xlink:href="#path-7pc0on4ajl-19"></use>
                 </g>
-                <rect id="background" fill="#AFB2C1" x="0" y="0" width="60" height="20"></rect>
+                <rect id="background" fill="#111214" x="0" y="0" width="60" height="20"></rect>
                 <text id="text" font-family="CourierNewPS-BoldMT, Courier New" font-size="14" font-weight="bold" fill="#000000">
                     <tspan x="2.19726562" y="14">Root</tspan>
                 </text>
             </g>
             <g id="borders">
                 <use fill="black" fill-opacity="1" filter="url(#filter-7pc0on4ajl-22)" xlink:href="#path-7pc0on4ajl-21"></use>
-                <use fill="#AFB2C1" fill-rule="evenodd" xlink:href="#path-7pc0on4ajl-21"></use>
+                <use fill="#111214" fill-rule="evenodd" xlink:href="#path-7pc0on4ajl-21"></use>
             </g>
             <g id="borders">
                 <use fill="black" fill-opacity="1" filter="url(#filter-7pc0on4ajl-24)" xlink:href="#path-7pc0on4ajl-23"></use>
-                <use fill="#AFB2C1" fill-rule="evenodd" xlink:href="#path-7pc0on4ajl-23"></use>
+                <use fill="#111214" fill-rule="evenodd" xlink:href="#path-7pc0on4ajl-23"></use>
             </g>
             <line x1="930" y1="0" x2="930" y2="815" id="Path-31" stroke="#000000" stroke-width="2"></line>
             <g id="borders">
                 <use fill="black" fill-opacity="1" filter="url(#filter-7pc0on4ajl-26)" xlink:href="#path-7pc0on4ajl-25"></use>
-                <use fill="#AFB2C1" fill-rule="evenodd" xlink:href="#path-7pc0on4ajl-25"></use>
+                <use fill="#111214" fill-rule="evenodd" xlink:href="#path-7pc0on4ajl-25"></use>
             </g>
             <g id="borders">
                 <use fill="black" fill-opacity="1" filter="url(#filter-7pc0on4ajl-28)" xlink:href="#path-7pc0on4ajl-27"></use>
-                <use fill="#AFB2C1" fill-rule="evenodd" xlink:href="#path-7pc0on4ajl-27"></use>
+                <use fill="#111214" fill-rule="evenodd" xlink:href="#path-7pc0on4ajl-27"></use>
             </g>
             <g id="Group" transform="translate(942.1861, 153)">
                 <g id="borders" fill="black" fill-opacity="1">
                     <use filter="url(#filter-7pc0on4ajl-30)" xlink:href="#path-7pc0on4ajl-29"></use>
                 </g>
-                <rect id="background" fill="#AFB2C1" x="0.313868613" y="0" width="273" height="20"></rect>
+                <rect id="background" fill="#111214" x="0.313868613" y="0" width="273" height="20"></rect>
                 <text id="text" font-family="CourierNewPS-BoldItalicMT, Courier New" font-size="14" font-style="italic" font-weight="bold" fill="#000000">
                     <tspan x="0.591796875" y="14">GEOGRAPHICAL</tspan>
                 </text>
@@ -1182,7 +1182,7 @@ const atsuielements = {
                 <g id="borders" fill="black" fill-opacity="1">
                     <use filter="url(#filter-7pc0on4ajl-32)" xlink:href="#path-7pc0on4ajl-31"></use>
                 </g>
-                <rect id="background" fill="#AFB2C1" x="0.313868613" y="0" width="273" height="20"></rect>
+                <rect id="background" fill="#111214" x="0.313868613" y="0" width="273" height="20"></rect>
                 <text id="text" font-family="CourierNewPS-BoldItalicMT, Courier New" font-size="14" font-style="italic" font-weight="bold" fill="#000000">
                     <tspan x="0.193847656" y="14">OPERATING</tspan>
                 </text>
@@ -1191,8 +1191,8 @@ const atsuielements = {
                 <g id="borders" fill="black" fill-opacity="1">
                     <use filter="url(#filter-7pc0on4ajl-34)" xlink:href="#path-7pc0on4ajl-33"></use>
                 </g>
-                <rect id="background" fill="#AFB2C1" x="0.313868613" y="0" width="273" height="20"></rect>
-                <rect id="background" fill="#AFB2C1" x="0.313868613" y="0" width="273" height="20"></rect>
+                <rect id="background" fill="#111214" x="0.313868613" y="0" width="273" height="20"></rect>
+                <rect id="background" fill="#111214" x="0.313868613" y="0" width="273" height="20"></rect>
                 <text id="text" font-family="CourierNewPS-BoldItalicMT, Courier New" font-size="14" font-style="italic" font-weight="bold" fill="#000000">
                     <tspan x="0.993164062" y="14">SIGNALLING</tspan>
                 </text>
@@ -1201,8 +1201,8 @@ const atsuielements = {
                 <g id="borders" fill="black" fill-opacity="1">
                     <use filter="url(#filter-7pc0on4ajl-36)" xlink:href="#path-7pc0on4ajl-35"></use>
                 </g>
-                <rect id="background" fill="#AFB2C1" x="0.313868613" y="0" width="273" height="20"></rect>
-                <rect id="background" fill="#AFB2C1" x="0.313868613" y="0" width="273" height="20"></rect>
+                <rect id="background" fill="#111214" x="0.313868613" y="0" width="273" height="20"></rect>
+                <rect id="background" fill="#111214" x="0.313868613" y="0" width="273" height="20"></rect>
                 <text id="text" font-family="CourierNewPS-BoldItalicMT, Courier New" font-size="14" font-style="italic" font-weight="bold" fill="#000000">
                     <tspan x="0.792480469" y="14">SUPERVISION</tspan>
                 </text>
@@ -1211,8 +1211,8 @@ const atsuielements = {
                 <g id="borders" fill="black" fill-opacity="1">
                     <use filter="url(#filter-7pc0on4ajl-38)" xlink:href="#path-7pc0on4ajl-37"></use>
                 </g>
-                <rect id="background" fill="#AFB2C1" x="0.313868613" y="0" width="273" height="20"></rect>
-                <rect id="background" fill="#AFB2C1" x="0.313868613" y="0" width="273" height="20"></rect>
+                <rect id="background" fill="#111214" x="0.313868613" y="0" width="273" height="20"></rect>
+                <rect id="background" fill="#111214" x="0.313868613" y="0" width="273" height="20"></rect>
                 <text id="text" font-family="CourierNewPS-BoldItalicMT, Courier New" font-size="14" font-style="italic" font-weight="bold" fill="#000000">
                     <tspan x="0.39453125" y="14">TRACTION</tspan>
                 </text>

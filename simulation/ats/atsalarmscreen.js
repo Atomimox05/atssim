@@ -9,7 +9,7 @@ class ATSAlarmScreen {
         this.title = "Alarm Display"
         this.HTMLElement = document.createElement("svg")
         this.HTMLElement.classList = "accessscreen"
-        var svg = new DOMParser().parseFromString(atsuielements["alarmscreen"], "text/html").body.firstChild
+        var svg = new DOMParser().parseFromString(atsuielements["alarmscreen"], "image/svg+xml").documentElement
         this.HTMLElement.append(svg)
         this.alarmList = document.createElement("div")
         this.alarmList.classList = "alarmlist"
@@ -48,9 +48,13 @@ class ATSAlarmScreen {
             var englishLabel = document.createElement("span")
             englishLabel.classList = "english"
             englishLabel.innerText = alarm.englishLabel
+            var spanishLabel = document.createElement("span")
+            spanishLabel.classList = "spanish"
+            spanishLabel.innerText = alarm.spanishLabel
             eventRow.appendChild(firstColumn)
             eventRow.appendChild(turkishLabel)
             eventRow.appendChild(englishLabel)
+            eventRow.appendChild(spanishLabel)
             list.appendChild(eventRow)
         });
         this.alarmList.innerHTML = ""

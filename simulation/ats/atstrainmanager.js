@@ -23,7 +23,7 @@ class ATSTrainManager {
     addTrain(train) {
         var atsTrain = new ATSTrain(train.name, `${(train.name)}`, train, this)
         this.trains.push(atsTrain)
-        AlarmHandler.addEvent(train.carPositions[0].mapTrackCircuit.name, "TREN BELİRDİ", "TRAIN APPEARED")
+        AlarmHandler.addEvent(train.carPositions[0].mapTrackCircuit.name, "TREN BELİRDİ", "TRAIN APPEARED", "TREN APARECIÓ")
         return atsTrain
     }
 }

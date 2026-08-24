@@ -36,9 +36,9 @@ class InterlockingPoint {
         if (possibility.status == true) {
             this.desiredPosition = position
             if (position == "normal") {
-                AlarmHandler.addEvent(this.name, "MAKAS KONTROLÜ NORMAL OK", "POINT CONTROL NORMAL OK")
+                AlarmHandler.addEvent(this.name, "MAKAS KONTROLÜ NORMAL OK", "POINT CONTROL NORMAL OK", "CONTROL DE PUNTO NORMAL OK")
             } else {
-                AlarmHandler.addEvent(this.name, "MAKAS KONTROLÜ TERS OK", "POINT CONTROL REVERSE OK")
+                AlarmHandler.addEvent(this.name, "MAKAS KONTROLÜ TERS OK", "POINT CONTROL REVERSE OK", "CONTROL DE PUNTO INVERSO OK")
             }
             return new InterlockingAnswer(true)
         } else {
@@ -51,7 +51,7 @@ class InterlockingPoint {
             return new InterlockingAnswer(false, "pointAlreadyLocked")
         } else if (this.currentPosition != null) {
             this.locked = true
-            AlarmHandler.addEvent(this.name, "MAKASIN KİLİTLİ KONUMA GETİRİLMESİ OK", "POINT LOCKING OK")
+            AlarmHandler.addEvent(this.name, "MAKASIN KİLİTLİ KONUMA GETİRİLMESİ OK", "POINT LOCKING OK", "BLOQUEO DE PUNTO OK")
             return new InterlockingAnswer(true)
         } else {
             return new InterlockingAnswer(false, "pointOutOfControl")
@@ -63,7 +63,7 @@ class InterlockingPoint {
             return new InterlockingAnswer(false, "pointAlreadyUnlocked")
         } else {
             this.locked = false
-            AlarmHandler.addEvent(this.name, "MAKASIN SERBEST KONUMA GETİRİLMESİ OK", "POINT UNLOCKING OK")
+            AlarmHandler.addEvent(this.name, "MAKASIN SERBEST KONUMA GETİRİLMESİ OK", "POINT UNLOCKING OK", "DESBLOQUEO DE PUNTO OK")
             return new InterlockingAnswer(true)
         }
     }

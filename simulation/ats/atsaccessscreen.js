@@ -10,7 +10,7 @@ class ATSAccessScreen {
         this.title = ""
         this.HTMLElement = document.createElement("svg")
         this.HTMLElement.classList = "accessscreen"
-        var svg = new DOMParser().parseFromString(atsuielements["accessscreen"], "text/html").body.firstChild
+        var svg = new DOMParser().parseFromString(atsuielements["accessscreen"], "image/svg+xml").documentElement
         this.HTMLElement.append(svg)
         mimicscreendata.forEach(mimicScreen => {
             var mimicScreenAccessButton = this.HTMLElement.querySelector(`#Access_${mimicScreen["name"]}`)

@@ -43,6 +43,7 @@
     left: 365px;
     font-size: 30px;
     margin: 0;
+    color: white;
 }
 
 .timedate {
@@ -51,6 +52,7 @@
     left: 948px;
     margin: 0;
     width: 200px;
+    color: white;
 }
 
 .user {
@@ -60,6 +62,7 @@
     margin: 0;
     padding-left: 28px;
     width: 200px;
+    color: white;
 }
 
 .logo {
@@ -80,6 +83,7 @@
     height: 25px;
     display: flex;
     align-items: center;
+    color: white;
 }
 
 .mimicscreen, .alarmscreen, .accessscreen {
@@ -117,6 +121,16 @@
     margin-left: 10px;
 }
 
+.navigationbar .languagebutton {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    vertical-align: top;
+    font-family: sans-serif;
+}
+
+
 .navigationbar .interlockinganswer {
     margin: 0;
     position: absolute;
@@ -125,6 +139,7 @@
     width: 430px;
     height: 20px;
     font-weight: bold;
+    color: white;
 }
 
 .navigationbar .secondline {
@@ -151,4 +166,7 @@
 
 .bold {
     font-weight: bold;
+}
+.cursor-pointer {
+    cursor: pointer;
 }

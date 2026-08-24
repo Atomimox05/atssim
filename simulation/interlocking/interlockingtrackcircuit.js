@@ -73,17 +73,25 @@ class InterlockingTrackCircuit {
         if (this.occupied != occupation) {
             if (occupation) {
                 if (this.reservedForRoute || this.reservedForShuntingRoute || this.approachLocked) {
-                    AlarmHandler.addEvent(this.name, "RAY DEVRESİ MEŞGUL", "TRACK CIRCUIT OCCUPIED")
+                    AlarmHandler.addEvent(this.name, "RAY DEVRESİ MEŞGUL", "TRACK CIRCUIT OCCUPIED", "CIRCUITO DE VÍA OCUPADO")
                 } else {
-                    AlarmHandler.addAlarm(this.name, "YERSİZ RAY DEVRESİ MEŞGULİYETİ", "UNEXPECTED TRACK CIRCUIT OCCUPANCY", 1)
+                    AlarmHandler.addAlarm(this.name, "YERSİZ RAY DEVRESİ MEŞGULİYETİ", "UNEXPECTED TRACK CIRCUIT OCCUPANCY", "OCUPACIÓN INESPERADA DE CIRCUITO DE VÍA", 1)
                 }
             } else {
                 if (this.reserveForRouteRequests == 0 && this.occupied && (this.reservedForRoute || this.reservedForShuntingRoute)) {
                     this.reservedForRoute = false
                     this.reservedForShuntingRoute = false
-                    AlarmHandler.addEvent(this.name, "ALT ROTA SERBEST", "SUBROUTE FREE")
+                    AlarmHandler.addEvent(this.name, "ALT ROTA SERBEST", "SUBROUTE FREE", "SUBRUTA LIBRE")
                 } else if (this.reserveForRouteRequests > 0) {
                     this.reserveForRouteRequests-- 
+                }
+                
+                if (typeof interlocking !== "undefined") {
+                    interlocking.signals.forEach(signal => {
+                        if (signal.fleeting) {
+                            signal.notifyTrackCircuitFreed(this.name)
+                        }
+                    })
                 }
             }
         }

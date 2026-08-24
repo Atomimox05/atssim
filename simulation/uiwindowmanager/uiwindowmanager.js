@@ -30,5 +30,6 @@ class UIWindowManager {
         var tmpWindow = new UIWindow(title, content, x, y, width, height, this, mainWindow)
         this.screen.appendChild(tmpWindow.DOMElement)
         this.windows.push(tmpWindow)
+        return tmpWindow
     }
 }

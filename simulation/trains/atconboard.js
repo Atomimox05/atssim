@@ -23,6 +23,7 @@ class ATCOnboard {
         this.departing = false
         this.currentlyStoppedPlatform = null
         this.alreadyChangedEnds = false
+        this.lastReversedTrackCircuit = null
         setInterval(() => { this.sendPositionReport() }, 500)
     }
 
@@ -35,6 +36,12 @@ class ATCOnboard {
                 this.atsTrain.updatePosition(this.train.carPositions[0].mapTrackCircuit.interlockingTrackCircuit)
             } else {
                 this.atsTrain.updatePosition(this.train.carPositions[this.train.carPositions.length - 1].mapTrackCircuit.interlockingTrackCircuit)
+            }
+        }
+        if (this.lastReversedTrackCircuit != null) {
+            var inTC = this.train.carPositions.some(car => car.mapTrackCircuit && car.mapTrackCircuit.name === this.lastReversedTrackCircuit)
+            if (!inTC) {
+                this.lastReversedTrackCircuit = null
             }
         }
     }
@@ -89,8 +96,17 @@ class ATCOnboard {
                         return false
                     }
                 }
+                if (this.train.carPositions[0].mapTrackCircuit.interlockingTrackCircuit.terminus) {
+                    if (this.lastReversedTrackCircuit != this.train.carPositions[0].mapTrackCircuit.name && this.train.carPositions[0].position == this.train.carPositions[0].mapTrackCircuit.length && !this.departing) {
+                        this.stoppedAtStation = true
+                        this.currentlyStoppedPlatform = { atsPlatform: { terminus: true, hold: false }, direction: "northbound" }
+                        this.stopAtStationTimestamp = Date.now()
+                        this.lastReversedTrackCircuit = this.train.carPositions[0].mapTrackCircuit.name
+                        return false
+                    }
+                }
             } else {
-                if (this.currentlyStoppedPlatform.terminus && !this.alreadyChangedEnds) {
+                if (this.currentlyStoppedPlatform.atsPlatform.terminus && !this.alreadyChangedEnds) {
                     this.alreadyChangedEnds = true
                     this.train.driver.changeEnds()
                 }
@@ -116,8 +132,17 @@ class ATCOnboard {
                         return false
                     }
                 }
+                if (this.train.carPositions[this.train.carPositions.length - 1].mapTrackCircuit.interlockingTrackCircuit.terminus) {
+                    if (this.lastReversedTrackCircuit != this.train.carPositions[this.train.carPositions.length - 1].mapTrackCircuit.name && this.train.carPositions[this.train.carPositions.length - 1].position == 1 && !this.departing) {
+                        this.stoppedAtStation = true
+                        this.currentlyStoppedPlatform = { atsPlatform: { terminus: true, hold: false }, direction: "southbound" }
+                        this.stopAtStationTimestamp = Date.now()
+                        this.lastReversedTrackCircuit = this.train.carPositions[this.train.carPositions.length - 1].mapTrackCircuit.name
+                        return false
+                    }
+                }
             } else {
-                if (this.currentlyStoppedPlatform.terminus && !this.alreadyChangedEnds) {
+                if (this.currentlyStoppedPlatform.atsPlatform.terminus && !this.alreadyChangedEnds) {
                     this.alreadyChangedEnds = true
                     this.train.driver.changeEnds()
                 }

@@ -26,7 +26,7 @@
     <p>Depending on the situation, a signal and its buttons may be shown with different colors.</p>
     <p></p>
     <h3>Aspect</h3>
-    <img src="/assets/signalaspect.jpg" alt="">
+    <img src="/assets/signalaspect.jpg" style="height: 190px;" alt="">
     <p>The signal's aspect may be as following:</p>
     <ul>
         <li>
@@ -34,29 +34,45 @@
             <p>There is no route, stop.</p>
         </li>
         <li>
+            <b>Flashing Red</b>
+            <p>The route has been cancelled and is inside the safety timer. A cancelled route will be completely removed after 60 seconds has passed.</p>
+            <p>This aspect is special to the ATS, and is shown as red on the physical signals.</p>
+        </li>
+        <li>
+            <b>Red-White</b>
+            <p>This aspect appears after a train has passed a signal with <b>fleeting mode</b> active, during the interval before the route is automatically re-set for the next train.</p>
+            <p>It works as a safety buffer: after the train clears the first few track circuits beyond the signal, the system transitions from Red-White to Green-White once enough track circuits have been freed, confirming the train has moved far enough ahead. The exact threshold depends on the length of the fleeting route.</p>
+            <p>Like Green-White, this aspect is ATS-specific and is shown as red on physical signals.</p>
+        </li>
+        <li>
             <b>Green</b>
             <p>There is a train route, passing the signal is allowed.</p>
             <p>Unlike most signalling systems, the signal will turn green as long as there is at least one track circuit with a subroute on it. The ATC will continue to supervise the train movement.</p>
         </li>
         <li>
+            <b>Green-White</b>
+            <p>This aspect is shown exclusively when <b>fleeting mode is active</b> or a <b>cycle is enabled</b> on the signal, and the fleeting route is clear for a new train.</p>
+            <p>It indicates that the route is set and the signal is ready to automatically reset for the next train. The signal will accept a new train passing through without requiring manual route setting by the dispatcher.</p>
+            <p>This aspect is specific to the ATS and has no direct physical counterpart — on physical signals it is displayed as green.</p>
+        </li>
+        <li>
             <b>Flashing Green</b>
             <p>There is a shunting route, expect stop at the next shunting panel, passing the signal is allowed.</p>
         </li>
-        <li>
-            <b>Flashing Red</b>
-            <p>The route has been cancelled and is inside the safety timer. A cancelled route will be completely removed after 60 seconds has passed.</p>
-            <p>This aspect is special to the ATS, and is shown as red on the physical signals.</p>
-        </li>
+        
     </ul>
     <h3>Signal Button</h3>
     <img src="/assets/signalbutton.jpg" alt="">
     <p>If the signal is closed and fleeting is off, the signal button will display a gray background with a yellow arrow. Otherwise, the background will be white and the arrow black.</p>
     <p>Route setting functions are accessed via this button.</p>
     <h3>Fleeting Button</h3>
-    <img src="/assets/fleetingbutton.jpg" alt="">
+    <img src="/assets/fleetingbutton.png" alt="">
     <p>Fleeting allows the same route to be set for all trains automatically to reduce the workload of the dispatcher. Only some signals have this function.</p>
     <p>If fleeting is disabled, the fleeting button will display a gray background with a yellow F letter. Otherwise, the background will be white and the F letter black.</p>
+    <p>When fleeting is enabled or a cycle is active, the signal aspect may also display <b>Green-White</b> or <b>Red-White</b> combinations to indicate the status of the train passing through the fleeting route.</p>
     <p>Fleeting functions are accessed via this button.</p>
+    <h3>Cycle Button</h3>
+    <p>Similar to fleeting, cycles allow continuous route setting for certain signals based on active schedules. The button works similarly by toggling the cycle mode on or off.</p>
     <h3>Cancel Button</h3>
     <img src="/assets/cancelbutton.jpg" alt="">
     <p>This button is used to cancel a route.</p>
@@ -68,17 +84,22 @@
     <ul>
         <li>
             <h3>Green, Fleeting On</h3>
-            <img src="/assets/signal.jpg" alt="">
+            <img src="/assets/signal.png" alt="">
             <p>There is a route set and fleeting is enabled.</p>
         </li>
         <li>
             <h3>Green, Fleeting Off</h3>
-            <img src="/assets/greensignalfleetingoff.jpg" alt="">
+            <img src="/assets/greensignalfleetingoff.png" alt="">
             <p>There is a route set but fleeting is disabled.</p>
         </li>
         <li>
+            <h3>Red-White (Fleeting / Cycle active)</h3>
+            <img src="/assets/redwhitesignal.png" alt="">
+            <p>A train has just passed the signal with fleeting or cycle enabled. The route is temporarily unready while the system waits for the train to clear enough track circuits ahead before transitioning back to Green-White.</p>
+        </li>
+        <li>
             <h3>Red, Fleeting Off</h3>
-            <img src="/assets/redsignal.jpg" alt="">
+            <img src="/assets/redsignal.png" alt="">
             <p>There is no route set.</p>
         </li>
     </ul>

@@ -19,7 +19,7 @@ class UIWindow {
         var leftButton = document.createElement("button")
         leftButton.classList.add("leftbutton")
         var leftButtonImg = document.createElement("img")
-        leftButtonImg.src = "/simulation/uiwindowmanager/lefticon.svg"
+        leftButtonImg.src = "./uiwindowmanager/lefticon.svg"
         leftButton.appendChild(leftButtonImg)
         windowbar.appendChild(leftButton)
 
@@ -35,7 +35,7 @@ class UIWindow {
 
         var rightButton = document.createElement("button")
         var rightButtonImg = document.createElement("img")
-        rightButtonImg.src = "/simulation/uiwindowmanager/righticon.svg"
+        rightButtonImg.src = "./uiwindowmanager/righticon.svg"
         rightButton.appendChild(rightButtonImg)
         windowbar.appendChild(rightButton)
 

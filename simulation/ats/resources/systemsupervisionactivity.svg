@@ -187,154 +187,154 @@
     </defs>
     <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Rectangle">
-            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use fill="white" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
             <use fill="#9496A2" fill-rule="evenodd" xlink:href="#path-1"></use>
         </g>
         <g id="Rectangle">
-            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+            <use fill="white" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
             <use fill="#9496A2" fill-rule="evenodd" xlink:href="#path-3"></use>
         </g>
-        <text id="SYSTEM-SUPERVISION-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="17" font-weight="bold" fill="#000000" fill-opacity="0.9">
+        <text id="SYSTEM-SUPERVISION-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="17" font-weight="bold" fill="#FFFFFF" fill-opacity="0.9">
             <tspan x="238.277588" y="29">SYSTEM SUPERVISION ACTIVITY</tspan>
         </text>
         <g id="Group-6" transform="translate(22, 52)">
             <g id="Rectangle">
-                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                <use fill="white" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
                 <use fill="#9496A2" fill-rule="evenodd" xlink:href="#path-5"></use>
             </g>
-            <text id="ATS-MAIN-COMPUTER" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#000000" fill-opacity="0.9">
+            <text id="ATS-MAIN-COMPUTER" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#FFFFFF" fill-opacity="0.9">
                 <tspan x="29.1953125" y="12">ATS MAIN</tspan>
                 <tspan x="29.1953125" y="26">COMPUTER</tspan>
             </text>
             <g id="SystemState" transform="translate(4, 35)">
-                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#000000" fill-opacity="0.9">
+                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#FFFFFF" fill-opacity="0.9">
                     <tspan x="4.39648438" y="10">UNIT 1</tspan>
                 </text>
-                <circle id="Oval" stroke="#000000" fill="#008000" cx="25.5" cy="39.5" r="10"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="#008000" cx="25.5" cy="39.5" r="10"></circle>
             </g>
             <g id="SystemStateRed" transform="translate(61, 35)">
-                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#000000" fill-opacity="0.9">
+                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#FFFFFF" fill-opacity="0.9">
                     <tspan x="4.39648438" y="10">UNIT 2</tspan>
                 </text>
-                <circle id="Oval" stroke="#000000" fill="#EA3323" cx="25.5" cy="39.5" r="10"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="#EA3323" cx="25.5" cy="39.5" r="10"></circle>
             </g>
         </g>
         <g id="Group-7" transform="translate(144, 52)">
             <g id="Rectangle">
-                <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                <use fill="white" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
                 <use fill="#9496A2" fill-rule="evenodd" xlink:href="#path-7"></use>
             </g>
-            <text id="COMMUNICATION" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#000000" fill-opacity="0.9">
+            <text id="COMMUNICATION" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#FFFFFF" fill-opacity="0.9">
                 <tspan x="178.192383" y="12">COMMUNICATION</tspan>
             </text>
             <g id="SystemState" transform="translate(5, 35)">
-                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#000000" fill-opacity="0.9">
+                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#FFFFFF" fill-opacity="0.9">
                     <tspan x="7.99707031" y="10">SSI A</tspan>
                 </text>
-                <circle id="Oval" stroke="#000000" fill="#008000" cx="25.5" cy="39.5" r="10"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="#008000" cx="25.5" cy="39.5" r="10"></circle>
             </g>
             <g id="SystemStateRed" transform="translate(62, 35)">
-                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#000000" fill-opacity="0.9">
+                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#FFFFFF" fill-opacity="0.9">
                     <tspan x="7.99707031" y="10">SSI B</tspan>
                 </text>
-                <circle id="Oval" stroke="#000000" fill="#EA3323" cx="25.5" cy="39.5" r="10"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="#EA3323" cx="25.5" cy="39.5" r="10"></circle>
             </g>
             <g id="SystemState" transform="translate(5, 90)">
-                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#000000" fill-opacity="0.9">
+                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#FFFFFF" fill-opacity="0.9">
                     <tspan x="0.795898438" y="10">SACEM A </tspan>
                     <tspan x="15.1982422" y="24">TAK</tspan>
                 </text>
-                <circle id="Oval" stroke="#000000" fill="#008000" cx="25.5" cy="39.5" r="10"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="#008000" cx="25.5" cy="39.5" r="10"></circle>
             </g>
             <g id="SystemStateRed" transform="translate(62, 90)">
-                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#000000" fill-opacity="0.9">
+                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#FFFFFF" fill-opacity="0.9">
                     <tspan x="0.795898438" y="10">SACEM B </tspan>
                     <tspan x="15.1982422" y="24">TAK</tspan>
                 </text>
-                <circle id="Oval" stroke="#000000" fill="#EA3323" cx="25.5" cy="39.5" r="10"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="#EA3323" cx="25.5" cy="39.5" r="10"></circle>
             </g>
             <g id="SystemState" transform="translate(134, 35)">
-                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#000000" fill-opacity="0.9">
+                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#FFFFFF" fill-opacity="0.9">
                     <tspan x="0.795898438" y="10">SCADA B</tspan>
                 </text>
-                <circle id="Oval" stroke="#000000" fill="#EA3323" cx="25.5" cy="39.5" r="10"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="#EA3323" cx="25.5" cy="39.5" r="10"></circle>
             </g>
             <g id="SystemStateRed" transform="translate(191, 35)">
-                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#000000" fill-opacity="0.9">
+                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#FFFFFF" fill-opacity="0.9">
                     <tspan x="0.795898438" y="10">SCADA B</tspan>
                 </text>
-                <circle id="Oval" stroke="#000000" fill="#EA3323" cx="25.5" cy="39.5" r="10"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="#EA3323" cx="25.5" cy="39.5" r="10"></circle>
             </g>
             <g id="SystemState" transform="translate(134, 90)">
-                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#000000" fill-opacity="0.9">
+                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#FFFFFF" fill-opacity="0.9">
                     <tspan x="0.795898438" y="10">SACEM A </tspan>
                     <tspan x="15.1982422" y="24">SIS</tspan>
                 </text>
-                <circle id="Oval" stroke="#000000" fill="#008000" cx="25.5" cy="39.5" r="10"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="#008000" cx="25.5" cy="39.5" r="10"></circle>
             </g>
             <g id="SystemStateRed" transform="translate(191, 90)">
-                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#000000" fill-opacity="0.9">
+                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#FFFFFF" fill-opacity="0.9">
                     <tspan x="0.795898438" y="10">SACEM B </tspan>
                     <tspan x="15.1982422" y="24">SIS</tspan>
                 </text>
-                <circle id="Oval" stroke="#000000" fill="#EA3323" cx="25.5" cy="39.5" r="10"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="#EA3323" cx="25.5" cy="39.5" r="10"></circle>
             </g>
             <g id="SystemState" transform="translate(263, 35)">
-                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#000000" fill-opacity="0.9">
+                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#FFFFFF" fill-opacity="0.9">
                     <tspan x="7.99707031" y="10">RADIO</tspan>
                 </text>
-                <circle id="Oval" stroke="#000000" fill="#EA3323" cx="25.5" cy="39.5" r="10"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="#EA3323" cx="25.5" cy="39.5" r="10"></circle>
             </g>
             <g id="SystemStateRed" transform="translate(320, 35)">
-                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#000000" fill-opacity="0.9">
+                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#FFFFFF" fill-opacity="0.9">
                     <tspan x="15.1982422" y="10">ECS</tspan>
                 </text>
-                <circle id="Oval" stroke="#000000" fill="#EA3323" cx="25.5" cy="39.5" r="10"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="#EA3323" cx="25.5" cy="39.5" r="10"></circle>
             </g>
             <g id="SystemState" transform="translate(263, 90)">
-                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#000000" fill-opacity="0.9">
+                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#FFFFFF" fill-opacity="0.9">
                     <tspan x="0.795898438" y="10">SACEM A </tspan>
                     <tspan x="15.1982422" y="24">LEV</tspan>
                 </text>
-                <circle id="Oval" stroke="#000000" fill="#008000" cx="25.5" cy="39.5" r="10"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="#008000" cx="25.5" cy="39.5" r="10"></circle>
             </g>
             <g id="SystemStateRed" transform="translate(320, 90)">
-                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#000000" fill-opacity="0.9">
+                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#FFFFFF" fill-opacity="0.9">
                     <tspan x="0.795898438" y="10">SACEM B </tspan>
                     <tspan x="15.1982422" y="24">LEV</tspan>
                 </text>
-                <circle id="Oval" stroke="#000000" fill="#EA3323" cx="25.5" cy="39.5" r="10"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="#EA3323" cx="25.5" cy="39.5" r="10"></circle>
             </g>
             <g id="SystemStateRed" transform="translate(392, 35)">
-                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#000000" fill-opacity="0.9">
+                <text id="SCADA-A" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#FFFFFF" fill-opacity="0.9">
                     <tspan x="7.99707031" y="10">CLOCK</tspan>
                 </text>
-                <circle id="Oval" stroke="#000000" fill="#EA3323" cx="25.5" cy="39.5" r="10"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="#EA3323" cx="25.5" cy="39.5" r="10"></circle>
             </g>
         </g>
         <g id="Group-7" transform="translate(600, 52)">
             <g id="Rectangle">
-                <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                <use fill="white" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
                 <use fill="#9496A2" fill-rule="evenodd" xlink:href="#path-9"></use>
             </g>
-            <text id="DATE-AND-TIME" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#000000" fill-opacity="0.9">
+            <text id="DATE-AND-TIME" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#FFFFFF" fill-opacity="0.9">
                 <tspan x="18.1923828" y="12">DATE AND TIME</tspan>
             </text>
-            <text id="DATE" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#000000" fill-opacity="0.9">
+            <text id="DATE" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#FFFFFF" fill-opacity="0.9">
                 <tspan x="11.5976562" y="67">DATE</tspan>
             </text>
-            <text id="TIME" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#000000" fill-opacity="0.9">
+            <text id="TIME" font-family="CourierNewPS-BoldMT, Courier New" font-size="12" font-weight="bold" fill="#FFFFFF" fill-opacity="0.9">
                 <tspan x="11.5976562" y="120">TIME</tspan>
             </text>
             <g id="daterectangle">
-                <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                <use fill="white" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
                 <use fill="#807989" fill-rule="evenodd" xlink:href="#path-11"></use>
             </g>
             <g id="timerectangle">
-                <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"></use>
+                <use fill="white" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"></use>
                 <use fill="#807989" fill-rule="evenodd" xlink:href="#path-13"></use>
             </g>
         </g>
-        <line x1="14" y1="39.5" x2="737" y2="39.5" id="Line-5" stroke="#000000" stroke-width="2" stroke-linecap="square"></line>
+        <line x1="14" y1="39.5" x2="737" y2="39.5" id="Line-5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></line>
     </g>
 </svg>
